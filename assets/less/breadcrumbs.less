@@ -1,0 +1,80 @@
+// BREADCRUMBS
+// -----------
+
+.breadcrumb {
+
+  font-size: @UIFontSize;
+  margin: 0 ;
+  list-style: none;
+  @elementHeight: 24px;
+  padding: ((@navbarHeight - @elementHeight) / 2 )+1 0 ((@navbarHeight - @elementHeight) / 2 )-1;
+  li {	
+    display: inline-block;
+    .ie7-inline-block();
+    text-shadow: 0 1px 0 @WHITE;
+    margin-right: @baseLineHeight;
+   
+  }
+  
+  .divider {
+    padding: 0 5px;
+    color: @grayLight;
+  }
+  a{
+  	 color: @GREY;
+  }
+   .active {
+   	font-weight: 600;
+   	position: relative;
+  }
+ 	a:hover{
+  	text-decoration: none;
+  	color: #1CAD7E;
+  }
+}
+
+.navbar-breadcrumb{
+		background-color: @grayLight;
+		border-bottom: 1px solid @grayDarker;
+	.breadcrumb{
+		position: relative;
+  		left: 0;
+  		display: block;
+  		margin: 0 10px 0 0;
+  		a{
+  			font-weight: 300;
+  		}
+		
+	}
+	.active:before {
+		top: 31px;
+		bottom: auto;
+		left: auto;
+		right: 47px;
+		border-width: 0 10px 10px;
+		content: "";
+		position: absolute;
+		
+		
+		
+		border-style: solid;
+		border-color: #C4C4C4 transparent;
+		display: block;
+		width: 0;
+	}
+	.active:after {
+		content: "";
+		position: absolute;
+		border-style: solid;
+		border-color: white transparent;
+		display: block;
+		width: 0;
+		top: 32px;
+		bottom: auto;
+		left: auto;
+		right: 47px;
+		border-width: 0 10px 10px;
+
+	}
+	
+}

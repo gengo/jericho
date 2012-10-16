@@ -1,0 +1,55 @@
+//
+// Layouts
+// Fixed-width and fluid (with sidebar) layouts
+// --------------------------------------------
+body{
+  padding-top: @navbarHeight;
+}
+
+.wrapper {
+   min-height:100%;
+   position:relative;
+   .clearfix;
+}
+// Container (centered, fixed-width layouts)
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  .clearfix();
+}
+
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+.container-fluid {
+  padding-right: @gridGutterWidth;
+  padding-left: @gridGutterWidth;
+  .clearfix();
+}
+
+#content{
+	// padding bottom for vertical space and to keep footer at the bottom of the page. 
+	padding-bottom: @baseLineHeight;
+}
+
+.content-divider{
+	position: absolute;
+	width: 1px;
+	right:-19px;
+	
+}
+.content-divider.main{
+		top: 84px;
+		bottom: 84px; 
+		height: auto;
+		background: #E2E2E2;
+}
+.content-divider.top{
+		height: 84px;
+		top:0;
+		background: transparent url('/img/content_divider_top.png') no-repeat right top;
+}
+.content-divider.bottom{
+		height: 84px;
+		bottom: 0;
+		background: transparent url('/img/content_divider_bottom.png') no-repeat right bottom;
+
+}

@@ -1,0 +1,62 @@
+.footer{
+	// this mixed with teh wrapper will keep the footer fixed to the bottom of the page.
+	position:absolute;
+   	bottom:0;
+   	width:100%;
+   	height: @footerHeight;
+	background-color: @footerBackground;
+	font-size: @baseFontSize -2;
+	padding-top: @baseLineHeight;
+	a{
+			color: @GREY;
+			font-weight: 300;
+			}
+	.nav{
+		
+		li a{
+			color: @GREY;
+			font-weight: 600;
+			
+		}
+		li a:hover{	
+			color: #4D4843;
+			text-decoration: underline;
+		}
+	}
+	.facebook{
+		padding-bottom:0;
+		span{
+			margin: 0 5px 0 0;
+			display: inline-block;
+			width: 23px;
+			height: 24px;
+			background: url("http://d1mvomz2rusyi1.cloudfront.net/048a98b/mygengo_v4/images/home/home-page-icons/social_media_icons.png") left top;
+		}
+	}
+	.twitter  {
+		padding-bottom:0;
+		span{
+		margin: 0;
+		display: inline-block;
+		width: 23px;
+		height: 24px;
+		
+		background: url("http://d1mvomz2rusyi1.cloudfront.net/048a98b/mygengo_v4/images/home/home-page-icons/social_media_icons.png") right top;
+		}
+	}
+	
+	.copyright{
+		font-weight: 300;
+		font-size: 12px;
+		margin-top: 24px;
+		text-align: right;
+		clear: both;
+	}
+	// remove the margin bottom from any row
+	.row{margin-bottom:0;}
+}
+.footer.footer-simple{
+	background-color: transparent;
+	height: 60px;
+	
+}
