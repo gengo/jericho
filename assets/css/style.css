@@ -605,7 +605,7 @@ h6 small {
 }
 h1 {
   font-size: 36px;
-  line-height: 48px -6;
+  line-height: 48px;
 }
 h2 {
   font-size: 30px;
@@ -702,7 +702,7 @@ dd {
 hr {
   margin: 24px 0;
   border: 0;
-  border-top: 1px solid #f9f9f9;
+  border-top: 1px solid #dddddd;
   border-bottom: 1px solid #ffffff;
 }
 strong {
@@ -730,7 +730,7 @@ blockquote {
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 30px;
 }
 blockquote small {
@@ -765,7 +765,7 @@ address {
   line-height: 24px;
 }
 small {
-  font-size: 87.5%;
+  font-size: 75%;
 }
 cite {
   font-style: normal;
@@ -2335,7 +2335,7 @@ table .span24 {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 9px 24px 0;
+  padding-left: 24px;
   margin-left: -24px;
   font-weight: 400;
   font-size: 20px;
@@ -2343,8 +2343,8 @@ table .span24 {
   color: #ffffff;
 }
 .navbar .brand img {
-  height: 30px;
-  width: 84px;
+  height: 42px;
+  width: 112px;
 }
 .navbar .brand.worker {
   height: 18px;
@@ -2578,22 +2578,22 @@ table .span24 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeaeaea', endColorstr='#ffeeeeee', GradientType=0);
   text-decoration: none;
   border-left-color: transparent;
+  color: #4D4843;
 }
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  color: #ffffff;
+  color: #4D4843;
   text-decoration: none;
-  background-color: #726e6b;
-  background-image: -moz-linear-gradient(top, #6c6864, #7b7875);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6c6864), to(#7b7875));
-  background-image: -webkit-linear-gradient(top, #6c6864, #7b7875);
-  background-image: -o-linear-gradient(top, #6c6864, #7b7875);
-  background-image: linear-gradient(to bottom, #6c6864, #7b7875);
+  background-color: #ececec;
+  background-image: -moz-linear-gradient(top, #eeeeee, #eaeaea);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#eaeaea));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #eaeaea);
+  background-image: -o-linear-gradient(top, #eeeeee, #eaeaea);
+  background-image: linear-gradient(to bottom, #eeeeee, #eaeaea);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6c6864', endColorstr='#ff7b7875', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffeaeaea', GradientType=0);
   border-right-color: transparent;
   border-left-color: transparent;
-  border-bottom: 1px solid #6C6864;
   position: relative;
   bottom: -1px;
   z-index: 100;
