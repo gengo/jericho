@@ -566,7 +566,7 @@ p small {
   margin-bottom: 24px;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.25em;
+  line-height: 30px;
 }
 a:focus {
   outline: 0;
@@ -712,20 +712,23 @@ em {
   font-style: italic;
 }
 .muted {
-  color: #90887f;
+  color: #cbc8c4;
+}
+.text-error {
+  color: #ea5e47;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #f4f4f4;
+  border-bottom: 1px dotted #4d4843;
 }
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 blockquote {
-  padding: 0 0 0 15px;
+  padding: 0 0 0 12px;
   margin: 0 0 24px;
-  border-left: 5px solid #f9f9f9;
+  border-left: 3px solid #dddddd;
 }
 blockquote p {
   margin-bottom: 0;
@@ -743,9 +746,9 @@ blockquote small:before {
 }
 blockquote.pull-right {
   float: right;
-  padding-right: 15px;
+  padding-right: 12px;
   padding-left: 0;
-  border-right: 5px solid #f9f9f9;
+  border-right: 3px solid #dddddd;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -765,10 +768,11 @@ address {
   line-height: 24px;
 }
 small {
-  font-size: 75%;
+  font-size: 14px;
+  font-style: italic;
 }
 cite {
-  font-style: normal;
+  font-style: italic;
 }
 .centered {
   text-align: center;
