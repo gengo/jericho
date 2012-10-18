@@ -16,12 +16,21 @@
     // side bar
     $('.bs-docs-sidenav').affix({
       offset: {
-        top: function () { return $window.width() <= 980 ? 290 : 210 }
+        top: function () { return $window.width() <= 980 ? 500 : 210 }
       , bottom: 270
       }
     })
-
-    // make code pretty
+  /*
+  $('.bs-docs-sidenav a').bind("click", function(e){
+        dataprevent
+        var scrollOffset = $(window).scrollTop();
+        $(window).scrollTo(0,scrollOffset+55)
+      
+      
+    })
+*/
+    
+        // make code pretty
     window.prettyPrint && prettyPrint()
 
     // add-ons
