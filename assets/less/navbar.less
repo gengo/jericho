@@ -61,7 +61,7 @@
     display: block;
     // Vertically center the text given @navbarHeight
     
-    padding: ((@navbarHeight - @elementHeight) / 2 - 2) @baseLineHeight 0;
+    padding-left: @baseLineHeight;
     margin-left: -@baseLineHeight; // negative indent to left-align the text down the page
     font-weight: 400;
     font-size: 20px;
@@ -69,8 +69,8 @@
     color: @navbarBrandColor;
   }
   .brand img{
-  	height: 30px;
-  	width: 84px;
+  	height: 42px;
+  	width: 112px;
   }
   .brand.worker{
   	height:18px;
@@ -305,18 +305,18 @@
 .navbar .nav > li > a:hover {
   #gradient > .vertical(@navbarLinkBackgHighlightHover, @navbarLinkBackgroundHover );
   text-decoration: none;
-   border-left-color: transparent;
+  border-left-color: transparent;
+  color: #4D4843;
 }
 
 // Active nav items
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  color: @navbarLinkColorActive;
+  color: #4D4843;
   text-decoration: none;
-  #gradient > .vertical(#6C6864, #7B7875 );
+  #gradient > .vertical(@navbarLinkBackgroundHover, @navbarLinkBackgHighlightHover );
   border-right-color: transparent;
   border-left-color: transparent;
-  border-bottom: 1px solid #6C6864;
   
     //force to overlap its parent, allowing border color change. 
     position: relative;
