@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Base · Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+   <!--  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <style type="text/css">
+      .hover { background-color: #EFF7E6; }
+      .table tbody tr:hover td{
+        background-color: #EFF7E6;
+      }
+      .table tbody tr:hover td:hover{
+        background-color: #DDF3C4;
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <div class="wrapper">
+    <div class="container">
+      
+    <table class="table table-bordered ">
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+	<thead>
+	    <tr>
+	        <th>Language</th>
+	        <th>Standard</th>
+	        <th>Business</th>
+	        <th>Ultra</th>
+	        <th>Specialist</th>
+	    </tr>
+	</thead>
+	<tbody>
+    		<tr>
+    			<td>Japanese</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    		<tr>
+    			<td>French</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    		<tr>
+    			<td>German</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    		<tr>
+    			<td>Chinese</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    		<tr>
+    			<td>Spanish</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    		<tr>
+    			<td>English</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    		<tr>
+    			<td>Dutch</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    		<tr>
+    			<td>Italian</td>
+    			<td>$0.05</td>
+    			<td>$0.10</td>
+    			<td>$0.15</td>
+    			<td>$0.20</td>
+    		</tr>
+    	</tbody>
+</table></table>
+    </div>
+  </div><!-- wrapper -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/application.js"></script>
+
+    <script type="text/javascript"> 
+    $("table").delegate('td','mouseover mouseleave', function(e) {
+    if (e.type == 'mouseover') {
+      $(this).parent().addClass("hover");
+      $("colgroup").eq($(this).index()).addClass("hover");
+    }
+    else {
+      $(this).parent().removeClass("hover");
+      $("colgroup").eq($(this).index()).removeClass("hover");
+    }
+});
+    </script>
+
+  </body>
+</html>
