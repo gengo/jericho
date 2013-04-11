@@ -267,7 +267,7 @@
   margin-top: 4px;
   height: 31px;
   text-align: center;
-  background: transparent url("../img/worker-icon.png") no-repeat;
+  background: transparent url("./img/gengo-navbar/worker-icon.png") no-repeat;
 }
 .navbar .navbar-text {
   float: right;
@@ -377,7 +377,7 @@
   outline: 0;
 }
 .navbar-search.input-append .btn {
-  background-image: url(../img/gengo-navbar/navigation_sprite.png);
+  background-image: url(./img/gengo-navbar/navigation_sprite.png);
   background-position: -206px -168px;
   background-repeat: no-repeat;
   border-radius: 0 3px 3px 0;
@@ -871,11 +871,11 @@
   position: relative;
 }
 .navbar .breadcrumb li a {
-  background: #24ad81 url(../img/navbar-crumb-back.png) no-repeat 100% 100%;
+  background: #24ad81 url(./img/navbar-crumb-back.png) no-repeat 100% 100%;
   border-width: 0;
 }
 .navbar .breadcrumb li a:hover {
-  background: #24ad81 url(../img/navbar-crumb-back.png) no-repeat 100% 100%;
+  background: #24ad81 url(./img/navbar-crumb-back.png) no-repeat 100% 100%;
 }
 .navbar .breadcrumb li a.active {
   background-position: 100% 0%;
@@ -907,7 +907,7 @@
   min-width: 19px;
 }
 .navbar .nav > li.nav-icon-order > a {
-  background: url(../img/gengo-navbar/navigation_sprite.png) no-repeat -286px -9px;
+  background: url(./img/gengo-navbar/navigation_sprite.png) no-repeat -286px -9px;
 }
 .navbar .nav > li.nav-icon-notifications {
   margin-right: 10px;
@@ -917,10 +917,10 @@
   -moz-transition: none;
   -o-transition: none;
   transition: none;
-  background: url(../img/gengo-navbar/navigation_sprite.png) no-repeat -135px -10px;
+  background: url(./img/gengo-navbar/navigation_sprite.png) no-repeat -135px -10px;
 }
 .navbar .nav > li.nav-icon-search > a {
-  background: url(../img/gengo-navbar/navigation_sprite.png) no-repeat -209px -9px;
+  background: url(./img/gengo-navbar/navigation_sprite.png) no-repeat -209px -9px;
 }
 .navbar .dropdown-menu > li > a.active {
   padding-left: 17px;
@@ -935,7 +935,7 @@
 }
 
 .navbar .navbar-personal .brand {
-  background: #1cad7e url(../img/gengo-navbar/navigation_sprite.png) no-repeat -5px -7px;
+  background: #1cad7e url(./img/gengo-navbar/navigation_sprite.png) no-repeat -5px -7px;
   box-shadow: 0 1px 0 #06a073;
   width: 59px;
 }
@@ -963,7 +963,7 @@
 }
 
 .navbar .navbar-translator .brand {
-  background: #98d7cc url(../img/gengo-navbar/navigation_sprite.png) no-repeat -5px -59px;
+  background: #98d7cc url(./img/gengo-navbar/navigation_sprite.png) no-repeat -5px -59px;
   box-shadow: 0 1px 0 #8ac6bc;
   width: 26px;
 }

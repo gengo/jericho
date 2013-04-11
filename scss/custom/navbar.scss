@@ -201,10 +201,10 @@ span{font-weight: 400;}
 	  display: inline-block;
 	  width: 32px;
 	  margin-left: 1px;
-	    margin-top: 4px;
+    margin-top: 4px;
 	  height: 31px;
 	  text-align: center;
-	  background: transparent url("../img/worker-icon.png") no-repeat;
+	  background: transparent url("./img/gengo-navbar/worker-icon.png") no-repeat;
   }
   // Plain text in topbar
   .navbar-text {
@@ -300,7 +300,7 @@ span{font-weight: 400;}
     }
   }
   &.input-append .btn {
-    background-image: url(../img/gengo-navbar/navigation_sprite.png);
+    background-image: url(./img/gengo-navbar/navigation_sprite.png);
     background-position: -206px -168px;
     background-repeat: no-repeat;
     border-radius: 0 3px 3px 0;
@@ -765,10 +765,10 @@ span{font-weight: 400;}
     margin:0;
     position: relative;
     a{
-       background: #24AD81 url(../img/navbar-crumb-back.png) no-repeat 100% 100%;
+       background: #24AD81 url(./img/navbar-crumb-back.png) no-repeat 100% 100%;
        border-width: 0;
        &:hover{
-        background: #24AD81 url(../img/navbar-crumb-back.png) no-repeat 100% 100%;
+        background: #24AD81 url(./img/navbar-crumb-back.png) no-repeat 100% 100%;
        }
       &.active{
         background-position: 100% 0%;
@@ -808,15 +808,15 @@ span{font-weight: 400;}
       }
     }
     > li.nav-icon-order > a {
-      background: url(../img/gengo-navbar/navigation_sprite.png) no-repeat -286px -9px;
+      background: url(./img/gengo-navbar/navigation_sprite.png) no-repeat -286px -9px;
     }
     > li.nav-icon-notifications { margin-right: 10px; }
     > li.nav-icon-notifications > a {
       @include transition(none);
-      background: url(../img/gengo-navbar/navigation_sprite.png) no-repeat -135px -10px;
+      background: url(./img/gengo-navbar/navigation_sprite.png) no-repeat -135px -10px;
     }
     > li.nav-icon-search > a {
-      background: url(../img/gengo-navbar/navigation_sprite.png) no-repeat -209px -9px;
+      background: url(./img/gengo-navbar/navigation_sprite.png) no-repeat -209px -9px;
     }
   }
   .dropdown-menu {
@@ -828,7 +828,7 @@ span{font-weight: 400;}
 }
 .navbar .navbar-personal {
   .brand {
-    background: $green url(../img/gengo-navbar/navigation_sprite.png) no-repeat -5px -7px;
+    background: $green url(./img/gengo-navbar/navigation_sprite.png) no-repeat -5px -7px;
     box-shadow: 0 1px 0 $greenHover;
     width: 59px;
     &:hover {
@@ -863,7 +863,7 @@ span{font-weight: 400;}
 }
 .navbar .navbar-translator {
   .brand {
-    background: $lightBlue url(../img/gengo-navbar/navigation_sprite.png) no-repeat -5px -59px;
+    background: $lightBlue url(./img/gengo-navbar/navigation_sprite.png) no-repeat -5px -59px;
     box-shadow: 0 1px 0 $lightBlueHover;
     width: 26px;
     &:hover {
