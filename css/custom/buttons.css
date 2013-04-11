@@ -1,0 +1,578 @@
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 5px 24px 5px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  *line-height: 28px;
+  color: #4d4843;
+  text-align: center;
+  text-shadow: 0px -2px 0px white;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #4d4843;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(top, white, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
+  background-image: -o-linear-gradient(top, white, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0);
+  border-color: #f2f2f2 #f2f2f2 #cccccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f2f2f2;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border: 1px solid #dbdbdb;
+  *border: 0;
+  border-bottom-color: #c2c2c2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  *margin-left: .3em;
+  /*  @include box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)"); */
+}
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+  color: #4d4843;
+  background-color: white;
+  *background-color: #e5e5e5;
+  background-image: none;
+}
+.btn:active, .btn.active {
+  background-color: #d8d8d8 \9;
+}
+.btn:first-child {
+  *margin-left: 0;
+}
+
+.btn:hover {
+  color: #1cad7e;
+  text-decoration: none;
+  background-color: #fafafa;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+  color: #4d4843;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  background-color: #efefef;
+  background-image: -moz-linear-gradient(top, whitesmoke, #e8e8e8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(whitesmoke), to(#e8e8e8));
+  background-image: -webkit-linear-gradient(top, whitesmoke, #e8e8e8);
+  background-image: -o-linear-gradient(top, whitesmoke, #e8e8e8);
+  background-image: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF5F5F5', endColorstr='#FFE8E8E8', GradientType=0);
+  border-color: #e8e8e8 #e8e8e8 #c2c2c2;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e8e8e8;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-top-color: #e8e8e8;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.btn:hover:hover, .btn:hover:active, .btn:hover.active, .btn:hover.disabled, .btn:hover[disabled] {
+  color: #4d4843;
+  background-color: white;
+  *background-color: #dbdbdb;
+  background-image: none;
+}
+.btn:hover:active, .btn:hover.active {
+  background-color: #cecece \9;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn.active,
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: "inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)";
+  -moz-box-shadow: "inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)";
+  box-shadow: "inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)";
+}
+
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-large {
+  font-size: 16px;
+  padding: 12px 24px 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btn-large [class^="icon-"] {
+  margin-top: 1px;
+}
+
+.btn-chubby {
+  padding: 8px 24px 8px;
+}
+
+.btn-small {
+  padding: .375em .75em .4375em;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.btn-small [class^="icon-"] {
+  margin-top: -1px;
+}
+
+.btn-mini {
+  padding: 2px 6px;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.btn [class^="icon-"],
+.btn [class*=" icon-"] {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  *margin-right: .3em;
+  line-height: 22px;
+  vertical-align: text-top;
+  /* background-position: 14px 14px; */
+  background-repeat: no-repeat;
+  margin-top: 1px;
+  margin-right: 7px;
+}
+
+.btn-group .btn {
+  margin-left: 8px;
+}
+.btn-group .btn:first-child {
+  margin-left: 0;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-core,
+.btn-core:hover,
+.btn-google,
+.btn-google:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary.active,
+.btn-core.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn {
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #28ab81;
+  background-image: -moz-linear-gradient(top, #33b58b, #199c72);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#33b58b), to(#199c72));
+  background-image: -webkit-linear-gradient(top, #33b58b, #199c72);
+  background-image: -o-linear-gradient(top, #33b58b, #199c72);
+  background-image: linear-gradient(to bottom, #33b58b, #199c72);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33B58B', endColorstr='#FF199C72', GradientType=0);
+  border-color: #199c72 #199c72 #0e5a42;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #199c72;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+  color: white;
+  background-color: #20c892;
+  *background-color: #158662;
+  background-image: none;
+}
+.btn-primary:active, .btn-primary.active {
+  background-color: #127052 \9;
+}
+
+.btn-primary:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #269e77;
+  background-image: -moz-linear-gradient(top, #30a982, #178f68);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#30a982), to(#178f68));
+  background-image: -webkit-linear-gradient(top, #30a982, #178f68);
+  background-image: -o-linear-gradient(top, #30a982, #178f68);
+  background-image: linear-gradient(to bottom, #30a982, #178f68);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF30A982', endColorstr='#FF178F68', GradientType=0);
+  border-color: #178f68 #178f68 #0c4d38;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #178f68;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-primary:hover:hover, .btn-primary:hover:active, .btn-primary:hover.active, .btn-primary:hover.disabled, .btn-primary:hover[disabled] {
+  color: white;
+  background-color: #1ebb88;
+  *background-color: #137958;
+  background-image: none;
+}
+.btn-primary:hover:active, .btn-primary:hover.active {
+  background-color: #106348 \9;
+}
+
+.btn-core {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #e2644f;
+  background-image: -moz-linear-gradient(top, #ec6e59, #d35540);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ec6e59), to(#d35540));
+  background-image: -webkit-linear-gradient(top, #ec6e59, #d35540);
+  background-image: -o-linear-gradient(top, #ec6e59, #d35540);
+  background-image: linear-gradient(to bottom, #ec6e59, #d35540);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEC6E59', endColorstr='#FFD35540', GradientType=0);
+  border-color: #d35540 #d35540 #a13725;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #d35540;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-core:hover, .btn-core:active, .btn-core.active, .btn-core.disabled, .btn-core[disabled] {
+  color: white;
+  background-color: #dd7a69;
+  *background-color: #cb452f;
+  background-image: none;
+}
+.btn-core:active, .btn-core.active {
+  background-color: #b63e2a \9;
+}
+
+.btn-core:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #df543d;
+  background-image: -moz-linear-gradient(top, #ea5e47, #cf4630);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea5e47), to(#cf4630));
+  background-image: -webkit-linear-gradient(top, #ea5e47, #cf4630);
+  background-image: -o-linear-gradient(top, #ea5e47, #cf4630);
+  background-image: linear-gradient(to bottom, #ea5e47, #cf4630);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEA5E47', endColorstr='#FFCF4630', GradientType=0);
+  border-color: #cf4630 #cf4630 #913121;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #cf4630;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-core:hover:hover, .btn-core:hover:active, .btn-core:hover.active, .btn-core:hover.disabled, .btn-core:hover[disabled] {
+  color: white;
+  background-color: #d96b59;
+  *background-color: #ba3f2b;
+  background-image: none;
+}
+.btn-core:hover:active, .btn-core:hover.active {
+  background-color: #a53826 \9;
+}
+
+.btn-google, .btn-google:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #616162;
+  background-image: -moz-linear-gradient(top, #676768, #59595a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#676768), to(#59595a));
+  background-image: -webkit-linear-gradient(top, #676768, #59595a);
+  background-image: -o-linear-gradient(top, #676768, #59595a);
+  background-image: linear-gradient(to bottom, #676768, #59595a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF676768', endColorstr='#FF59595A', GradientType=0);
+  border-color: #59595a #59595a #333334;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #59595a;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #969697 #4c4c4d #333334;
+}
+.btn-google:hover, .btn-google:active, .btn-google.active, .btn-google.disabled, .btn-google[disabled], .btn-google:hover:hover, .btn-google:hover:active, .btn-google:hover.active, .btn-google:hover.disabled, .btn-google:hover[disabled] {
+  color: white;
+  background-color: #727274;
+  *background-color: #4c4c4d;
+  background-image: none;
+}
+.btn-google:active, .btn-google.active, .btn-google:hover:active, .btn-google:hover.active {
+  background-color: #404040 \9;
+}
+
+.btn-google:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #575758;
+  background-image: -moz-linear-gradient(top, #5d5d5e, #4f4f50);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5d5d5e), to(#4f4f50));
+  background-image: -webkit-linear-gradient(top, #5d5d5e, #4f4f50);
+  background-image: -o-linear-gradient(top, #5d5d5e, #4f4f50);
+  background-image: linear-gradient(to bottom, #5d5d5e, #4f4f50);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5D5D5E', endColorstr='#FF4F4F50', GradientType=0);
+  border-color: #4f4f50 #4f4f50 #292929;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #4f4f50;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #8c8c8d #424243 #292929;
+}
+.btn-google:hover:hover, .btn-google:hover:active, .btn-google:hover.active, .btn-google:hover.disabled, .btn-google:hover[disabled] {
+  color: white;
+  background-color: #686869;
+  *background-color: #424243;
+  background-image: none;
+}
+.btn-google:hover:active, .btn-google:hover.active {
+  background-color: #353536 \9;
+}
+
+.btn-facebook {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #3a5b8d;
+  background-image: -moz-linear-gradient(top, #416193, #315284);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#416193), to(#315284));
+  background-image: -webkit-linear-gradient(top, #416193, #315284);
+  background-image: -o-linear-gradient(top, #416193, #315284);
+  background-image: linear-gradient(to bottom, #416193, #315284);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF416193', endColorstr='#FF315284', GradientType=0);
+  border-color: #315284 #315284 #1c2f4c;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #315284;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #688ec7 #2a4671 #1c2f4c;
+}
+.btn-facebook:hover, .btn-facebook:active, .btn-facebook.active, .btn-facebook.disabled, .btn-facebook[disabled] {
+  color: white;
+  background-color: #3f69a9;
+  *background-color: #2a4671;
+  background-image: none;
+}
+.btn-facebook:active, .btn-facebook.active {
+  background-color: #233b5f \9;
+}
+
+.btn-facebook:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #34527e;
+  background-image: -moz-linear-gradient(top, #3b5885, #2b4975);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5885), to(#2b4975));
+  background-image: -webkit-linear-gradient(top, #3b5885, #2b4975);
+  background-image: -o-linear-gradient(top, #3b5885, #2b4975);
+  background-image: linear-gradient(to bottom, #3b5885, #2b4975);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3B5885', endColorstr='#FF2B4975', GradientType=0);
+  border-color: #2b4975 #2b4975 #17263d;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2b4975;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #5983c2 #253d63 #17263d;
+}
+.btn-facebook:hover:hover, .btn-facebook:hover:active, .btn-facebook:hover.active, .btn-facebook:hover.disabled, .btn-facebook:hover[disabled] {
+  color: white;
+  background-color: #39609a;
+  *background-color: #253d63;
+  background-image: none;
+}
+.btn-facebook:hover:active, .btn-facebook:hover.active {
+  background-color: #1e3250 \9;
+}
+
+.btn-primary-worker {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #81c7bb;
+  background-image: -moz-linear-gradient(top, #8dd3c7, #70b6aa);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dd3c7), to(#70b6aa));
+  background-image: -webkit-linear-gradient(top, #8dd3c7, #70b6aa);
+  background-image: -o-linear-gradient(top, #8dd3c7, #70b6aa);
+  background-image: linear-gradient(to bottom, #8dd3c7, #70b6aa);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8DD3C7', endColorstr='#FF70B6AA', GradientType=0);
+  border-color: #70b6aa #70b6aa #4a9084;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #70b6aa;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-primary-worker:hover, .btn-primary-worker:active, .btn-primary-worker.active, .btn-primary-worker.disabled, .btn-primary-worker[disabled] {
+  color: white;
+  background-color: #92c7be;
+  *background-color: #5fada0;
+  background-image: none;
+}
+.btn-primary-worker:active, .btn-primary-worker.active {
+  background-color: #52a193 \9;
+}
+
+.btn-primary-worker:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #6fbfb2;
+  background-image: -moz-linear-gradient(top, #7bccbe, #5fada0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7bccbe), to(#5fada0));
+  background-image: -webkit-linear-gradient(top, #7bccbe, #5fada0);
+  background-image: -o-linear-gradient(top, #7bccbe, #5fada0);
+  background-image: linear-gradient(to bottom, #7bccbe, #5fada0);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7BCCBE', endColorstr='#FF5FADA0', GradientType=0);
+  border-color: #5fada0 #5fada0 #417f74;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #5fada0;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-primary-worker:hover:hover, .btn-primary-worker:hover:active, .btn-primary-worker:hover.active, .btn-primary-worker:hover.disabled, .btn-primary-worker:hover[disabled] {
+  color: white;
+  background-color: #81bfb4;
+  *background-color: #52a193;
+  background-image: none;
+}
+.btn-primary-worker:hover:active, .btn-primary-worker:hover.active {
+  background-color: #4a9084 \9;
+}
+
+.btn-primary-alt {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #abcc84;
+  background-image: -moz-linear-gradient(top, #b5d68e, #9dbd76);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b5d68e), to(#9dbd76));
+  background-image: -webkit-linear-gradient(top, #b5d68e, #9dbd76);
+  background-image: -o-linear-gradient(top, #b5d68e, #9dbd76);
+  background-image: linear-gradient(to bottom, #b5d68e, #9dbd76);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB5D68E', endColorstr='#FF9DBD76', GradientType=0);
+  border-color: #9dbd76 #9dbd76 #779c4b;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #9dbd76;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-primary-alt:hover, .btn-primary-alt:active, .btn-primary-alt.active, .btn-primary-alt.disabled, .btn-primary-alt[disabled] {
+  color: white;
+  background-color: #b6ce98;
+  *background-color: #91b565;
+  background-image: none;
+}
+.btn-primary-alt:active, .btn-primary-alt.active {
+  background-color: #84ac54 \9;
+}
+
+.btn-primary-alt:hover {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #a1c675;
+  background-image: -moz-linear-gradient(top, #abd17f, #93b668);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#abd17f), to(#93b668));
+  background-image: -webkit-linear-gradient(top, #abd17f, #93b668);
+  background-image: -o-linear-gradient(top, #abd17f, #93b668);
+  background-image: linear-gradient(to bottom, #abd17f, #93b668);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFABD17F', endColorstr='#FF93B668', GradientType=0);
+  border-color: #93b668 #93b668 #6d8e44;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #93b668;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-primary-alt:hover:hover, .btn-primary-alt:hover:active, .btn-primary-alt:hover.active, .btn-primary-alt:hover.disabled, .btn-primary-alt:hover[disabled] {
+  color: white;
+  background-color: #acc78b;
+  *background-color: #87ae57;
+  background-image: none;
+}
+.btn-primary-alt:hover:active, .btn-primary-alt:hover.active {
+  background-color: #7a9f4d \9;
+}
+
+.language-btn {
+   padding: 4px 12px 2px 10px;
+   font-size: 13px;
+}
+
+.language-btn.btn .caret {
+   margin-top: 10px;
+   margin-left: 8px;
+   margin-right: -4px;
+}
+
+.icon-lang {
+   background: transparent url(../img/gengo-navbar/navigation_sprite.png) no-repeat -366px -74px;
+   margin-top: 0px !important;
+   margin-right: 0px !important;
+}
+
+.icon-nav-order {
+  background: transparent url(../img/gengo-navbar/navigation_sprite.png) no-repeat -365px -124px;
+  margin-top: 0px !important;
+}
+
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+}
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}

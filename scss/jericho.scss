@@ -1,0 +1,34 @@
+@import "compass";
+@import "lib/variables";
+@import "lib/mixins";
+
+@import "custom/variables";
+@import "custom/mixins";
+
+@import "bootstrap";
+@import "responsive";
+
+@import "custom/navbar";
+@import "custom/buttons";
+
+$docPaddingTop: 59px;
+$colorSwatchSize: 72px;
+
+body {
+	padding: $docPaddingTop 0 0;
+	font-family: $sansFontFamily;
+}
+
+// Put Custome Styles Here.
+html,
+body {
+   margin:0!important;
+   padding:0!important;
+   height:100%!important;
+   background-color: $bodyBackground;
+}
+
+body #page-content{
+   padding-top:44px;
+   padding-bottom:110px;   /* Height of the footer */
+}
