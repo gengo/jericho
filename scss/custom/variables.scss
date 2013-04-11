@@ -5,7 +5,7 @@
 // Base Colours
 // -------------------------
 $green:                 #1CAD7E;
-$gray:            		#4D4843;
+$gray:            		#4C4643;
 $lightBlue:             #98D7CC;
 $red:                  	#EA5E47;
 $yellowGreen:           #C3EA94;
@@ -66,9 +66,9 @@ $tableBorder:                       #DDDDDD; // table and cell border
 
 // Buttons
 // -------------------------
-$btnBackground:                     #FFFFFF;
-$btnBackgroundHighlight:           	#F2F2F2;
-$btnBorder:                         #DBDBDB;
+$btnBackground:                     #FCFCFC;
+$btnBackgroundHighlight:           	#FCFCFC;
+$btnBorder:                         #DDDDDD;
 
 $btnPrimaryBackground:              #33B58B;
 $btnPrimaryBackgroundHighlight:     #199C72;
@@ -223,6 +223,17 @@ $gridColumns:             12;
 $gridColumnWidth:         54px;
 $gridGutterWidth:         36px;
 $gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
+
+// 1200px min
+$gridColumnWidth1200:     54px !default;
+$gridGutterWidth1200:     36px !default;
+$gridRowWidth1200:        ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1)) !default;
+
+// 768px-979px
+$gridColumnWidth768:      54px !default;
+$gridGutterWidth768:      36px !default;
+$gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1)) !default;
+
 
 // Fluid grid
 // -------------------------

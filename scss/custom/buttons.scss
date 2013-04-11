@@ -1,8 +1,7 @@
 @import "compass";
 @import "lib/variables";
-@import "lib/mixins";
-
 @import "variables";
+@import "lib/mixins";
 @import "mixins";
 
 // BUTTON STYLES
@@ -21,8 +20,8 @@
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  line-height: 24px;
-  *line-height: 28px;
+  line-height: 30px;
+  *line-height: 32px;
   color: $gray;
   text-align: center;
   text-shadow: 0px -2px 0px white;

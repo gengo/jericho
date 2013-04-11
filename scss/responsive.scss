@@ -19,7 +19,9 @@
 // Required since we compile the responsive stuff separately
 
 @import "lib/variables"; // Modify this for custom colors, font-sizes, etc
+@import "custom/variables";
 @import "lib/mixins";
+@import "custom/mixins";
 
 
 // RESPONSIVE CLASSES

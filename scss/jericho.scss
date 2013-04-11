@@ -1,13 +1,11 @@
 @import "compass";
-@import "lib/variables";
-@import "lib/mixins";
-
 @import "custom/variables";
 @import "custom/mixins";
 
 @import "bootstrap";
 @import "responsive";
 
+@import "custom/layouts";
 @import "custom/navbar";
 @import "custom/buttons";
 
