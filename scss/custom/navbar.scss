@@ -723,6 +723,7 @@ span{font-weight: 400;}
   .navbar-inner{
     background-color: $white;
     background-image: none;
+    border: 0px;
   }
   .brand{
     color: $gray;
@@ -730,11 +731,11 @@ span{font-weight: 400;}
   .nav > li > a{
     color: $gray;
     &:hover{
-      color: $green;
+      color: $textHoverColor;
     }
   }
   .divider-vertical{
-    background-color: #CCCCCC;
+    background-color: #DFDFDF;
     border-color: $white;
   }
   &.navbar-fixed-bottom{
