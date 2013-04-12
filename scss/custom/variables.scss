@@ -173,11 +173,11 @@ $navbarInverseBackground:		  $gray;
 
 $navbarText:                      $gray;
 $navbarLinkColor:                 $gray;
-$navbarLinkColorHover:            $white;
+$navbarLinkColorHover:            $grayMid;
 $navbarLinkColorActive:           $navbarLinkColorHover;
 $navbarLinkBackgroundHover:       $grayLight;
 $navbarLinkBackgHighlightHover:   $grayLight;
-$navbarLinkBackgroundActive:      $navbarBackground;
+$navbarLinkBackgroundActive:      $white;
 
 $navbarSearchBackground:          lighten($navbarBackground, 25%);
 $navbarSearchBackgroundFocus:     $inputBorder;
