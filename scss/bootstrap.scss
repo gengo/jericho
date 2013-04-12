@@ -8,8 +8,11 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+// Core variables and mixins
+@import "lib/variables"; // Modify this for custom colors, font-sizes, etc
+@import "lib/mixins";
+
 @import "custom/variables";
-@import "custom/navbar";
 
 // Google web font
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic);

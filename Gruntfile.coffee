@@ -48,6 +48,7 @@ module.exports = (grunt) ->
                 files: './scss/**/*.scss'
                 tasks: [
                     'compass:dev'
+                    'concat:dev'
                     'copy:dev'
                 ]
 
@@ -72,6 +73,16 @@ module.exports = (grunt) ->
                     expand: true
                 ]
 
+        concat:
+            options:
+              separator: ';'
+            dev:
+              src: ['css/bootstrap.css', 'css/responsive.css', 'css/jericho.css']
+              dest: 'css/jericho.css'
+            prod:
+              src: ['css/bootstrap.css', 'css/responsive.css', 'css/jericho.css']
+              dest: 'css/jericho.css'
+
     # Compiles the app with non-optimized build settings and places the build artifacts in the dist directory.
     # Enter the following command at the command line to execute this build task:
     # grunt
@@ -84,6 +95,7 @@ module.exports = (grunt) ->
     # grunt prod
     grunt.registerTask 'prod', [
         'compass:prod'
+        'concat:prod'
         'copy:prod'
         'requirejs:styles'
     ]
