@@ -447,12 +447,14 @@ span{font-weight: 400;}
   
 }
 // Hover
-.navbar .nav > li > a:hover {
-  @include gradient-vertical($navbarLinkBackgHighlightHover, $navbarLinkBackgroundHover);
-  text-decoration: none;
-  border-bottom: 1px solid $navbarLinkBackgroundHover;
-  border-left-color: transparent;
-  color: $gray;
+.navbar .nav > li > a {
+  &:hover {
+    @include gradient-vertical($navbarLinkBackgHighlightHover, $navbarLinkBackgroundHover);
+    text-decoration: none;
+    border-bottom: 1px solid $navbarLinkBackgroundHover;
+    border-left-color: transparent;
+    color: $gray;
+  }
 }
 
 // Active nav items
@@ -464,14 +466,14 @@ span{font-weight: 400;}
   @include gradient-vertical($navbarBackground, $navbarBackground);
   border-right-color: transparent;
   border-left-color: transparent;
+  border-bottom: 3px solid $green;
   box-shadow: none;
   
-    //force to overlap its parent, allowing border color change. 
-    position: relative;
-    bottom: -1px;
-    z-index: 100;
-    margin-top: -1px;
-   
+  //force to overlap its parent, allowing border color change. 
+  position: relative;
+  bottom: -1px;
+  z-index: 100;
+  margin-top: -1px;
 }
 //  NAVBAR SIMPLE-NAV
 // ------------

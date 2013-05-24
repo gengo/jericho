@@ -249,3 +249,24 @@ body {
     }
   }
 }
+
+.box {
+  background-color: $white;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  padding: 36px;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.box-gray {
+  background-color: $grayLight;
+  border: 1px solid #DBDBDB;
+  border-radius: 1px;
+  overflow: hidden;
+  padding: 36px;
+  position: relative;
+  margin-bottom: 36px;
+}
