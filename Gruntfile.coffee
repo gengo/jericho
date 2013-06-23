@@ -21,7 +21,7 @@ module.exports = (grunt) ->
                     cssIn: './jericho.css'
                     logLevel: 0
                     optimizeCss: 'standard'
-                    out: './jerico.min.css'
+                    out: './jericho.min.css'
 
         compass:
             files: ['scss/jericho.scss']
@@ -87,6 +87,11 @@ module.exports = (grunt) ->
     # Enter the following command at the command line to execute this build task:
     # grunt
     grunt.registerTask 'default', [
+        'compass:dev'
+        'watch'
+    ]
+    grunt.registerTask 'dev', [
+        'compass:dev'
         'watch'
     ]
 

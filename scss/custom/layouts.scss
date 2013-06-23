@@ -97,15 +97,15 @@ hr{
 }
 
 .content-module{
-.module-inner{
-padding: 18px;
-background-color: white;
-@include border-radius(3px);
--webkit-box-shadow: 0 0 6px #C1C1C1;
--moz-box-shadow: 0 0 6px #C1C1C1;
-box-shadow: 0 0 6px #C1C1C1;
+  .module-inner{
+  padding: 18px;
+  background-color: white;
+  @include border-radius(3px);
+  -webkit-box-shadow: 0 0 6px #C1C1C1;
+  -moz-box-shadow: 0 0 6px #C1C1C1;
+  box-shadow: 0 0 6px #C1C1C1;
 
-}
+  }
 }
 
 body {
@@ -114,6 +114,8 @@ body {
   }
   #page-content {
     margin: 0;
+    padding-top:44px;
+    padding-bottom:110px;   /* Height of the footer */
   }
   #v1-wrap {
     margin: 0 auto;
@@ -151,9 +153,9 @@ body {
         line-height: 1.5;
       }
     }
-    > .sidebar ~ div {
+    > .sidebar {
       margin-left: 0;
-      min-width: 864px;
+      min-width: 216px;
       width: inherit;
     }
     > aside.sidebar {
@@ -181,4 +183,90 @@ body {
 .sidebar .module {
   margin-bottom: 36px;
   width: 294px;
+}
+
+
+/*
+ sub side menu list
+*/
+.nav-list {
+  padding: 0;
+  &.sidebar {
+    float: left;
+    margin-top: 2px;
+    padding: 0;
+    width: 216px;
+  }
+  > li > a,
+  .nav-header {
+    margin: 0;
+    padding: 6px 0 6px 36px;
+  }
+  > li > a {
+    color: lighten($textColor, 15%);
+    font-size: 14px;
+    &:hover {
+      background-color: $white;
+    }
+  }
+  .nav-header {
+    color: lighten($textColor, 30%);
+    font-weight: normal;
+    text-shadow: none;
+  }
+  > .active {
+    > a,
+    > a:hover {
+      background-color: $white;
+      border-left: 3px solid $green;
+      color: $textColor;
+      font-weight: bold;
+      padding-left: 33px;
+      text-shadow: none;
+    }
+    .nav-list {
+      > li > a {
+        color: lighten($textColor, 15%);
+        padding-left: 54px;
+      }
+      > .active > a,
+      > .active > a:hover {
+        background-color: inherit;
+        border-left: none;
+        color: $textColor;
+        font-weight: bold;
+        text-shadow: none;
+      }
+    }
+  }
+}
+
+.area-translator-team .nav-list {
+  > .active {
+    > a,
+    > a:hover {
+      border-color: $lightBlue;
+    }
+  }
+}
+
+.box {
+  background-color: $white;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  padding: 36px;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.box-gray {
+  background-color: $grayLight;
+  border: 1px solid #DBDBDB;
+  border-radius: 1px;
+  overflow: hidden;
+  padding: 36px;
+  position: relative;
+  margin-bottom: 36px;
 }

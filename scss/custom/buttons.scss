@@ -14,6 +14,7 @@
 // Core
 .btn {
   display: inline-block;
+  position: relative;
   @include ie7-inline-block();
   padding: 5px  24px 5px;
   margin-bottom: 0; // For input.btn
@@ -24,29 +25,19 @@
   *line-height: 32px;
   color: $gray;
   text-align: center;
-  text-shadow: 0px -2px 0px white;
+  // text-shadow: 0px -2px 0px white;
   vertical-align: middle;
-  cursor: pointer;
-  @include buttonBackground($btnBackground, $btnBackgroundHighlight, $gray, 0 -1px 0 rgba(255,255,255,.25));
-  border: 1px solid $btnBorder;
+  // cursor: pointer;
+  // border: 1px solid $btnBorder;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
-  border-bottom-color: darken($btnBorder, 10%);
+  // border-bottom-color: darken($btnBorder, 10%);
   @include border-radius(3px);
   @include ie7-restore-left-whitespace(); // Give IE7 some love
  /*  @include box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)"); */
 }
 
-// Hover state
 .btn:hover {
   color: $green;
-  text-decoration: none;
-  background-color: darken($white, 2%);
-  *background-color: darken($white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
-  @include buttonBackground( darken($btnBackground, 4%), darken($btnBackgroundHighlight, 4%), $gray, 0 -1px 0 rgba(255,255,255,.25));
-  border-top-color:  darken($btnBackgroundHighlight, 4%);
-  // transition is only when going to hover, otherwise the background
-  // behind the gradient (there for IE<=9 fallback) gets mismatched
-  @include transition(background-position .1s linear);
 }
 
 // Focus state for keyboard and accessibility
@@ -124,7 +115,6 @@
 }
 .btn-group{
   .btn{
-
     margin-left: 8px;
 
   }
@@ -142,6 +132,8 @@
 .btn-primary:hover,
 .btn-core,
 .btn-core:hover,
+.btn-warning,
+.btn-warning:hover,
 .btn-google,
 .btn-google:hover {
   color: $white;
@@ -155,10 +147,17 @@
 
 // Set the backgrounds
 // -------------------------
+
 .btn {
   // reset here as of 2.0.3 due to Recess property order
+  @include buttonBackground($btnBackground, $btnBackgroundHighlight, $green, $grayDark);
   border-color: #ccc;
   border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+  color: $green;
+
+  &:hover {
+    @include buttonBackground(darken($btnBackground,4%), darken($btnBackgroundHighlight,4%), $green, $grayDark);
+  }
 }
 .btn-primary {
   @include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
@@ -251,13 +250,20 @@ input[type="submit"].btn {
     *padding-bottom: 1px;
   }
 }
+input[type="file"] {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .btn-full{
 	width: 100%;
 }
 button.close{
-    padding: 0;
-cursor: pointer;
-background: transparent;
-border: 0;
--webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }
