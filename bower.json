@@ -1,0 +1,11 @@
+{
+  "name": "jericho",
+  "version": "0.0.1",
+  "main": "jericho.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "docs"
+  ]
+}
