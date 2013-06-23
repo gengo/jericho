@@ -1,8 +1,8 @@
 @import "compass";
-@import "lib/variables";
-@import "variables";
-@import "lib/mixins";
-@import "mixins";
+@import "../lib/variables";
+@import "./variables";
+@import "../lib/mixins";
+@import "./mixins";
 
 //
 // Layouts
@@ -255,10 +255,34 @@ body {
   border: 1px solid #DBDBDB;
   border-radius: 3px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.075);
-  overflow: hidden;
+  // overflow: hidden;
   padding: 36px;
   position: relative;
   margin-bottom: 36px;
+
+  &.arrow:after, &.arrow:before {
+      left: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+  }
+  &.arrow:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: white;
+      border-width: $popoverArrowOuterWidth;
+      top: 50%;
+      margin-top: -$popoverArrowOuterWidth;
+  }
+  &.arrow:before {
+      border-color: rgba(0, 0, 0, 0);
+      border-left-color: #000;
+      border-width: $popoverArrowOuterWidth;
+      top: 50%;
+      margin-top: -$popoverArrowOuterWidth;
+  }
 }
 
 .box-gray {

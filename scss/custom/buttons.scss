@@ -1,8 +1,8 @@
 @import "compass";
-@import "lib/variables";
-@import "variables";
-@import "lib/mixins";
-@import "mixins";
+@import "../lib/variables";
+@import "./variables";
+@import "../lib/mixins";
+@import "./mixins";
 
 // BUTTON STYLES
 // -------------
@@ -266,4 +266,36 @@ button.close{
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+}
+
+// Link buttons
+// --------------------------------------------------
+
+// Make a button look and behave like a link
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  padding: 0px;
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+}
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: $linkColor;
+  @include border-radius(0);
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: $linkColorHover;
+  text-decoration: underline;
+  background-color: transparent !important;
+  background-image: none;
+  border: none;
+}
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
 }

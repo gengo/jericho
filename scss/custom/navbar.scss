@@ -1,8 +1,8 @@
 @import "compass";
-@import "lib/variables";
-@import "variables";
-@import "lib/mixins";
-@import "mixins";
+@import "../lib/variables";
+@import "./variables";
+@import "../lib/mixins";
+@import "./mixins";
 
 .area-translator-team a.ui_btn{
 	color: #4D4843;
