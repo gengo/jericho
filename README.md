@@ -41,7 +41,7 @@ grunt
 if you want to minified file. run task for production.
 
 ```
-grunt prod
+grunt build
 ```
 
 

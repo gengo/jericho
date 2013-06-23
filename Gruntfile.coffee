@@ -29,15 +29,15 @@ module.exports = (grunt) ->
                 importPath: '/../..'
                 src: 'scss'
                 dest: 'css'
-                linecomments: true
+                noLineComments: false
                 forcecompile: false
-                debugsass: false
+                debugsass: true
                 relativeassets: true
             prod:
                 importPath: '/../..'
                 src: 'scss'
                 dest: 'css'
-                linecomments: false
+                noLineComments: true
                 forcecompile: true
                 debugsass: false
                 relativeassets: true
@@ -77,10 +77,10 @@ module.exports = (grunt) ->
             options:
               separator: ';'
             dev:
-              src: ['css/bootstrap.css', 'css/responsive.css', 'css/jericho.css']
+              src: ['css/jericho.css', 'css/responsive.css']
               dest: 'css/jericho.css'
             prod:
-              src: ['css/bootstrap.css', 'css/responsive.css', 'css/jericho.css']
+              src: ['css/jericho.css', 'css/responsive.css']
               dest: 'css/jericho.css'
 
     # Compiles the app with non-optimized build settings and places the build artifacts in the dist directory.
@@ -88,17 +88,21 @@ module.exports = (grunt) ->
     # grunt
     grunt.registerTask 'default', [
         'compass:dev'
+        'concat:dev'
+        'copy:dev'
         'watch'
     ]
     grunt.registerTask 'dev', [
         'compass:dev'
+        'concat:dev'
+        'copy:dev'
         'watch'
     ]
 
     # Compiles the app with optimized build settings and places the build artifacts in the dist directory.
     # Enter the following command at the command line to execute this build task:
     # grunt prod
-    grunt.registerTask 'prod', [
+    grunt.registerTask 'build', [
         'compass:prod'
         'concat:prod'
         'copy:prod'

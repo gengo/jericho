@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 15, ../../scss/custom/buttons.scss */
 .btn {
   display: inline-block;
@@ -5,7 +6,7 @@
   *display: inline;
   /* IE7 inline-block hack */
   *zoom: 1;
-  padding: 5px 24px 5px;
+  padding: 5px  24px 5px;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 400;
@@ -179,17 +180,17 @@
 .btn:hover {
   color: #1cad7e;
   text-shadow: #dddddd;
-  background-color: #f0f0f0;
-  background-image: -moz-linear-gradient(top, #f2f2f2, #efefef);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#efefef));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, #efefef);
-  background-image: -o-linear-gradient(top, #f2f2f2, #efefef);
-  background-image: linear-gradient(to bottom, #f2f2f2, #efefef);
+  background-color: #f2f2f2;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -o-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF2F2F2', endColorstr='#FFEFEFEF', GradientType=0);
-  border-color: #efefef #efefef #c9c9c9;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF2F2F2', endColorstr='#FFF2F2F2', GradientType=0);
+  border-color: #f2f2f2 #f2f2f2 #cccccc;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #efefef;
+  *background-color: #f2f2f2;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
@@ -197,12 +198,12 @@
 .btn:hover:hover, .btn:hover:active, .btn:hover.active, .btn:hover.disabled, .btn:hover[disabled] {
   color: #1cad7e;
   background-color: white;
-  *background-color: #e3e3e3;
+  *background-color: #e5e5e5;
   background-image: none;
 }
 /* line 511, ../../scss/lib/_mixins.scss */
 .btn:hover:active, .btn:hover.active {
-  background-color: #d6d6d6 \9;
+  background-color: #d8d8d8 \9;
 }
 
 /* line 162, ../../scss/custom/buttons.scss */
@@ -647,4 +648,43 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+}
+
+/* line 277, ../../scss/custom/buttons.scss */
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  padding: 0px;
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 283, ../../scss/custom/buttons.scss */
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #1cad7e;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 290, ../../scss/custom/buttons.scss */
+.btn-link:hover,
+.btn-link:focus {
+  color: #116b4e;
+  text-decoration: underline;
+  background-color: transparent !important;
+  background-image: none;
+  border: none;
+}
+
+/* line 298, ../../scss/custom/buttons.scss */
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: #dddddd;
+  text-decoration: none;
 }
