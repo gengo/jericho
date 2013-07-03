@@ -164,6 +164,9 @@ table {
   tfoot + tbody:last-child tr:last-child td:last-child {
     // @include border-bottom-right-radius(0);
   }
+  tfoot tr:first-child {
+    border-bottom: 2px solid $tableBorder;
+  }
 
   // Special fixes to round the left border on the first td/th
   caption + thead tr:first-child th:first-child,
