@@ -123,7 +123,7 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 34px;
+  min-height: 42px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -300,7 +300,7 @@
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 34px;
+    min-height: 42px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -779,7 +779,7 @@
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 34px;
+    min-height: 42px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1163,7 +1163,7 @@
   .uneditable-input {
     display: block;
     width: 100%;
-    min-height: 34px;
+    min-height: 42px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1214,7 +1214,7 @@
   /* line 133, ../scss/lib/_responsive-767px-max.scss */
   .page-header h1 small {
     display: block;
-    line-height: 24px;
+    line-height: 32px;
   }
 
   /* line 140, ../scss/lib/_responsive-767px-max.scss */
@@ -1290,12 +1290,12 @@
 
   /* line 21, ../scss/lib/_responsive-navbar.scss */
   .navbar-fixed-top {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 
   /* line 24, ../scss/lib/_responsive-navbar.scss */
   .navbar-fixed-bottom {
-    margin-top: 24px;
+    margin-top: 32px;
   }
 
   /* line 28, ../scss/lib/_responsive-navbar.scss */
@@ -1325,7 +1325,7 @@
   /* line 49, ../scss/lib/_responsive-navbar.scss */
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 12px;
+    margin: 0 0 16px;
   }
 
   /* line 53, ../scss/lib/_responsive-navbar.scss */
@@ -1447,8 +1447,8 @@
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
-    padding: 12px 15px;
-    margin: 12px 0;
+    padding: 16px 15px;
+    margin: 16px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
