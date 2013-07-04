@@ -31,7 +31,6 @@ $lightBlueDivider:      #90CCC2;
 $bodyBackground:        $grayLighter;
 $textColor:            	$gray;
 
-
 // Links
 // -------------------------
 $linkColor:             $green;
@@ -46,7 +45,7 @@ $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
 $baseFontSize:          14px;
 $baseFontFamily:        $sansFontFamily;
-$baseLineHeight:        32px;
+$baseLineHeight:        16px;
 $altFontFamily:         $serifFontFamily;
 $UIFontSize:			16px;
 $navFontSize:           13px;
@@ -111,7 +110,7 @@ $dropdownDividerBottom:         $white;
 
 // Tooltips and popovers
 // -------------------------
-$tooltipColor:            #fff;
+$tooltipColor:            #DBDBDB;
 $tooltipBackground:       #000;
 $tooltipArrowWidth:       5px;
 $tooltipArrowColor:       $tooltipBackground;

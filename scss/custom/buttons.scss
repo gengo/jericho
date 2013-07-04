@@ -23,7 +23,6 @@
   letter-spacing: 0.5px;
   line-height: 30px;
   *line-height: 32px;
-  color: $gray;
   text-align: center;
   // text-shadow: 0px -2px 0px white;
   vertical-align: middle;
@@ -153,7 +152,7 @@
   @include buttonBackground($btnBackground, $btnBackgroundHighlight, $green, $grayDark);
   border-color: #ccc;
   border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
-  color: $green;
+  color: $gray;
 
   &:hover {
     @include buttonBackground(darken($btnBackground,4%), darken($btnBackgroundHighlight,4%), $green, $grayDark);
