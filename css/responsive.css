@@ -123,7 +123,7 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 26px;
+  min-height: 28px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -300,7 +300,7 @@
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -779,7 +779,7 @@
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1163,7 +1163,7 @@
   .uneditable-input {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1214,7 +1214,7 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-767px-max\.scss}line{font-family:\00003133}}
   .page-header h1 small {
     display: block;
-    line-height: 16px;
+    line-height: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-767px-max\.scss}line{font-family:\00003140}}
@@ -1290,12 +1290,12 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000321}}
   .navbar-fixed-top {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000324}}
   .navbar-fixed-bottom {
-    margin-top: 16px;
+    margin-top: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000328}}
@@ -1325,7 +1325,7 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000349}}
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 8px;
+    margin: 0 0 9px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000353}}
@@ -1447,8 +1447,8 @@
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
-    padding: 8px 15px;
-    margin: 8px 0;
+    padding: 9px 15px;
+    margin: 9px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);

@@ -11,7 +11,7 @@ table {
   background-color: $tableBackground;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 85%;
+  font-size: $baseFontSize;
 }
 
 // BASELINE STYLES

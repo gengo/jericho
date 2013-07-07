@@ -45,13 +45,14 @@ $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
 $baseFontSize:          14px;
 $baseFontFamily:        $sansFontFamily;
-$baseLineHeight:        16px;
-$altFontFamily:         $serifFontFamily;
+$baseLineHeight:        18px;
+$altFontFamily:         $sansFontFamily;
 $UIFontSize:			16px;
+$UILineHeight:			26px;
 $navFontSize:           13px;
 
-$headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    600;    // instead of browser default, bold
+$headingsFontFamily:    $sansFontFamily; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    500;    // instead of browser default, bold
 $headingsColor:         inherit; // empty to use BS default, $textColor
 
 

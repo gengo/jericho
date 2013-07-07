@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_reset\.scss}line{font-family:\0000319}}
 article,
 aside,
@@ -230,7 +230,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   color: #4c4643;
   background-color: #f9f9f9;
 }
@@ -455,7 +455,7 @@ a:focus {
 .row-fluid [class*="span"] {
   display: block;
   width: 100%;
-  min-height: 26px;
+  min-height: 28px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -700,15 +700,15 @@ a:focus {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\000039}}
 p {
-  margin: 0 0 8px;
+  margin: 0 0 9px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\0000312}}
 .lead {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 21px;
   font-weight: 200;
-  line-height: 24px;
+  line-height: 27px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\0000324}}
@@ -803,10 +803,10 @@ a.text-success:focus {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\0000359}}
 h1, h2, h3, h4, h5, h6 {
-  margin: 8px 0;
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 16px;
+  margin: 9px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  line-height: 18px;
   color: inherit;
   text-rendering: optimizelegibility;
 }
@@ -825,7 +825,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 h1,
 h2,
 h3 {
-  line-height: 32px;
+  line-height: 36px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\0000380}}
@@ -880,15 +880,15 @@ h4 small {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\0000396}}
 .page-header {
-  padding-bottom: 7px;
-  margin: 16px 0 24px;
+  padding-bottom: 8px;
+  margin: 18px 0 27px;
   border-bottom: 1px solid #f9f9f9;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003108}}
 ul, ol {
   padding: 0;
-  margin: 0 0 8px 25px;
+  margin: 0 0 9px 25px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003115}}
@@ -901,7 +901,7 @@ ol ul {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003118}}
 li {
-  line-height: 16px;
+  line-height: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003124}}
@@ -930,13 +930,13 @@ ol.inline > li {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003143}}
 dl {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003147}}
 dt,
 dd {
-  line-height: 16px;
+  line-height: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003150}}
@@ -946,7 +946,7 @@ dt {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003153}}
 dd {
-  margin-left: 8px;
+  margin-left: 9px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003157}}
@@ -980,7 +980,7 @@ dd {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003175}}
 hr {
-  margin: 16px 0;
+  margin: 18px 0;
   border: 0;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid white;
@@ -1002,7 +1002,7 @@ abbr.initialism {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003195}}
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 16px;
+  margin: 0 0 18px;
   border-left: 5px solid #f9f9f9;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003199}}
@@ -1015,7 +1015,7 @@ blockquote p {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003205}}
 blockquote small {
   display: block;
-  line-height: 16px;
+  line-height: 18px;
   color: #f4f4f4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003209}}
@@ -1055,9 +1055,9 @@ blockquote:after {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_type\.scss}line{font-family:\00003245}}
 address {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-style: normal;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_code\.scss}line{font-family:\000038}}
@@ -1084,10 +1084,10 @@ code {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_code\.scss}line{font-family:\0000326}}
 pre {
   display: block;
-  padding: 7.5px;
-  margin: 0 0 8px;
+  padding: 8.5px;
+  margin: 0 0 9px;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 18px;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -1101,7 +1101,7 @@ pre {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_code\.scss}line{font-family:\0000342}}
 pre.prettyprint {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_code\.scss}line{font-family:\0000347}}
 pre code {
@@ -1121,7 +1121,7 @@ pre code {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\0000310}}
 form {
-  margin: 0 0 16px;
+  margin: 0 0 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\0000314}}
@@ -1136,16 +1136,16 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 21px;
-  line-height: 32px;
+  line-height: 36px;
   color: #707b8a;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\0000333}}
 legend small {
-  font-size: 12px;
+  font-size: 13.5px;
   color: #f4f4f4;
 }
 
@@ -1157,7 +1157,7 @@ select,
 textarea {
   font-size: 14px;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\0000350}}
@@ -1193,11 +1193,11 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 16px;
+  height: 18px;
   padding: 4px 6px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   color: #4c4643;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1288,11 +1288,11 @@ input[type="checkbox"] {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003154}}
 select,
 input[type="file"] {
-  height: 26px;
+  height: 28px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size */
   *margin-top: 4px;
   /* For IE7, add top margin to align select with labels */
-  line-height: 26px;
+  line-height: 28px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003161}}
@@ -1363,7 +1363,7 @@ textarea::-webkit-input-placeholder {
 .radio,
 .checkbox {
   color: #3a4a55;
-  min-height: 16px;
+  min-height: 18px;
   padding-left: 20px;
 }
 
@@ -1773,9 +1773,9 @@ select:focus:invalid:focus {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003385}}
 .form-actions {
-  padding: 15px 20px 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding: 17px 20px 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   background-color: #f7f7fd;
   border-top: 1px solid #e5e5e5;
   *zoom: 1;
@@ -1800,7 +1800,7 @@ select:focus:invalid:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003404}}
 .help-block {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003409}}
@@ -1817,7 +1817,7 @@ select:focus:invalid:focus {
 .input-append,
 .input-prepend {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   vertical-align: middle;
   font-size: 0;
   white-space: nowrap;
@@ -1864,12 +1864,12 @@ select:focus:invalid:focus {
 .input-prepend .add-on {
   display: inline-block;
   width: auto;
-  height: 16px;
+  height: 18px;
   min-width: 16px;
   padding: 4px 5px;
   font-size: 14px;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 18px;
   text-align: center;
   text-shadow: 0 1px 0 white;
   background-color: #f9f9f9;
@@ -2099,18 +2099,18 @@ input.search-query {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003632}}
 .control-group {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003637}}
 legend + .control-group {
-  margin-top: 16px;
+  margin-top: 18px;
   -webkit-margin-top-collapse: separate;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003647}}
 .form-horizontal .control-group {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   *zoom: 1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_mixins\.scss}line{font-family:\0000315}}
@@ -2152,7 +2152,7 @@ legend + .control-group {
 .form-horizontal .uneditable-input + .help-block,
 .form-horizontal .input-prepend + .help-block,
 .form-horizontal .input-append + .help-block {
-  margin-top: 8px;
+  margin-top: 9px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_forms\.scss}line{font-family:\00003686}}
 .form-horizontal .form-actions {
@@ -2165,19 +2165,19 @@ table {
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 85%;
+  font-size: 14px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_tables\.scss}line{font-family:\0000320}}
 .table {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_tables\.scss}line{font-family:\0000325}}
 .table th,
 .table td {
   padding: 8px;
-  line-height: 16px;
+  line-height: 18px;
   text-align: left;
   vertical-align: top;
   border-left: 1px solid transparent;
@@ -2488,7 +2488,7 @@ table th[class*="span"],
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
-  margin: 7px 1px;
+  margin: 8px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #dfdfdf;
@@ -2500,7 +2500,7 @@ table th[class*="span"],
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 18px;
   color: #3a4a55;
   white-space: nowrap;
   text-decoration: none;
@@ -2725,7 +2725,7 @@ table th[class*="span"],
 .close {
   float: right;
   font-size: 20px;
-  line-height: 16px;
+  line-height: 18px;
   color: white;
   height: 30px;
   width: 30px;
@@ -2937,7 +2937,7 @@ button.close {
   padding: 4px 12px;
   margin-bottom: 0;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -3365,8 +3365,8 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_button-groups\.scss}line{font-family:\0000323}}
 .btn-toolbar {
   font-size: 0;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_button-groups\.scss}line{font-family:\0000329}}
 .btn-toolbar > .btn + .btn,
@@ -3578,7 +3578,7 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_alerts\.scss}line{font-family:\000039}}
 .alert {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   background-color: #fcf8e3;
   border: 1px solid #ee7218;
   -webkit-border-radius: 2px;
@@ -3649,7 +3649,7 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_navs\.scss}line{font-family:\000039}}
 .nav {
   margin-left: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   list-style: none;
 }
 
@@ -3682,7 +3682,7 @@ input[type="submit"].btn.btn-mini {
   padding: 3px 15px;
   font-size: 11px;
   font-weight: bold;
-  line-height: 16px;
+  line-height: 18px;
   color: #f4f4f4;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -3732,7 +3732,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list .divider {
   *width: 100%;
   height: 1px;
-  margin: 7px 1px;
+  margin: 8px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -3770,7 +3770,7 @@ input[type="submit"].btn.btn-mini {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: 2px;
-  line-height: 10px;
+  line-height: 12px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_navs\.scss}line{font-family:\00003114}}
@@ -3787,7 +3787,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
-  line-height: 16px;
+  line-height: 18px;
   border: 1px solid transparent;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_navs\.scss}line{font-family:\00003129}}
@@ -3876,7 +3876,7 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_mixins\.scss}line{font-family:\00003754}}
 .nav .dropdown-toggle .caret[class^="icon-"], .nav .dropdown-toggle .caret[class*=" icon-"] {
   margin-top: 2px;
-  line-height: 8px;
+  line-height: 10px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_navs\.scss}line{font-family:\00003233}}
@@ -4087,7 +4087,7 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_navbar\.scss}line{font-family:\0000310}}
 .navbar {
   overflow: visible;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   *position: relative;
   *z-index: 2;
 }
@@ -4128,7 +4128,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 28px 20px 27px;
+  padding: 26px 20px 25px;
   margin-left: -20px;
   font-size: 17.5px;
   font-weight: 200;
@@ -4360,7 +4360,7 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_navbar\.scss}line{font-family:\00003261}}
 .navbar .nav > li > a {
   float: none;
-  padding: 28px 15px 28px;
+  padding: 26px 15px 26px;
   color: #d6dee5;
   font-size: 12px;
   text-decoration: none;
@@ -4372,7 +4372,7 @@ input[type="submit"].btn.btn-mini {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_mixins\.scss}line{font-family:\00003754}}
 .navbar .nav .dropdown-toggle .caret[class^="icon-"], .navbar .nav .dropdown-toggle .caret[class*=" icon-"] {
-  line-height: 13px;
+  line-height: 15px;
   margin-top: 3px;
 }
 
@@ -4639,7 +4639,7 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_breadcrumbs\.scss}line{font-family:\000036}}
 .breadcrumb {
   padding: 8px 15px;
-  margin: 0 0 16px;
+  margin: 0 0 18px;
   list-style: none;
   background-color: #f5f5f5;
   -webkit-border-radius: 2px;
@@ -4670,7 +4670,7 @@ input[type="submit"].btn.btn-mini {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_pagination\.scss}line{font-family:\000036}}
 .pagination {
-  margin: 16px 0;
+  margin: 18px 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_pagination\.scss}line{font-family:\0000310}}
@@ -4693,7 +4693,7 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > li > span {
   float: left;
   padding: 4px 12px;
-  line-height: 16px;
+  line-height: 18px;
   text-decoration: none;
   background-color: #d6dee5;
   border: 1px solid #d6dee5;
@@ -4770,7 +4770,7 @@ input[type="submit"].btn.btn-mini {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_pager\.scss}line{font-family:\000036}}
 .pager {
-  margin: 16px 0;
+  margin: 18px 0;
   list-style: none;
   text-align: center;
   *zoom: 1;
@@ -5246,7 +5246,7 @@ input[type="submit"].btn.btn-mini {
   padding: 8px 14px;
   font-size: 17.5px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 22.5px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_popovers\.scss}line{font-family:\0000344}}
 .popover-title:empty {
@@ -5370,7 +5370,7 @@ input[type="submit"].btn.btn-mini {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_thumbnails\.scss}line{font-family:\0000320}}
 .thumbnails > li {
   float: left;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   margin-left: 36px;
 }
 
@@ -5378,7 +5378,7 @@ input[type="submit"].btn.btn-mini {
 .thumbnail {
   display: block;
   padding: 4px;
-  line-height: 16px;
+  line-height: 18px;
   background-color: #d6dee5;
   border: 1px solid #d6dee5;
   -webkit-border-radius: 2px;
@@ -5854,8 +5854,8 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_progress-bars\.scss}line{font-family:\0000360}}
 .progress {
   overflow: hidden;
-  height: 8px;
-  margin-bottom: 16px;
+  height: 9px;
+  margin-bottom: 18px;
   background-color: #d6dee5;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -6042,7 +6042,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_accordion\.scss}line{font-family:\000037}}
 .accordion {
   list-style: none;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   margin-left: 0;
 }
 
@@ -6087,7 +6087,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_carousel\.scss}line{font-family:\000036}}
 .carousel {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   line-height: 1;
 }
 
@@ -6229,7 +6229,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .carousel-caption h4,
 .carousel-caption p {
   color: white;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_carousel\.scss}line{font-family:\00003161}}
@@ -6248,7 +6248,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
-  line-height: 24px;
+  line-height: 27px;
   color: inherit;
   background: url(../img/bg_pattern-cover.png);
   background-color: #f9f9f9;
@@ -6266,7 +6266,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_hero-unit\.scss}line{font-family:\0000323}}
 .hero-unit li {
-  line-height: 24px;
+  line-height: 27px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_utilities\.scss}line{font-family:\000037}}
@@ -6328,7 +6328,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 26px;
+  min-height: 28px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6459,7 +6459,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 26px;
+  min-height: 28px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6636,7 +6636,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -7115,7 +7115,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -7499,7 +7499,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .uneditable-input {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -7550,7 +7550,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-767px-max\.scss}line{font-family:\00003133}}
   .page-header h1 small {
     display: block;
-    line-height: 16px;
+    line-height: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-767px-max\.scss}line{font-family:\00003140}}
@@ -7626,12 +7626,12 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000321}}
   .navbar-fixed-top {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000324}}
   .navbar-fixed-bottom {
-    margin-top: 16px;
+    margin-top: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000328}}
@@ -7661,7 +7661,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000349}}
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 8px;
+    margin: 0 0 9px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000353}}
@@ -7783,8 +7783,8 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
-    padding: 8px 15px;
-    margin: 8px 0;
+    padding: 9px 15px;
+    margin: 9px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -7952,7 +7952,7 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/layouts\.scss}line{font-family:\0000340}}
 #content {
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/layouts\.scss}line{font-family:\0000346}}
@@ -8392,7 +8392,7 @@ body #show-metrics h2 {
   *position: relative;
   *z-index: 2;
   overflow: visible;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   font-size: 13px;
 }
 
@@ -9477,7 +9477,7 @@ body #show-metrics h2 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/buttons\.scss}line{font-family:\0000370}}
 .btn-large {
   font-size: 16px;
-  padding: 8px 16px 8px;
+  padding: 9px 18px 9px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -9497,7 +9497,7 @@ body #show-metrics h2 {
 .btn-small {
   padding: .375em .75em .4375em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 16px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/buttons\.scss}line{font-family:\0000389}}
@@ -9509,7 +9509,7 @@ body #show-metrics h2 {
 .btn-mini {
   padding: 2px 6px;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 14px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/buttons\.scss}line{font-family:\00003102}}
@@ -10111,8 +10111,8 @@ footer {
   margin: 0 36px;
   height: 90px;
   font-size: 14px -2;
-  padding-top: 16px;
-  margin-bottom: -16px;
+  padding-top: 18px;
+  margin-bottom: -18px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000318}}
 .footer a {
@@ -10346,7 +10346,7 @@ body #page-content {
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 26px;
+  min-height: 28px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -10523,7 +10523,7 @@ body #page-content {
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -11002,7 +11002,7 @@ body #page-content {
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -11386,7 +11386,7 @@ body #page-content {
   .uneditable-input {
     display: block;
     width: 100%;
-    min-height: 26px;
+    min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -11437,7 +11437,7 @@ body #page-content {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-767px-max\.scss}line{font-family:\00003133}}
   .page-header h1 small {
     display: block;
-    line-height: 16px;
+    line-height: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-767px-max\.scss}line{font-family:\00003140}}
@@ -11513,12 +11513,12 @@ body #page-content {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000321}}
   .navbar-fixed-top {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000324}}
   .navbar-fixed-bottom {
-    margin-top: 16px;
+    margin-top: 18px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000328}}
@@ -11548,7 +11548,7 @@ body #page-content {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000349}}
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 8px;
+    margin: 0 0 9px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_responsive-navbar\.scss}line{font-family:\0000353}}
@@ -11670,8 +11670,8 @@ body #page-content {
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
-    padding: 8px 15px;
-    margin: 8px 0;
+    padding: 9px 15px;
+    margin: 9px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);

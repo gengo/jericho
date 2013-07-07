@@ -65,7 +65,7 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/buttons\.scss}line{font-family:\0000370}}
 .btn-large {
   font-size: 16px;
-  padding: 8px 16px 8px;
+  padding: 9px 18px 9px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -85,7 +85,7 @@
 .btn-small {
   padding: .375em .75em .4375em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 16px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/buttons\.scss}line{font-family:\0000389}}
@@ -97,7 +97,7 @@
 .btn-mini {
   padding: 2px 6px;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 14px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/custom\/buttons\.scss}line{font-family:\00003102}}
