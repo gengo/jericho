@@ -1,11 +1,11 @@
 {
   "name": "jericho",
   "version": "0.0.2",
-  "main": "jericho.css",
+  "main": "./jericho.css",
+  "dependencies": {},
   "ignore": [
     "**/.*",
     "node_modules",
-    "components",
-    "docs"
+    "components"
   ]
 }
