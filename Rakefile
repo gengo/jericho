@@ -9,44 +9,63 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-VERSION = "2.3.2"
-BOOTSTRAP_CSS = "bootstrap-#{VERSION}.css"
-BOOTSTRAP_MIN_CSS = "bootstrap-#{VERSION}.min.css"
-BOOTSTRAP_RESPONSIVE_CSS = "bootstrap-responsive-#{VERSION}.css"
-BOOTSTRAP_RESPONSIVE_MIN_CSS = "bootstrap-responsive-#{VERSION}.min.css"
+VERSION = "0.2.0"
+JERICHO_CSS = "jericho-#{VERSION}.css"
+JERICHO_MIN_CSS = "jericho-#{VERSION}.min.css"
+JERICHO_RESPONSIVE_CSS = "jericho-responsive-#{VERSION}.css"
+JERICHO_RESPONSIVE_MIN_CSS = "jericho-responsive-#{VERSION}.min.css"
+# crate files in doc repo
+JERICHO_NO_VERSION_CSS = "./docs/assets/css/jericho.css"
+JERICHO_RESPONSIVE_NO_VERSION_CSS = "./docs/assets/css/jericho-responsive.css"
+
 
 SASS_COMMAND = "sass --precision 16 --load-path lib --style"
 
-task BOOTSTRAP_CSS do |target|
-  sh "#{SASS_COMMAND} expanded lib/bootstrap.scss:#{target}"
+task JERICHO_CSS do |target|
+  sh "#{SASS_COMMAND} expanded lib/jericho.scss:#{target}"
   css = IO.read(target.to_s)
   css.gsub!('@DATE', `date`.strip)
   File.open(target.to_s, 'w+') { |f| f.write(css) }
 end
 
-task BOOTSTRAP_MIN_CSS do |target|
-  sh "#{SASS_COMMAND} compressed lib/bootstrap.scss:#{target}"
+task JERICHO_NO_VERSION_CSS do |target|
+  sh "#{SASS_COMMAND} expanded lib/jericho.scss:#{target}"
+  css = IO.read(target.to_s)
+  css.gsub!('@DATE', `date`.strip)
+  File.open(target.to_s, 'w+') { |f| f.write(css) }
 end
 
 
-task BOOTSTRAP_RESPONSIVE_CSS do |target|
+task JERICHO_MIN_CSS do |target|
+  sh "#{SASS_COMMAND} compressed lib/jericho.scss:#{target}"
+end
+
+
+task JERICHO_RESPONSIVE_NO_VERSION_CSS do |target|
   sh "#{SASS_COMMAND} expanded lib/responsive.scss:#{target}"
   css = IO.read(target.to_s)
   css.gsub!('@DATE', `date`.strip)
   File.open(target.to_s, 'w+') { |f| f.write(css) }
 end
 
-task BOOTSTRAP_RESPONSIVE_MIN_CSS do |target|
+task JERICHO_RESPONSIVE_CSS do |target|
+  sh "#{SASS_COMMAND} expanded lib/responsive.scss:#{target}"
+  css = IO.read(target.to_s)
+  css.gsub!('@DATE', `date`.strip)
+  File.open(target.to_s, 'w+') { |f| f.write(css) }
+end
+
+task JERICHO_RESPONSIVE_MIN_CSS do |target|
   sh "#{SASS_COMMAND} compressed lib/responsive.scss:#{target}"
 end
 
 
-desc "build regular and compresed versions of bootstrap"
-task :build => [BOOTSTRAP_CSS, BOOTSTRAP_MIN_CSS, BOOTSTRAP_RESPONSIVE_CSS, BOOTSTRAP_RESPONSIVE_MIN_CSS]
+desc "build regular and compresed versions of jericho"
+task :build => [JERICHO_CSS, JERICHO_MIN_CSS, JERICHO_RESPONSIVE_CSS, JERICHO_RESPONSIVE_MIN_CSS, JERICHO_NO_VERSION_CSS, JERICHO_RESPONSIVE_NO_VERSION_CSS]
 
-desc "rebuild regular version of bootstrap when modifications are made"
+desc "rebuild regular version of jericho when modifications are made"
 task :watch do
-  sh "#{SASS_COMMAND} expanded --watch lib/bootstrap.scss:#{BOOTSTRAP_CSS}"
+  sh "#{SASS_COMMAND} expanded --watch lib/jericho.scss:#{JERICHO_CSS}"
 end
 
 task :default => :build
