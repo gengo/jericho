@@ -202,6 +202,7 @@ input[type="submit"].btn {
 // --------------------------------------------------
 
 // Make a button look and behave like a link
+// General page links
 .btn-link,
 .btn-link:active,
 .btn-link[disabled] {
@@ -226,3 +227,110 @@ input[type="submit"].btn {
   color: $grayDark;
   text-decoration: none;
 }
+
+// Translator page links
+.btn-translator-link,
+.btn-translator-link:active,
+.btn-translator-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+}
+.btn-translator-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: $translatorLinkColor;
+  @include border-radius(0);
+}
+.btn-translator-link:hover,
+.btn-translator-link:focus {
+  color: $translatorLinkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-translator-link[disabled]:hover,
+.btn-translator-link[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+}
+
+// Developer page links
+.btn-dev-link,
+.btn-dev-link:active,
+.btn-dev-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+}
+.btn-dev-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: $developerLinkColor;
+  @include border-radius(0);
+}
+.btn-dev-link:hover,
+.btn-dev-link:focus {
+  color: $developerLinkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-dev-link[disabled]:hover,
+.btn-dev-link[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+}
+
+// Red Background links
+.btn-link.red-bg,
+.btn-link.red-bg:active,
+.btn-link.red-bg[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+  text-shadow: none;
+}
+.btn-link.red-bg {
+  border-color: transparent;
+  cursor: pointer;
+  color: $redBgLinkColor;
+  @include border-radius(0);
+}
+.btn-link.red-bg:hover,
+.btn-link.red-bg:focus {
+  color: $redBgLinkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link.red-bg[disabled]:hover,
+.btn-link.red-bg[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+}
+
+// Blue Background links
+.btn-link.blue-bg,
+.btn-link.blue-bg:active,
+.btn-link.blue-bg[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+  text-shadow: none;
+}
+.btn-link.blue-bg {
+  border-color: transparent;
+  cursor: pointer;
+  color: $blueBgLinkColor;
+  @include border-radius(0);
+}
+.btn-link.blue-bg:hover,
+.btn-link.blue-bg:focus {
+  color: $blueBgLinkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link.blue-bg[disabled]:hover,
+.btn-link.blue-bg[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+}
+

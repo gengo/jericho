@@ -38,8 +38,20 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
-$linkColorHover:        darken($linkColor, 15%) !default;
+$linkColor:                 #1CAD7E !default;
+$linkColorHover:            #1CAD7E !default;
+//
+$translatorLinkColor:       #52AE9B !default;
+$translatorLinkColorHover:  #52AE9B !default;
+//
+$developerLinkColor:        #EA5E47 !default;
+$developerLinkColorHover:   #EA5E47 !default;
+//
+$redBgLinkColor:            $white !default;
+$redBgLinkColorHover:       $grayDark !default;
+//
+$blueBgLinkColor:           $white !default;
+$blueBgLinkColorHover:      $grayDark !default;
 
 
 // Typography
