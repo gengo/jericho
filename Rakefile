@@ -15,8 +15,8 @@ JERICHO_MIN_CSS = "jericho-#{VERSION}.min.css"
 JERICHO_RESPONSIVE_CSS = "jericho-responsive-#{VERSION}.css"
 JERICHO_RESPONSIVE_MIN_CSS = "jericho-responsive-#{VERSION}.min.css"
 # crate files in doc repo
-JERICHO_NO_VERSION_CSS = "./docs/assets/css/jericho.css"
-JERICHO_RESPONSIVE_NO_VERSION_CSS = "./docs/assets/css/jericho-responsive.css"
+JERICHO_DOCS_CSS = "./docs/assets/css/jericho.css"
+JERICHO_RESPONSIVE_DOCS_CSS = "./docs/assets/css/jericho-responsive.css"
 
 
 SASS_COMMAND = "sass --precision 16 --load-path lib --style"
@@ -28,7 +28,7 @@ task JERICHO_CSS do |target|
   File.open(target.to_s, 'w+') { |f| f.write(css) }
 end
 
-task JERICHO_NO_VERSION_CSS do |target|
+task JERICHO_DOCS_CSS do |target|
   sh "#{SASS_COMMAND} expanded lib/jericho.scss:#{target}"
   css = IO.read(target.to_s)
   css.gsub!('@DATE', `date`.strip)
@@ -41,7 +41,7 @@ task JERICHO_MIN_CSS do |target|
 end
 
 
-task JERICHO_RESPONSIVE_NO_VERSION_CSS do |target|
+task JERICHO_RESPONSIVE_DOCS_CSS do |target|
   sh "#{SASS_COMMAND} expanded lib/responsive.scss:#{target}"
   css = IO.read(target.to_s)
   css.gsub!('@DATE', `date`.strip)
@@ -61,11 +61,11 @@ end
 
 
 desc "build regular and compresed versions of jericho"
-task :build => [JERICHO_CSS, JERICHO_MIN_CSS, JERICHO_RESPONSIVE_CSS, JERICHO_RESPONSIVE_MIN_CSS, JERICHO_NO_VERSION_CSS, JERICHO_RESPONSIVE_NO_VERSION_CSS]
+task :build => [JERICHO_CSS, JERICHO_MIN_CSS, JERICHO_RESPONSIVE_CSS, JERICHO_RESPONSIVE_MIN_CSS, JERICHO_DOCS_CSS, JERICHO_RESPONSIVE_DOCS_CSS]
 
 desc "rebuild regular version of jericho when modifications are made"
 task :watch do
-  sh "#{SASS_COMMAND} expanded --watch lib/jericho.scss:#{JERICHO_CSS}"
+  sh "#{SASS_COMMAND} expanded --watch lib/jericho.scss:#{JERICHO_CSS} lib/jericho.scss:#{JERICHO_DOCS_CSS} lib/jericho.scss:#{JERICHO_RESPONSIVE_CSS} lib/jericho.scss:#{JERICHO_RESPONSIVE_DOCS_CSS}"
 end
 
 task :default => :build
