@@ -8,7 +8,8 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="../jericho.css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
@@ -24,6 +25,16 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -38,38 +49,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Jericho</a>
+          <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="divider-vertical"></li>
               <li class="active">
                 <a href="./index.html">Home</a>
               </li>
-              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./getting-started.html">Get started</a>
               </li>
-              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./scaffolding.html">Scaffolding</a>
               </li>
-              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./base-css.html">Base CSS</a>
               </li>
-              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./components.html">Components</a>
               </li>
-              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./javascript.html">JavaScript</a>
               </li>
-              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./customize.html">Customize</a>
               </li>
-              <li class="divider-vertical"></li>
             </ul>
           </div>
         </div>
@@ -78,23 +81,23 @@
 
 <div class="jumbotron masthead">
   <div class="container">
-    <h1>Jericho</h1>
+    <h1>Bootstrap</h1>
     <p>Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
     <p>
-      <a href="../jericho.css" class="btn btn-primary btn-large" >Download Jericho</a>
+      <a href="assets/bootstrap.zip" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.3.2']);">Download Bootstrap</a>
     </p>
     <ul class="masthead-links">
       <li>
-        <a href="http://github.com/gengo/jericho" >GitHub project</a>
+        <a href="http://github.com/twitter/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
       </li>
       <li>
-        <a href="./getting-started.html#examples" >Examples</a>
+        <a href="./getting-started.html#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
       </li>
       <li>
-        <a href="./extend.html" >Extend</a>
+        <a href="./extend.html" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Extend']);">Extend</a>
       </li>
       <li>
-        Version 2.3.0
+        Version 2.3.2
       </li>
     </ul>
   </div>
@@ -118,6 +121,66 @@
     </ul>
   </div>
 </div>
+
+<div class="container">
+
+  <div class="marketing">
+
+    <h1>Introducing Bootstrap.</h1>
+    <p class="marketing-byline">Need reasons to love Bootstrap? Look no further.</p>
+
+    <div class="row-fluid">
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
+        <h2>By nerds, for nerds.</h2>
+        <p>Built at Twitter by <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>, Bootstrap utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/bs-docs-responsive-illustrations.png">
+        <h2>Made for everyone.</h2>
+        <p>Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via <a href="./scaffolding.html#responsive">responsive CSS</a> as well.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/bs-docs-bootstrap-features.png">
+        <h2>Packed with features.</h2>
+        <p>A 12-column responsive <a href="./scaffolding.html#gridSystem">grid</a>, dozens of components, <a href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.html">web-based Customizer</a> to make Bootstrap your own.</p>
+      </div>
+    </div>
+
+    <hr class="soften">
+
+    <h1>Built with Bootstrap.</h1>
+    <p class="marketing-byline">For even more sites built with Bootstrap, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">visit the unofficial Tumblr</a> or <a href="./getting-started.html#examples">browse the examples</a>.</p>
+    <div class="row-fluid">
+      <ul class="thumbnails example-sites">
+        <li class="span3">
+          <a class="thumbnail" href="http://soundready.fm/" target="_blank">
+            <img src="assets/img/example-sites/soundready.png" alt="SoundReady.fm">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://kippt.com/" target="_blank">
+            <img src="assets/img/example-sites/kippt.png" alt="Kippt">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://www.gathercontent.com/" target="_blank">
+            <img src="assets/img/example-sites/gathercontent.png" alt="Gather Content">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://www.jshint.com/" target="_blank">
+            <img src="assets/img/example-sites/jshint.png" alt="JS Hint">
+          </a>
+        </li>
+      </ul>
+     </div>
+
+  </div>
+
+</div>
+
+
 
     <!-- Footer
     ================================================== -->
@@ -163,6 +226,21 @@
     <script src="assets/js/application.js"></script>
 
 
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
 
   </body>
 </html>
