@@ -44,12 +44,13 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
+$gengoFontFamily:       "Open Sans", Helvetica, Arial, sans-serif !default;
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
-$baseFontFamily:        $sansFontFamily !default;
+$baseFontFamily:        $gengoFontFamily !default;
 $baseLineHeight:        24px !default;
 $altFontFamily:         $serifFontFamily !default;
 
