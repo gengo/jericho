@@ -79,7 +79,7 @@ h2 { font-size: $baseFontSize * 1.715; } // ~24px
 h3 { font-size: $baseFontSize * 1.286; } // ~18px
 h4 { font-size: $baseFontSize * 1.143; } // ~16px
 h5 { font-size: $baseFontSize; }
-h6 { font-size: $baseFontSize * 0.8575; } // ~12px
+h6 { font-size: $baseFontSize * 0.8575; color: $grayLight; } // ~12px
 
 h1 small { font-size: $baseFontSize * 1.75; } // ~24px
 h2 small { font-size: $baseFontSize * 1.25; } // ~18px
