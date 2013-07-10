@@ -9,7 +9,7 @@
 
     <!-- Le styles -->
     <link href="assets/css/jericho.css" rel="stylesheet">
-    <link href="assets/css/jericho-responsive.css" rel="stylesheet">
+    <!-- <link href="assets/css/jericho-responsive.css" rel="stylesheet"> -->
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <style>
@@ -504,29 +504,37 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th>Content</th>
+                  <th>Language</th>
+                  <th class="text-right">Time Left</th>
+                  <th class="text-right">Words</th>
+                  <th class="text-right">Reward</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>This is the title of the job</td>
+                  <td>en > jp</td>
+                  <td class="text-right">1h 02min</td>
+                  <td class="text-right">1w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>Hello world</td>
+                  <td>en > jp-es</td>
+                  <td class="text-right">23h 18min</td>
+                  <td class="text-right">236w</td>
+                  <td class="text-right">0.25USD</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <td>Nissan product description</td>
+                  <td>en > jp</td>
+                  <td class="text-right">14h 45min</td>
+                  <td class="text-right">140w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
               </tbody>
             </table>
@@ -544,6 +552,54 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h2>Optional classes</h2>
           <p>Add any of the following classes to the <code>.table</code> base class.</p>
 
+          <h3><code>.table-job-list</code></h3>
+          <p>Adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> via the <code>:nth-child</code> CSS selector (not available in IE7-8).</p>
+          <div class="bs-docs-example">
+            <table class="table table-job-list">
+              <thead>
+                <tr>
+                  <th>TYPE</th>
+                  <th>CONTENT</th>
+                  <th>LANGUAGE</th>
+                  <th class="text-right">TIME LEFT</th>
+                  <th class="text-right">WORDS</th>
+                  <th class="text-right">REWARD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>This is the title of the job</td>
+                  <td>en > jp</td>
+                  <td class="text-right">1h 02min</td>
+                  <td class="text-right">1w</td>
+                  <td class="text-right">0.05USD</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Hello world</td>
+                  <td>en > jp-es</td>
+                  <td class="text-right">23h 18min</td>
+                  <td class="text-right">236w</td>
+                  <td class="text-right">0.25USD</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Nissan product description</td>
+                  <td>en > jp</td>
+                  <td class="text-right">14h 45min</td>
+                  <td class="text-right">140w</td>
+                  <td class="text-right">0.05USD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-job-list"&gt;
+  …
+&lt;/table&gt;
+</pre>
+
           <h3><code>.table-striped</code></h3>
           <p>Adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> via the <code>:nth-child</code> CSS selector (not available in IE7-8).</p>
           <div class="bs-docs-example">
@@ -551,29 +607,37 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th>Content</th>
+                  <th>Language</th>
+                  <th class="text-right">Time Left</th>
+                  <th class="text-right">Words</th>
+                  <th class="text-right">Reward</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>This is the title of the job</td>
+                  <td>en > jp</td>
+                  <td class="text-right">1h 02min</td>
+                  <td class="text-right">1w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>Hello world</td>
+                  <td>en > jp-es</td>
+                  <td class="text-right">23h 18min</td>
+                  <td class="text-right">236w</td>
+                  <td class="text-right">0.25USD</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <td>Nissan product description</td>
+                  <td>en > jp</td>
+                  <td class="text-right">14h 45min</td>
+                  <td class="text-right">140w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
               </tbody>
             </table>
@@ -591,33 +655,37 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th>Content</th>
+                  <th>Language</th>
+                  <th class="text-right">Time Left</th>
+                  <th class="text-right">Words</th>
+                  <th class="text-right">Reward</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td rowspan="2">1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@TwBootstrap</td>
+                  <td>1</td>
+                  <td>This is the title of the job</td>
+                  <td>en > jp</td>
+                  <td class="text-right">1h 02min</td>
+                  <td class="text-right">1w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>Hello world</td>
+                  <td>en > jp-es</td>
+                  <td class="text-right">23h 18min</td>
+                  <td class="text-right">236w</td>
+                  <td class="text-right">0.25USD</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
+                  <td>Nissan product description</td>
+                  <td>en > jp</td>
+                  <td class="text-right">14h 45min</td>
+                  <td class="text-right">140w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
               </tbody>
             </table>
@@ -635,28 +703,37 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th>Content</th>
+                  <th>Language</th>
+                  <th class="text-right">Time Left</th>
+                  <th class="text-right">Words</th>
+                  <th class="text-right">Reward</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>This is the title of the job</td>
+                  <td>en > jp</td>
+                  <td class="text-right">1h 02min</td>
+                  <td class="text-right">1w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>Hello world</td>
+                  <td>en > jp-es</td>
+                  <td class="text-right">23h 18min</td>
+                  <td class="text-right">236w</td>
+                  <td class="text-right">0.25USD</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
+                  <td>Nissan product description</td>
+                  <td>en > jp</td>
+                  <td class="text-right">14h 45min</td>
+                  <td class="text-right">140w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
               </tbody>
             </table>
@@ -674,28 +751,37 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th>Content</th>
+                  <th>Language</th>
+                  <th class="text-right">Time Left</th>
+                  <th class="text-right">Words</th>
+                  <th class="text-right">Reward</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>This is the title of the job</td>
+                  <td>en > jp</td>
+                  <td class="text-right">1h 02min</td>
+                  <td class="text-right">1w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>Hello world</td>
+                  <td>en > jp-es</td>
+                  <td class="text-right">23h 18min</td>
+                  <td class="text-right">236w</td>
+                  <td class="text-right">0.25USD</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
+                  <td>Nissan product description</td>
+                  <td>en > jp</td>
+                  <td class="text-right">14h 45min</td>
+                  <td class="text-right">140w</td>
+                  <td class="text-right">0.05USD</td>
                 </tr>
               </tbody>
             </table>
@@ -1711,26 +1797,34 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <td><code>btn btn-info</code></td>
                 <td>Used as an alternative to the default styles</td>
               </tr>
+<!--
               <tr>
                 <td><button type="button" class="btn btn-success">Success</button></td>
                 <td><code>btn btn-success</code></td>
                 <td>Indicates a successful or positive action</td>
               </tr>
+
+ -->
+<!--
               <tr>
                 <td><button type="button" class="btn btn-warning">Warning</button></td>
                 <td><code>btn btn-warning</code></td>
                 <td>Indicates caution should be taken with this action</td>
               </tr>
+ -->
               <tr>
-                <td><button type="button" class="btn btn-danger">Danger</button></td>
-                <td><code>btn btn-danger</code></td>
-                <td>Indicates a dangerous or potentially negative action</td>
+                <td><button type="button" class="btn btn-core">Core</button></td>
+                <td><code>btn btn-core</code></td>
+                <!-- <td>Indicates a dangerous or potentially negative action</td> -->
+                <td>Core negative action</td>
               </tr>
+<!--
               <tr>
                 <td><button type="button" class="btn btn-inverse">Inverse</button></td>
                 <td><code>btn btn-inverse</code></td>
                 <td>Alternate dark gray button, not tied to a semantic action or use</td>
               </tr>
+-->
               <tr>
                 <td><button type="button" class="btn btn-link">Link</button></td>
                 <td><code>btn btn-link</code></td>
