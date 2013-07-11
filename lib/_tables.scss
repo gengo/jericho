@@ -70,6 +70,11 @@ table {
 // JOB LIST TABLE
 // -------------------------------
 .table-job-list {
+  th, td {
+    padding: 16px 7px;
+    vertical-align: middle;
+  }
+
   thead:first-child tr:first-child th,
   thead:first-child tr:first-child td {
     text-transform:capitalize;
