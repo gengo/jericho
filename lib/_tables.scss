@@ -17,6 +17,7 @@ table {
 // ---------------
 
 .table {
+  color: $grayDark;
   width: 100%;
   margin-bottom: $baseLineHeight;
   // Cells
@@ -75,6 +76,12 @@ table {
     color: #999999;
     font-size: $baseFontSize * 0.8575; // ~12px
   }
+
+  tbody tr th:first-child + th,
+  tbody tr td:first-child + td {
+    font-weight: bold;
+  }
+
 }
 
 // CONDENSED TABLE W/ HALF PADDING
