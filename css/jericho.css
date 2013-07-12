@@ -1,5 +1,11 @@
 @charset "UTF-8";
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/lib\/_reset\.scss}line{font-family:\0000319}}
 article,
 aside,
@@ -10200,7 +10206,7 @@ footer {
   height: 60px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/jericho\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/jericho\.scss}line{font-family:\0000389}}
 html,
 body {
   margin: 0 !important;
@@ -10210,12 +10216,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/jericho\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/jericho\.scss}line{font-family:\0000397}}
 body {
   padding: 72px 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/jericho\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/vagrant\/srv\/retail\/app\/assets\/scripts\/components\/jericho\/scss\/jericho\.scss}line{font-family:\00003101}}
 body #page-content {
   padding-top: 44px;
   padding-bottom: 110px;
