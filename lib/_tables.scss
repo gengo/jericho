@@ -23,7 +23,7 @@ table {
   // Cells
   th,
   td {
-    padding: 8px 7px 4px 7px;
+    padding: 8px 7px 3px 7px;
     line-height: $baseLineHeight;
     text-align: left;
     vertical-align: top;
@@ -80,9 +80,11 @@ table {
     text-transform:capitalize;
     color: #999999;
     font-size: $baseFontSize * 0.8575; // ~12px
+    padding-bottom: 4px;
   }
 
-  tbody th, td {
+  tbody th,
+  tbody td {
     padding: 17px 7px 18px 7px;
     vertical-align: middle;
   }
