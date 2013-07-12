@@ -11,11 +11,15 @@
 // -------------------------
 $black:                 #000 !default;
 $grayDarker:            #222 !default;
-$grayDark:              #4D4844 !default;
+$grayDark:              #333 !default;
 $gray:                  #555 !default;
-$grayLight:             #A6A3A1 !default;
+$grayLight:             #999 !default;
 $grayLighter:           #eee !default;
 $white:                 #fff !default;
+
+
+$jerichoGrayDark:       #4D4844 !default;
+$jerichoGrayLight:      #A6A3A1 !default;
 
 
 // Accent colors
@@ -97,37 +101,127 @@ $tableBorder:                       #ddd !default; // table and cell border
 
 // Buttons
 // -------------------------
-$btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
-$btnBorder:                         #ccc !default;
+$btnBackground:                   $white !default;
+$btnBackgroundHighlight:          darken($white, 10%) !default;
+$btnBorder:                       #ccc !default;
 
+// Default btn
+$btnBackground-0:                   $white !default;
+$btnBackground-5:                   #FEFEFE !default;
+$btnBackground-95:                  #F3F3F3 !default;
+$btnBackground-100:                 #EAEAEA !default;
+$btnBorderTop:                      #E6E6E6 !default;
+$btnBorderRight:                    #D6D6D6 !default;
+$btnBorderBottom:                   #C5C5C5 !default;
+$btnBorderLeft:                     #D6D6D6 !default;
+
+$btnHoverBackground-0:            #F6F6F6 !default;
+$btnHoverBackground-5:            #F4F4F4 !default;
+$btnHoverBackground-95:           #EDEDED !default;
+$btnHoverBackground-100:          #E6E6E6 !default;
+$btnHoverBorderTop:               #E3E3E3 !default;
+$btnHoverBorderRight:             #D2D2D2 !default;
+$btnHoverBorderBottom:            #C2C2C2 !default;
+$btnHoverBorderLeft:              #D2D2D2 !default;
+
+// Primary btn
 $btnPrimaryBackground:              $linkColor !default;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
 
+$btnPrimaryBackground-0:            #4ABE98 !default;
+$btnPrimaryBackground-5:            #27B184 !default;
+$btnPrimaryBackground-95:           #1BA478 !default;
+$btnPrimaryBackground-100:          #199B71 !default;
+$btnPrimaryBorderTop:               #5DB79A !default;
+$btnPrimaryBorderRight:             #1F9771 !default;
+$btnPrimaryBorderBottom:            #1F9771 !default;
+$btnPrimaryBorderLeft:              #168361 !default;
+
+$btnPrimaryHoverBackground-0:            #42B087 !default;
+$btnPrimaryHoverBackground-5:            #1EA070 !default;
+$btnPrimaryHoverBackground-95:           #129564 !default;
+$btnPrimaryHoverBackground-100:          #108B5E !default;
+$btnPrimaryHoverBorderTop:               #5AA98E !default;
+$btnPrimaryHoverBorderRight:             #1B8560 !default;
+$btnPrimaryHoverBorderBottom:            #127351 !default;
+$btnPrimaryHoverBorderLeft:              #1B8560 !default;
+
+// Info btn
 $btnInfoBackground:                 #5bc0de !default;
 $btnInfoBackgroundHighlight:        #2f96b4 !default;
 
+$btnInfoBackground-0:            #A7DAD3 !default;
+$btnInfoBackground-5:            #96D3C9 !default;
+$btnInfoBackground-95:           #8BC7BE !default;
+$btnInfoBackground-100:          #82BBB2 !default;
+$btnInfoBorderTop:               #A7D1CB !default;
+$btnInfoBorderRight:             #83BBB2 !default;
+$btnInfoBorderBottom:            #70A29B !default;
+$btnInfoBorderLeft:              #83BBB2 !default;
+
+$btnInfoHoverBackground-0:            #A4D3CB !default;
+$btnInfoHoverBackground-5:            #92C9C1 !default;
+$btnInfoHoverBackground-95:           #87BEB5 !default;
+$btnInfoHoverBackground-100:          #7EB2AA !default;
+$btnInfoHoverBorderTop:               #8EC7BE !default;
+$btnInfoHoverBorderRight:             #5FADA1 !default;
+$btnInfoHoverBorderBottom:            #50978C !default;
+$btnInfoHoverBorderLeft:              #5FADA1 !default;
+
+// Primary btn
 $btnSuccessBackground:              #62c462 !default;
 $btnSuccessBackgroundHighlight:     #51a351 !default;
 
+// Warning btn
 $btnWarningBackground:              lighten($orange, 15%) !default;
 $btnWarningBackgroundHighlight:     $orange !default;
 
-$btnDangerBackground:               #ee5f5b !default;
-$btnDangerBackgroundHighlight:      #bd362f !default;
+// Denger btn
+$btnCoreBackground:               #ee5f5b !default;
+$btnCoreBackgroundHighlight:      #bd362f !default;
 
+$btnCoreBackground-0:            #EE7F6C !default;
+$btnCoreBackground-5:            #EB6650 !default;
+$btnCoreBackground-95:           #DF5A44 !default;
+$btnCoreBackground-100:          #CF5440 !default;
+$btnCoreBorderTop:               #DA8375 !default;
+$btnCoreBorderRight:             #C4513F !default;
+$btnCoreBorderBottom:            #AD4533 !default;
+$btnCoreBorderLeft:              #C4513F !default;
+
+$btnCoreHoverBackground-0:            #E67865 !default;
+$btnCoreHoverBackground-5:            #E15D47 !default;
+$btnCoreHoverBackground-95:           #D5513C !default;
+$btnCoreHoverBackground-100:          #C84C38 !default;
+$btnCoreHoverBorderTop:               #CE7C6E !default;
+$btnCoreHoverBorderRight:             #B54837 !default;
+$btnCoreHoverBorderBottom:            #9F3C2C !default;
+$btnCoreHoverBorderLeft:              #B54837 !default;
+
+
+// Invert btn
 $btnInverseBackground:              #444 !default;
 $btnInverseBackgroundHighlight:     $grayDarker !default;
 
 
 // Forms
 // -------------------------
-$inputBackground:               $white !default;
+$inputBackground:               #F9F9F9 !default;
 $inputBorder:                   #ccc !default;
+$inputBorderTop:                #B8B8B8 !default;
+$inputBorderRight:              #D9D9D9 !default;
+$inputBorderBottom:             #D9D9D9 !default;
+$inputBorderLeft:               #D9D9D9 !default;
+$inputBorderTopFocus:           #5EA38C !default;
+$inputBorderRightFocus:         #1DAD7E !default;
+$inputBorderBottomFocus:        #1FAE7F !default;
+$inputBorderLeftFocus:          #1DAD7E !default;
 $inputBorderRadius:             $baseBorderRadius !default;
-$inputDisabledBackground:       $grayLighter !default;
+$inputDisabledColor:            $grayLight !default;
+$inputDisabledBackground:       #F9F9F9 !default;
 $formActionsBackground:         #f5f5f5 !default;
-$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+// $inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+$inputHeight:                   30px; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
 // Dropdowns
@@ -248,7 +342,9 @@ $warningBackground:       #fcf8e3 !default;
 $warningBorder:           darken(adjust-hue($warningBackground, -10), 3%) !default;
 
 $errorText:               #b94a48 !default;
-$errorBackground:         #f2dede !default;
+$errorText:               #b94a48 !default;
+// $errorBackground:         #f2dede !default;
+$errorBackground:         #FDEFEC !default;
 $errorBorder:             darken(adjust-hue($errorBackground, -10), 3%) !default;
 
 $successText:             #468847 !default;
