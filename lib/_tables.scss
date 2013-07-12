@@ -23,7 +23,7 @@ table {
   // Cells
   th,
   td {
-    padding: 8px;
+    padding: 8px 7px 4px 7px;
     line-height: $baseLineHeight;
     text-align: left;
     vertical-align: top;
@@ -52,7 +52,12 @@ table {
   colgroup + thead tr:first-child td,
   thead:first-child tr:first-child th,
   thead:first-child tr:first-child td {
-    border-top: 0;
+    // border-top: 0;
+  }
+  // Add border to the tbody by default
+  tr:last-child th,
+  tr:last-child td {
+    border-bottom: 1px solid $tableBorder;
   }
 
   // Account for multiple tbody instances
@@ -70,16 +75,16 @@ table {
 // JOB LIST TABLE
 // -------------------------------
 .table-job-list {
-  th, td {
-    padding: 16px 7px;
-    vertical-align: middle;
-  }
-
   thead:first-child tr:first-child th,
   thead:first-child tr:first-child td {
     text-transform:capitalize;
     color: #999999;
     font-size: $baseFontSize * 0.8575; // ~12px
+  }
+
+  tbody th, td {
+    padding: 17px 7px 18px 7px;
+    vertical-align: middle;
   }
 
   tbody tr th:first-child + th,
@@ -113,6 +118,12 @@ table {
   td {
     border-left: 1px solid $tableBorder;
   }
+
+  tr:last-child th,
+  tr:last-child td {
+    border-bottom: 0;
+  }
+
   // Prevent a double border
   caption + thead tr:first-child th,
   caption + tbody tr:first-child th,
