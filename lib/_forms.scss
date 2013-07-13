@@ -80,7 +80,7 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: $baseLineHeight;
-  padding: 4px 10px;
+  padding: 2px 6px;
   margin-bottom: $baseLineHeight / 2;;
   font-size: $baseFontSize;
   line-height: $inputHeight;
@@ -88,6 +88,33 @@ input[type="color"],
   @include border-radius($inputBorderRadius);
   vertical-align: middle;
 }
+
+form.order,
+form.login {
+  select,
+  textarea,
+  input,
+  .uneditable-input {
+    line-height: 36px;
+  }
+}
+form.order{
+  select,
+  textarea,
+  input,
+  .uneditable-input {
+    padding: 5px 8px;
+  }
+}
+form.login {
+  select,
+  textarea,
+  input,
+  .uneditable-input {
+    padding: 8px 8px;
+  }
+}
+
 
 // Reset appearance properties for textual inputs and textarea
 // Declare width for legacy (can't be on input[type=*] selectors or it's too specific)
@@ -466,7 +493,7 @@ select:focus:invalid {
     width: auto;
     height: $baseLineHeight;
     min-width: 16px;
-    padding: 4px 5px;
+    padding: 2px 5px;
     font-size: $baseFontSize;
     font-weight: normal;
     line-height: $baseLineHeight;
