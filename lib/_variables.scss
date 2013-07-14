@@ -229,13 +229,13 @@ $inputLoginHeight:              40px;
 // Dropdowns
 // -------------------------
 $dropdownBackground:            $white !default;
-$dropdownBorder:                rgba(0,0,0,.2) !default;
+$dropdownBorder:                #ccc !default;
 $dropdownDividerTop:            #e5e5e5 !default;
 $dropdownDividerBottom:         $white !default;
 
 $dropdownLinkColor:             $grayDark !default;
-$dropdownLinkColorHover:        $white !default;
-$dropdownLinkColorActive:       $white !default;
+$dropdownLinkColorHover:        $grayDark !default;
+$dropdownLinkColorActive:       #1AAC7E !default;
 
 $dropdownLinkBackgroundActive:  $linkColor !default;
 $dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;

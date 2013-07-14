@@ -50,12 +50,11 @@
   margin: 2px 0 0; // override default ul
   list-style: none;
   background-color: $dropdownBackground;
-  border: 1px solid #ccc; // Fallback for IE7-8
   border: 1px solid $dropdownBorder;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   @include border-radius(6px);
-  @include box-shadow(0 5px 10px rgba(0,0,0,.2));
+  @include box-shadow(0 0 6px rgba(0,0,0,.2));
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
           background-clip: padding-box;
@@ -74,13 +73,34 @@
   // Links within the dropdown menu
   > li > a {
     display: block;
-    padding: 3px 20px;
+    padding: 0px 13px;
     clear: both;
     font-weight: normal;
     line-height: $baseLineHeight;
     color: $dropdownLinkColor;
     white-space: nowrap;
   }
+}
+
+.dropdown-menu:before,
+.dropdown-menu:after {
+    content: '';
+    position: absolute;
+    left: 72px;
+    top: -4px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid $dropdownBackground;
+}
+.dropdown-menu:before
+{
+    left: 71px;
+    top: -5px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid $dropdownBorder;
 }
 
 // Hover/Focus state
@@ -91,7 +111,8 @@
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: $dropdownLinkColorHover;
-  @include gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
+  background-color: #F4F4F4;
+  // @include gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
 }
 
 // Active state
@@ -102,7 +123,9 @@
   color: $dropdownLinkColorActive;
   text-decoration: none;
   outline: 0;
-  @include gradient-vertical($dropdownLinkBackgroundActive, darken($dropdownLinkBackgroundActive, 5%));
+  background-color: $white;
+  cursor: default;
+  // @include gradient-vertical($dropdownLinkBackgroundActive, darken($dropdownLinkBackgroundActive, 5%));
 }
 
 // Disabled state
