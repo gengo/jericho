@@ -143,8 +143,8 @@
   .btn-warning.dropdown-toggle {
     background-color: $btnWarningBackgroundHighlight;
   }
-  .btn-danger.dropdown-toggle {
-    background-color: $btnDangerBackgroundHighlight;
+  .btn-core.dropdown-toggle {
+    background-color: $btnCoreBackgroundHighlight;
   }
   .btn-success.dropdown-toggle {
     background-color: $btnSuccessBackgroundHighlight;
@@ -181,12 +181,27 @@
   border-bottom-width: 5px;
 }
 
+form {
+  .btn .caret {
+    margin-top: 13px;
+  }
+}
+form.order {
+  .btn .caret {
+    margin-top: 15px;
+  }
+}
+form.login {
+  .btn .caret {
+    margin-top: 18px;
+  }
+}
 
 
 // Account for other colors
 .btn-primary,
 .btn-warning,
-.btn-danger,
+.btn-core,
 .btn-info,
 .btn-success,
 .btn-inverse {

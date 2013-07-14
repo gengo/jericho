@@ -457,6 +457,19 @@
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 }
+
+@mixin gradient-vertical-four-colors($startColor: #ffffff, $startMidColor: #fefefe, $endMidColor: #f3f3f3, $endColor: #eaeaea) {
+  background-color: mix($startMidColor, $endColor, 80%);
+  // background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $startColor), color-stop(5%, $startMidColor), color-stop(95%,$endMidColor), color-stop(100%,$endColor));
+  background-image: -webkit-linear-gradient($startColor 0%, $startMidColor 5%, $endMidColor 95%, $endColor 100%);
+  background-image: -moz-linear-gradient(top, $startColor 0%, $startMidColor 5%, $endMidColor 95%, $endColor 100%);
+  background-image: -o-linear-gradient($startColor 0%, $startMidColor 5%, $endMidColor 95%, $endColor 100%);
+  background-image: linear-gradient($startColor 0%, $startMidColor 5%, $endMidColor 95%, $endColor 100%);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
+}
+
 @mixin gradient-radial($innerColor: #555, $outerColor: #333)  {
   background-color: $outerColor;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from($innerColor), to($outerColor));
@@ -506,6 +519,31 @@
 @mixin buttonBackground($startColor, $endColor, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
   @include gradientBar($startColor, $endColor, $textColor, $textShadow);
+  *background-color: $endColor; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  @include reset-filter();
+
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+    color: $textColor;
+    background-color: $endColor;
+    *background-color: darken($endColor, 5%);
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken($endColor, 10%) \9;
+  }
+}
+
+@mixin buttonBackgroundJericho($startColor, $startMidColor, $endMidColor, $endColor, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+  //
+  color: $textColor;
+  text-shadow: $textShadow;
+  @include gradient-vertical-four-colors($startColor, $startMidColor, $endMidColor, $endColor);
+  // border-color: $secondaryColor $secondaryColor darken($secondaryColor, 15%);
+  // border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fade-in(rgba(0,0,0,.1), 0.15);
+
   *background-color: $endColor; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   @include reset-filter();
 
