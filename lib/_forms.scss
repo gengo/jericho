@@ -398,7 +398,7 @@ input[type="checkbox"][readonly] {
 }
 // Success
 .control-group.success {
-  @include formFieldState($successText, $successText, $successBackground);
+  // @include formFieldState($successText, $successText, $successBackground);
 }
 // Info
 .control-group.info {
