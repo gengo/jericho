@@ -41,7 +41,7 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -50%;
   z-index: $zindexDropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
@@ -86,7 +86,7 @@
 .dropdown-menu:after {
     content: '';
     position: absolute;
-    left: 72px;
+    left: 75px;
     top: -4px;
     width: 0;
     height: 0;
@@ -96,12 +96,20 @@
 }
 .dropdown-menu:before
 {
-    left: 71px;
+    left: 74px;
     top: -5px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid $dropdownBorder;
 }
+
+.dropdown-menu .dropdown-menu:before,
+.dropdown-menu .dropdown-menu:after {
+  border: 0;
+}
+
+
+
 
 // Hover/Focus state
 // -----------
@@ -155,6 +163,7 @@
 
   & > .dropdown-menu {
     display: block;
+    margin-top: 11px;
   }
 }
 
@@ -233,8 +242,8 @@
   border-style: solid;
   border-width: 5px 0 5px 5px;
   border-left-color: darken($dropdownBackground, 20%);
-  margin-top: 5px;
-  margin-right: -10px;
+  margin-top: 7px;
+  margin-right: -5px;
 }
 .dropdown-submenu:hover > a:after {
   border-left-color: $dropdownLinkColorHover;
