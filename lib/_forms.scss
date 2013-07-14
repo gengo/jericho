@@ -601,16 +601,16 @@ input.search-query {
   @include border-radius(0); // Override due to specificity
 }
 .form-search .input-append .search-query {
-  @include border-radius(14px 0 0 14px);
+  @include border-radius($baseBorderRadius 0 0 $baseBorderRadius);
 }
 .form-search .input-append .btn {
-  @include border-radius(0 14px 14px 0);
+  @include border-radius(0 $baseBorderRadius $baseBorderRadius 0);
 }
 .form-search .input-prepend .search-query {
-  @include border-radius(0 14px 14px 0);
+  @include border-radius(0 $baseBorderRadius $baseBorderRadius 0);
 }
 .form-search .input-prepend .btn {
-  @include border-radius(14px 0 0 14px);
+  @include border-radius($baseBorderRadius 0 0 $baseBorderRadius);
 }
 
 
