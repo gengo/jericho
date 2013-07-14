@@ -259,6 +259,7 @@ textarea {
 .checkbox {
   min-height: $baseLineHeight; // clear the floating input if there is no label text
   padding-left: 20px;
+  margin-bottom: 1px;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
@@ -279,6 +280,7 @@ textarea {
   display: inline-block;
   padding-top: 5px;
   margin-bottom: 0;
+  margin-right: 10px;
   vertical-align: middle;
 }
 .radio.inline + .radio.inline,
@@ -484,6 +486,7 @@ select:focus:invalid {
     vertical-align: top;
     @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
     // Make input on top when focused so blue border and shadow always show
+    background-color: #FCFCFC;
     &:focus {
       z-index: 2;
     }
@@ -494,13 +497,15 @@ select:focus:invalid {
     height: $baseLineHeight;
     min-width: 16px;
     padding: 2px 5px;
+    color: $grayLight;
     font-size: $baseFontSize;
     font-weight: normal;
     line-height: $baseLineHeight;
     text-align: center;
     text-shadow: 0 1px 0 $white;
-    background-color: $grayLighter;
-    border: 1px solid #ccc;
+    // background-color: $grayLighter;
+    background-color: #F8F8F8;
+    border: 1px solid $inputBorderRight;
   }
   .add-on,
   .btn,
