@@ -1730,65 +1730,62 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>Bootstrap includes validation styles for error, warning, info, and success messages. To use, add the appropriate class to the surrounding <code>.control-group</code>.</p>
 
           <form class="bs-docs-example form-horizontal">
-            <div class="control-group warning">
+<!--             <div class="control-group warning">
               <label class="control-label" for="inputWarning">Input with warning</label>
               <div class="controls">
                 <input type="text" id="inputWarning">
                 <span class="help-inline">Something may have gone wrong</span>
               </div>
             </div>
+ -->
             <div class="control-group error">
-              <label class="control-label" for="inputError">Input with error</label>
               <div class="controls">
                 <input type="text" id="inputError">
-                <span class="help-inline">Please correct the error</span>
+                <span class="help-inline">！</span>
               </div>
             </div>
-            <div class="control-group info">
+<!--             <div class="control-group info">
               <label class="control-label" for="inputInfo">Input with info</label>
               <div class="controls">
                 <input type="text" id="inputInfo">
                 <span class="help-inline">Username is taken</span>
               </div>
             </div>
+ -->
             <div class="control-group success">
-              <label class="control-label" for="inputSuccess">Input with success</label>
               <div class="controls">
                 <input type="text" id="inputSuccess">
-                <span class="help-inline">Woohoo!</span>
+                <span class="help-inline">✔</span>
               </div>
             </div>
           </form>
 <pre class="prettyprint linenums">
-&lt;div class="control-group warning"&gt;
+<!-- &lt;div class="control-group warning"&gt;
   &lt;label class="control-label" for="inputWarning"&gt;Input with warning&lt;/label&gt;
   &lt;div class="controls"&gt;
     &lt;input type="text" id="inputWarning"&gt;
     &lt;span class="help-inline"&gt;Something may have gone wrong&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-
+ -->
 &lt;div class="control-group error"&gt;
-  &lt;label class="control-label" for="inputError"&gt;Input with error&lt;/label&gt;
   &lt;div class="controls"&gt;
     &lt;input type="text" id="inputError"&gt;
-    &lt;span class="help-inline"&gt;Please correct the error&lt;/span&gt;
+    &lt;span class="help-inline"&gt;！&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-
-&lt;div class="control-group info"&gt;
+<!-- &lt;div class="control-group info"&gt;
   &lt;label class="control-label" for="inputInfo"&gt;Input with info&lt;/label&gt;
   &lt;div class="controls"&gt;
     &lt;input type="text" id="inputInfo"&gt;
     &lt;span class="help-inline"&gt;Username is already taken&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-
+ -->
 &lt;div class="control-group success"&gt;
-  &lt;label class="control-label" for="inputSuccess"&gt;Input with success&lt;/label&gt;
   &lt;div class="controls"&gt;
     &lt;input type="text" id="inputSuccess"&gt;
-    &lt;span class="help-inline"&gt;Woohoo!&lt;/span&gt;
+    &lt;span class="help-inline"&gt;✔&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -1893,10 +1890,11 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h2>Button sizes</h2>
           <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
           <div class="bs-docs-example">
-            <p>
+<!--             <p>
               <button type="button" class="btn btn-large btn-primary">Large button</button>
               <button type="button" class="btn btn-large">Large button</button>
             </p>
+ -->
             <p>
               <button type="button" class="btn btn-primary">Default button</button>
               <button type="button" class="btn">Default button</button>
@@ -1911,10 +1909,11 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
             </p>
           </div>
 <pre class="prettyprint linenums">
-&lt;p&gt;
+<!-- &lt;p&gt;
   &lt;button class="btn btn-large btn-primary" type="button"&gt;Large button&lt;/button&gt;
   &lt;button class="btn btn-large" type="button"&gt;Large button&lt;/button&gt;
 &lt;/p&gt;
+-->
 &lt;p&gt;
   &lt;button class="btn btn-primary" type="button"&gt;Default button&lt;/button&gt;
   &lt;button class="btn" type="button"&gt;Default button&lt;/button&gt;
