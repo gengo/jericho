@@ -46,6 +46,11 @@
   font-size: 11px;
   padding: 2px 11px;
 }
+
+.btn-group > .dropdown-menu{
+  padding: 2px 0;
+}
+
 form .btn-group > .btn,
 form .btn-group > .dropdown-menu,
 form .btn-group > .popover {
