@@ -66,10 +66,39 @@
   // Disabled state
   &.disabled,
   &[disabled] {
+    color: #A5A2A1;
     cursor: default;
     background-image: none;
-    @include opacity(65);
     @include box-shadow(none);
+    background-color: #F4F4F4;
+
+    &:hover,
+    &:focus {
+      color: #A5A2A1;
+      cursor: default;
+      background-image: none;
+      @include box-shadow(none);
+      background-color: #F4F4F4;
+    }
+
+    &.btn-primary,
+    &.btn-warning,
+    &.btn-core,
+    &.btn-success,
+    &.btn-info,
+    &.btn-inverse {
+      cursor: default;
+      @include buttonBackgroundJericho($btnBackground-0, $btnBackground-5, $btnBackground-95, $btnBackground-100, #A5A2A1, 0 1px 1px rgba(255,255,255,.75));
+      border: 1px solid $btnBorder;
+      *border: 0; // Remove the border to prevent IE7's black border on input:focus
+      border-top-color   : $btnBorderTop;
+      border-right-color : $btnBorderRight;
+      border-bottom-color: $btnBorderBottom;
+      border-left-color  : $btnBorderLeft;
+      @include border-radius($baseBorderRadius);
+      @include ie7-restore-left-whitespace(); // Give IE7 some love
+    }
+
   }
 
 }
