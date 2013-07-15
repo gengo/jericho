@@ -89,22 +89,6 @@ input[type="color"],
   vertical-align: middle;
 }
 
-form.order{
-  select,
-  textarea,
-  input,
-  .uneditable-input {
-    height: $inputOrderHeight;
-  }
-}
-form.login {
-  select,
-  textarea,
-  input,
-  .uneditable-input {
-    height: $inputLoginHeight;
-  }
-}
 
 form.search {
   select,
@@ -605,16 +589,6 @@ select:focus:invalid {
   }
 }
 
-form.order .add-on {
-  line-height: 30px;
-  height: 30px;
-}
-form.login .add-on {
-  line-height: 36px;
-  height: 36px;
-}
-
-
 
 // SEARCH FORM
 // -----------
@@ -765,5 +739,40 @@ legend + .control-group {
   // Move over buttons in .form-actions to align with .controls
   .form-actions {
     padding-left: $horizontalComponentOffset;
+  }
+}
+
+
+// Order Page Style
+.order {
+  form .add-on {
+    line-height: 30px;
+    height: 30px;
+  }
+
+  form {
+    select,
+    textarea,
+    input,
+    .uneditable-input {
+      height: $inputOrderHeight;
+    }
+  }
+}
+
+// Login Page Style
+.login {
+  form .add-on {
+    line-height: 36px;
+    height: 36px;
+  }
+
+  form {
+    select,
+    textarea,
+    input,
+    .uneditable-input {
+      height: $inputLoginHeight;
+    }
   }
 }
