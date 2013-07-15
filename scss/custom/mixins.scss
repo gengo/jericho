@@ -1,9 +1,0 @@
-//
-// Mixins
-// --------------------------------------------------
-
-
-// the darker buttons need to havelarger color differnce between top and bottom. 
-@mixin darkerBorderColors($secondaryColor){
-    border-color: lighten($secondaryColor, 24%) darken($secondaryColor, 5%) darken($secondaryColor, 15%);
-}

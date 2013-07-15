@@ -1,0 +1,537 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+// Core
+.btn {
+  display: inline-block;
+  @include ie7-inline-block();
+  padding: 4px 12px;
+  margin-bottom: 0; // For input.btn
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  // @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
+  @include buttonBackgroundJericho($btnBackground-0, $btnBackground-5, $btnBackground-95, $btnBackground-100, $jerichoGrayDark, 0 1px 1px rgba(255,255,255,.75));
+  border: 1px solid $btnBorder;
+
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  // border-bottom-color: darken($btnBorder, 10%);
+  border-top-color   : $btnBorderTop;
+  border-right-color : $btnBorderRight;
+  border-bottom-color: $btnBorderBottom;
+  border-left-color  : $btnBorderLeft;
+  @include border-radius($baseBorderRadius);
+  @include ie7-restore-left-whitespace(); // Give IE7 some love
+  // @include box-shadow(inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05));
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    // color: $grayDark;
+    text-decoration: none;
+    // background-position: 0 -15px;
+
+    @include buttonBackgroundJericho($btnHoverBackground-0, $btnHoverBackground-5, $btnHoverBackground-95, $btnHoverBackground-100, $grayDark, 0);
+    border-top-color   : $btnHoverBorderTop;
+    border-right-color : $btnHoverBorderRight;
+    border-bottom-color: $btnHoverBorderBottom;
+    border-left-color  : $btnHoverBorderLeft;
+
+
+    // transition is only when going to hover/focus, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+
+  // Focus state for keyboard and accessibility
+  &:focus {
+    @include tab-focus();
+  }
+
+  // Active state
+  &.active,
+  &:active {
+    background-image: none;
+    outline: 0;
+    @include box-shadow(inset 0 1px 4px 1px rgba(0,0,0,.15), 0 2px 2px rgba(0,0,0,.05));
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    color: #A5A2A1;
+    cursor: default;
+    background-image: none;
+    @include box-shadow(none);
+    background-color: #F4F4F4;
+
+    &:hover,
+    &:focus {
+      color: #A5A2A1;
+      cursor: default;
+      background-image: none;
+      @include box-shadow(none);
+      background-color: #F4F4F4;
+    }
+
+    &.btn-primary,
+    &.btn-warning,
+    &.btn-core,
+    &.btn-success,
+    &.btn-info,
+    &.btn-inverse {
+      cursor: default;
+      @include buttonBackgroundJericho($btnBackground-0, $btnBackground-5, $btnBackground-95, $btnBackground-100, #A5A2A1, 0 1px 1px rgba(255,255,255,.75));
+      border: 1px solid $btnBorder;
+      *border: 0; // Remove the border to prevent IE7's black border on input:focus
+      border-top-color   : $btnBorderTop;
+      border-right-color : $btnBorderRight;
+      border-bottom-color: $btnBorderBottom;
+      border-left-color  : $btnBorderLeft;
+      @include border-radius($baseBorderRadius);
+      @include ie7-restore-left-whitespace(); // Give IE7 some love
+    }
+
+  }
+
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: $paddingLarge;
+  font-size: $fontSizeLarge;
+  @include border-radius($borderRadiusLarge);
+}
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+// Small
+.btn-small {
+  padding: $paddingSmall;
+  font-size: $fontSizeSmall;
+  @include border-radius($borderRadiusSmall);
+}
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+// Mini
+.btn-mini {
+  padding: $paddingMini;
+  font-size: $fontSizeMini;
+  @include border-radius($borderRadiusSmall);
+}
+
+
+// Block button
+// -------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  @include box-sizing(border-box);
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+// Provide *some* extra contrast for those who can get it
+.btn-primary.active,
+.btn-warning.active,
+.btn-core.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255,255,255,.75);
+}
+
+// Set the backgrounds
+// -------------------------
+.btn-primary {
+  // @include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
+  @include buttonBackgroundJericho($btnPrimaryBackground-0, $btnPrimaryBackground-5, $btnPrimaryBackground-95, $btnPrimaryBackground-100);
+  border-top-color   : $btnPrimaryBorderTop;
+  border-right-color : $btnPrimaryBorderRight;
+  border-bottom-color: $btnPrimaryBorderBottom;
+  border-left-color  : $btnPrimaryBorderLeft;
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    @include buttonBackgroundJericho($btnPrimaryHoverBackground-0, $btnPrimaryHoverBackground-5, $btnPrimaryHoverBackground-95, $btnPrimaryHoverBackground-100);
+    border-top-color   : $btnPrimaryHoverBorderTop;
+    border-right-color : $btnPrimaryHoverBorderRight;
+    border-bottom-color: $btnPrimaryHoverBorderBottom;
+    border-left-color  : $btnPrimaryHoverBorderLeft;
+
+    // transition is only when going to hover/focus, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+}
+// Warning appears are orange
+.btn-warning {
+  @include buttonBackground($btnWarningBackground, $btnWarningBackgroundHighlight);
+  // @include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
+  @include buttonBackgroundJericho($btnPrimaryBackground-0, $btnPrimaryBackground-5, $btnPrimaryBackground-95, $btnPrimaryBackground-100);
+  border-top-color   : $btnPrimaryBorderTop;
+  border-right-color : $btnPrimaryBorderRight;
+  border-bottom-color: $btnPrimaryBorderBottom;
+  border-left-color  : $btnPrimaryBorderLeft;
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    @include buttonBackgroundJericho($btnPrimaryHoverBackground-0, $btnPrimaryHoverBackground-5, $btnPrimaryHoverBackground-95, $btnPrimaryHoverBackground-100);
+    border-top-color   : $btnPrimaryHoverBorderTop;
+    border-right-color : $btnPrimaryHoverBorderRight;
+    border-bottom-color: $btnPrimaryHoverBorderBottom;
+    border-left-color  : $btnPrimaryHoverBorderLeft;
+
+    // transition is only when going to hover/focus, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+}
+// Danger and error appear as red
+.btn-core {
+  // @include buttonBackground($btnCoreBackground, $btnCoreBackgroundHighlight);
+  @include buttonBackgroundJericho($btnCoreBackground-0, $btnCoreBackground-5, $btnCoreBackground-95, $btnCoreBackground-100);
+  border-top-color   : $btnCoreBorderTop;
+  border-right-color : $btnCoreBorderRight;
+  border-bottom-color: $btnCoreBorderBottom;
+  border-left-color  : $btnCoreBorderLeft;
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    @include buttonBackgroundJericho($btnCoreHoverBackground-0, $btnCoreHoverBackground-5, $btnCoreHoverBackground-95, $btnCoreHoverBackground-100);
+    border-top-color   : $btnCoreHoverBorderTop;
+    border-right-color : $btnCoreHoverBorderRight;
+    border-bottom-color: $btnCoreHoverBorderBottom;
+    border-left-color  : $btnCoreHoverBorderLeft;
+
+    // transition is only when going to hover/focus, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+}
+// Success appears as green
+.btn-success {
+  @include buttonBackground($btnSuccessBackground, $btnSuccessBackgroundHighlight);
+}
+// Info appears as a neutral blue
+.btn-info {
+  // @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
+  @include buttonBackgroundJericho($btnInfoBackground-0, $btnInfoBackground-5, $btnInfoBackground-95, $btnInfoBackground-100);
+  border-top-color   : $btnInfoBorderTop;
+  border-right-color : $btnInfoBorderRight;
+  border-bottom-color: $btnInfoBorderBottom;
+  border-left-color  : $btnInfoBorderLeft;
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    @include buttonBackgroundJericho($btnInfoHoverBackground-0, $btnInfoHoverBackground-5, $btnInfoHoverBackground-95, $btnInfoHoverBackground-100);
+    border-top-color   : $btnInfoHoverBorderTop;
+    border-right-color : $btnInfoHoverBorderRight;
+    border-bottom-color: $btnInfoHoverBorderBottom;
+    border-left-color  : $btnInfoHoverBorderLeft;
+
+    // transition is only when going to hover/focus, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+}
+// Inverse appears as dark gray
+.btn-inverse {
+  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
+}
+
+
+// Cross-browser Jank
+// --------------------------------------------------
+
+button.btn,
+input[type="submit"].btn {
+
+  // Firefox 3.6 only I believe
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+
+  // IE7 has some default padding on button controls
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+
+  &.btn-large {
+    *padding-top: 7px;
+    *padding-bottom: 7px;
+  }
+  &.btn-small {
+    *padding-top: 3px;
+    *padding-bottom: 3px;
+  }
+  &.btn-mini {
+    *padding-top: 1px;
+    *padding-bottom: 1px;
+  }
+}
+
+form .btn {
+  padding: 0px 12px;
+  line-height: $inputHeight;
+}
+
+form.order .btn {
+  line-height: $inputOrderHeight;
+}
+form.login .btn {
+  line-height: $inputLoginHeight;
+}
+
+form.search .btn {
+  display: inline-block;
+  width: auto;
+  min-width: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+
+  margin-left: -4px;
+  padding: 0 8px;
+  height: 30px;
+  line-height: 30px;
+
+  background: $inputBackground;
+  border-top: 1px solid $inputBorderTop;
+  border-right: 1px solid $inputBorderRight;
+  border-bottom: 1px solid $inputBorderBottom;
+  border-left: 0;
+  @include border-radius(0);
+  @include border-right-radius($inputBorderRadius);
+  @include box-shadow(none);
+  @include transition(border linear .2s, box-shadow linear .2s);
+}
+
+
+
+// Link buttons
+// --------------------------------------------------
+
+// Make a button look and behave like a link
+// General page links
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+  border: 0;
+}
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: $linkColor;
+  @include border-radius(0);
+  border: 0;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: $linkColorHover;
+  text-decoration: underline;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+  }
+}
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+  border: 0;
+}
+
+// Translator page links
+.btn-translator-link,
+.btn-translator-link:active,
+.btn-translator-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+  border: 0;
+}
+.btn-translator-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: $translatorLinkColor;
+  @include border-radius(0);
+  border: 0;
+}
+.btn-translator-link:hover,
+.btn-translator-link:focus {
+  color: $translatorLinkColorHover;
+  text-decoration: underline;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+  }
+}
+.btn-translator-link[disabled]:hover,
+.btn-translator-link[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+  border: 0;
+}
+
+// Developer page links
+.btn-dev-link,
+.btn-dev-link:active,
+.btn-dev-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+  border: 0;
+}
+.btn-dev-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: $developerLinkColor;
+  @include border-radius(0);
+  border: 0;
+}
+.btn-dev-link:hover,
+.btn-dev-link:focus {
+  color: $developerLinkColorHover;
+  text-decoration: underline;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+  }
+}
+.btn-dev-link[disabled]:hover,
+.btn-dev-link[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+  border: 0;
+}
+
+// Red Background links
+.btn-link.red-bg,
+.btn-link.red-bg:active,
+.btn-link.red-bg[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+  text-shadow: none;
+  border: 0;
+}
+.btn-link.red-bg {
+  border-color: transparent;
+  cursor: pointer;
+  color: $redBgLinkColor;
+  @include border-radius(0);
+  border: 0;
+}
+.btn-link.red-bg:hover,
+.btn-link.red-bg:focus {
+  color: $redBgLinkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+  border: 0;
+}
+.btn-link.red-bg[disabled]:hover,
+.btn-link.red-bg[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+  border: 0;
+}
+
+// Blue Background links
+.btn-link.blue-bg,
+.btn-link.blue-bg:active,
+.btn-link.blue-bg[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+  text-shadow: none;
+  border: 0;
+}
+.btn-link.blue-bg {
+  border-color: transparent;
+  cursor: pointer;
+  color: $blueBgLinkColor;
+  @include border-radius(0);
+  border: 0;
+}
+.btn-link.blue-bg:hover,
+.btn-link.blue-bg:focus {
+  color: $blueBgLinkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+  border: 0;
+}
+.btn-link.blue-bg[disabled]:hover,
+.btn-link.blue-bg[disabled]:focus {
+  color: $grayDark;
+  text-decoration: none;
+  border: 0;
+}
+

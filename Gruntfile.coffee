@@ -1,3 +1,4 @@
+'use strict';
 path = require 'path'
 
 # Build configurations.
@@ -7,6 +8,20 @@ module.exports = (grunt) ->
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig
+
+        # Sets up file watchers and runs tasks when watched files are changed.
+        watch:
+            # options:
+            #     livereload: true
+            styles:
+                files: './lib/{,*/}*.{scss,sass}'
+                tasks: [
+                    'compass:dev'
+                    'concat:dev'
+                    'copy:dev'
+                    'copy:docs'
+                ]
+
 
         # RequireJS optimizer configuration for both scripts and styles.
         # This configuration is only used in the 'prod' build.
@@ -24,38 +39,31 @@ module.exports = (grunt) ->
                     out: './jericho.min.css'
 
         compass:
-            files: ['scss/jericho.scss']
+            options:
+                sassDir       : 'lib'
+                cssDir        : '.tmp'
+                imagesDir     : 'img'
+                # fontsDir      : ''
+                relativeAssets: true
             dev:
-                importPath: '/../..'
-                src: 'scss'
-                dest: 'css'
-                noLineComments: false
-                forcecompile: false
-                debugsass: true
-                relativeassets: true
+                options:
+                    debugInfo: true
+                    outputStyle: 'expanded'
+                    noLineComments: false
+                    relativeAssets: true
             prod:
-                importPath: '/../..'
-                src: 'scss'
-                dest: 'css'
-                noLineComments: true
-                forcecompile: true
-                debugsass: false
-                relativeassets: true
+                options:
+                    debugInfo: false
+                    outputStyle: 'expanded'
+                    noLineComments: true
+                    relativeAssets: true
 
-        # Sets up file watchers and runs tasks when watched files are changed.
-        watch:
-            styles:
-                files: './scss/**/*.scss'
-                tasks: [
-                    'compass:dev'
-                    'concat:dev'
-                    'copy:dev'
-                ]
+        clean: ['css']
 
         copy:
             dev:
                 files: [
-                    cwd: './css'
+                    cwd: '.tmp'
                     src: [
                         'jericho.css'
                     ]
@@ -64,7 +72,7 @@ module.exports = (grunt) ->
                 ]
             prod:
                 files: [
-                    cwd: './css'
+                    cwd: '.tmp'
                     src: [
                         'jericho.css'
                         'jericho.min.css'
@@ -72,30 +80,39 @@ module.exports = (grunt) ->
                     dest: './'
                     expand: true
                 ]
+            docs:
+                files: [
+                    cwd: './'
+                    src: [
+                        'jericho.css'
+                    ]
+                    dest: './docs/assets/css'
+                    expand: true
+                ]
 
         concat:
             options:
               separator: ';'
             dev:
-              src: ['css/jericho.css', 'css/responsive.css']
-              dest: 'css/jericho.css'
+              src: ['.tmp/jericho.css', '.tmp/responsive.css']
+              dest: '.tmp/jericho.css'
             prod:
-              src: ['css/jericho.css', 'css/responsive.css']
-              dest: 'css/jericho.css'
+              src: ['.tmp/jericho.css', '.tmp/responsive.css']
+              dest: '.tmp/jericho.css'
+
 
     # Compiles the app with non-optimized build settings and places the build artifacts in the dist directory.
     # Enter the following command at the command line to execute this build task:
     # grunt
     grunt.registerTask 'default', [
-        'compass:dev'
-        'concat:dev'
-        'copy:dev'
-        'watch'
+        'dev'
     ]
+
     grunt.registerTask 'dev', [
         'compass:dev'
         'concat:dev'
         'copy:dev'
+        'copy:docs'
         'watch'
     ]
 
@@ -103,8 +120,10 @@ module.exports = (grunt) ->
     # Enter the following command at the command line to execute this build task:
     # grunt prod
     grunt.registerTask 'build', [
+        'clean'
         'compass:prod'
         'concat:prod'
         'copy:prod'
+        'copy:docs'
         'requirejs:styles'
     ]
