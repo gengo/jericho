@@ -46,6 +46,11 @@
   font-size: 11px;
   padding: 2px 11px;
 }
+form .btn-group > .btn,
+form .btn-group > .dropdown-menu,
+form .btn-group > .popover {
+  padding: 0 11px;
+}
 
 // Reset fonts for other sizes
 .btn-group > .btn-mini {
