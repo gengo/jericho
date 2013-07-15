@@ -2,3 +2,5 @@
 lib/.sass-cache/*
 .sass-cache/*
 .rvmrc
+node_modules
+.tmp
