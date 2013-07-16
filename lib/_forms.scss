@@ -386,7 +386,7 @@ input[type="checkbox"][readonly] {
     height: 18px;
     @include ie7-restore-right-whitespace();
     vertical-align: text-top;
-    background-image: url("../img/validation_error.png");
+    background-image: url("/img/validation_error.png");
     // background-position: 14px 14px;
     background-repeat: no-repeat;
     line-height: 18px;
@@ -404,7 +404,7 @@ input[type="checkbox"][readonly] {
     height: 14px;
     @include ie7-restore-right-whitespace();
     vertical-align: text-top;
-    background-image: url("../img/validation_success.png");
+    background-image: url("/img/validation_success.png");
     // background-position: 14px 14px;
     background-repeat: no-repeat;
     line-height: 14px;
