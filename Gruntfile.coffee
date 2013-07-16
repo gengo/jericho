@@ -1,4 +1,8 @@
 'use strict';
+
+LIVERELOAD_PORT = 35729;
+lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT})
+
 path = require 'path'
 
 # Build configurations.
@@ -11,8 +15,8 @@ module.exports = (grunt) ->
 
         # Sets up file watchers and runs tasks when watched files are changed.
         watch:
-            # options:
-            #     livereload: true
+            options:
+                livereload: true
             styles:
                 files: './lib/{,*/}*.{scss,sass}'
                 tasks: [
@@ -21,7 +25,28 @@ module.exports = (grunt) ->
                     'copy:dev'
                     'copy:docs'
                 ]
+            livereload:
+                options:
+                    livereload: LIVERELOAD_PORT
+                files: '.tmp/{,*/}*.css'
 
+        connect:
+            options:
+                port: 9000
+                 # change this to '0.0.0.0' to access the server from outside
+                hostname: 'localhost'
+            livereload:
+                options:
+                    middleware: (connect) ->
+                        return [
+                            lrSnippet
+                            connect.static( require('path').resolve('.tmp') )
+                            connect.static( require('path').resolve('docs') )
+                        ]
+
+        open:
+            server:
+                path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>'
 
         # RequireJS optimizer configuration for both scripts and styles.
         # This configuration is only used in the 'prod' build.
@@ -99,6 +124,19 @@ module.exports = (grunt) ->
             prod:
               src: ['.tmp/jericho.css', '.tmp/responsive.css']
               dest: '.tmp/jericho.css'
+
+
+
+    grunt.registerTask 'server', (target) ->
+        grunt.task.run([
+            'compass:dev'
+            'concat:dev'
+            'copy:dev'
+            'copy:docs'
+            'connect:livereload'
+            'open'
+            'watch'
+        ])
 
 
     # Compiles the app with non-optimized build settings and places the build artifacts in the dist directory.
