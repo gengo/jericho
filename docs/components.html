@@ -125,7 +125,6 @@
           <p>Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="./javascript.html#dropdowns">dropdown JavaScript plugin</a>.</p>
           <div class="bs-docs-example">
             <div class="dropdown clearfix">
-              <div class="arrow"></div>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
                 <li class="active"><a tabindex="-1" href="#">Action</a></li>
                 <li><a tabindex="-1" href="#">Another action</a></li>
@@ -1094,8 +1093,11 @@
                 <a class="brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
+                  <li class="divider-vertical"></li>
                   <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
                   <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
                 </ul>
               </div>
             </div>
@@ -1106,8 +1108,43 @@
     &lt;a class="brand" href="#"&gt;Title&lt;/a&gt;
     &lt;ul class="nav"&gt;
       &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h2>Translator navbar</h2>
+          <div class="bs-docs-example">
+            <div class="navbar navbar-translator">
+              <div class="navbar-inner">
+                <a class="brand" href="#">Title</a>
+                <ul class="nav">
+                  <li><a href="#">Home</a></li>
+                  <li class="divider-vertical"></li>
+                  <li class="active"><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-translator"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;a class="brand" href="#"&gt;Title&lt;/a&gt;
+    &lt;ul class="nav"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -2633,22 +2670,18 @@ class="clearfix"
 
     <script src="assets/js/application.js"></script>
 
-
-    <!-- Analytics
-    ================================================== -->
     <script>
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
+      // $(function(){
+      //   $(".dropdown-menu").each(function(){
+      //       var $this = $(this),
+      //         parentWidth = $this.parent().innerWidth(),
+      //         menuWidth = $this.innerWidth(),
+      //         margin = (parentWidth / 2 ) - (menuWidth / 2);
+      //       $this.css("margin-left", margin +"px");
+      //   });
+      // });
     </script>
+
 
   </body>
 </html>
