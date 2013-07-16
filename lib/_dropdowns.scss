@@ -41,7 +41,7 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: -50%;
+  // left: -50%;
   z-index: $zindexDropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
@@ -82,12 +82,14 @@
   }
 }
 
+/*
 .dropdown-menu:before,
 .dropdown-menu:after {
     content: '';
     position: absolute;
-    left: 75px;
+    left: 50%;
     top: -4px;
+    margin-left: -4px;
     width: 0;
     height: 0;
     border-left: 7px solid transparent;
@@ -96,8 +98,9 @@
 }
 .dropdown-menu:before
 {
-    left: 74px;
+    left: 50%;
     top: -5px;
+    margin-left: -5px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid $dropdownBorder;
@@ -107,6 +110,7 @@
 .dropdown-menu .dropdown-menu:after {
   border: 0;
 }
+*/
 
 
 
