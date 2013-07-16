@@ -26,6 +26,7 @@
   float: left; // Collapse white-space
   padding: 4px 12px;
   line-height: $baseLineHeight;
+  color: $jerichoGrayLight;
   text-decoration: none;
   background-color: $paginationBackground;
   border: 1px solid $paginationBorder;
@@ -35,11 +36,11 @@
 .pagination ul > li > a:focus,
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  background-color: $paginationActiveBackground;
+  // background-color: $paginationActiveBackground;
 }
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  color: $grayLight;
+  color: #4E4944;
   cursor: default;
 }
 .pagination ul > .disabled > span,
