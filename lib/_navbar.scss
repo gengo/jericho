@@ -52,7 +52,7 @@
   float: left;
   display: block;
   // Vertically center the text given $navbarHeight
-  padding: (($navbarHeight - $baseLineHeight) / 2) 20px (($navbarHeight - $baseLineHeight) / 2);
+  // padding: (($navbarHeight - $baseLineHeight) / 2) 20px (($navbarHeight - $baseLineHeight) / 2);
   font-size: 20px;
   color: $navbarBrandColor;
   // text-shadow: 0 1px 0 $navbarBackgroundHighlight;
@@ -63,7 +63,8 @@
   height: $navbarHeight;
   line-height: 1.9;
   margin-left: 0;
-  padding: 0 20px;
+  // padding: 0 20px;
+  // padding: 0;
   text-align: center;
 
   border-bottom: 1px solid #06A073;
@@ -529,6 +530,24 @@
   // Navbar collapse button
   .btn-navbar {
     @include buttonBackground(darken($navbarInverseBackgroundHighlight, 5%), darken($navbarInverseBackground, 5%));
+  }
+
+}
+
+
+.navbar-translator {
+
+  .brand {
+    background-color: #98D7CC;
+    border-right: 1px solid #8CC6BC;
+    border-bottom: 1px solid #89C2B8;
+    width: 80px;
+  }
+
+  .nav .active > a,
+  .nav .active > a:hover,
+  .nav .active > a:focus {
+    border-color: #98D7CC;
   }
 
 }
