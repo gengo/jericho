@@ -142,7 +142,8 @@ dl {
 }
 dt,
 dd {
-  line-height: $baseLineHeight;
+  // line-height: $baseLineHeight;
+  line-height: 21px;
 }
 dt {
   font-weight: bold;
