@@ -75,15 +75,13 @@ module.exports = (grunt) ->
                     debugInfo: true
                     outputStyle: 'expanded'
                     noLineComments: false
-                    relativeAssets: true
             prod:
                 options:
                     debugInfo: false
                     outputStyle: 'expanded'
                     noLineComments: true
-                    relativeAssets: true
 
-        clean: ['css']
+        clean: ['.tmp']
 
         copy:
             dev:
@@ -129,6 +127,7 @@ module.exports = (grunt) ->
 
     grunt.registerTask 'server', (target) ->
         grunt.task.run([
+            'clean'
             'compass:dev'
             'concat:dev'
             'copy:dev'
@@ -147,6 +146,7 @@ module.exports = (grunt) ->
     ]
 
     grunt.registerTask 'dev', [
+        'clean'
         'compass:dev'
         'concat:dev'
         'copy:dev'
