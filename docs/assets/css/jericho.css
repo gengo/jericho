@@ -1677,7 +1677,7 @@ input[type="checkbox"][readonly] {
   height: 18px;
   *margin-right: .3em;
   vertical-align: text-top;
-  background-image: url("../img/validation_error.png");
+  background-image: url("/img/validation_error.png");
   background-repeat: no-repeat;
   line-height: 18px;
   margin-top: 0;
@@ -1691,7 +1691,7 @@ input[type="checkbox"][readonly] {
   height: 14px;
   *margin-right: .3em;
   vertical-align: text-top;
-  background-image: url("../img/validation_success.png");
+  background-image: url("/img/validation_success.png");
   background-repeat: no-repeat;
   line-height: 14px;
   margin-top: 4px;
@@ -5076,47 +5076,48 @@ form.login .pager li > span .caret,
   transition: background-position 0.1s linear;
 }
 
-/*
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000353}}
 .alert-success {
-  background-color: $successBackground;
-  border-color: $successBorder;
-  color: $successText;
+  background-image: url("/img/alert_success.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
-.alert-success h4 {
-  color: $successText;
-}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000365}}
 .alert-danger,
 .alert-error {
-  background-color: $errorBackground;
-  border-color: $errorBorder;
-  color: $errorText;
+  background-image: url("/img/alert_error.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
-.alert-danger h4,
-.alert-error h4 {
-  color: $errorText;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000373}}
+.alert-warning {
+  background-image: url("/img/alert_warning.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000385}}
 .alert-info {
-  background-color: $infoBackground;
-  border-color: $infoBorder;
-  color: $infoText;
+  background-image: url("/img/alert_info.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
-.alert-info h4 {
-  color: $infoText;
-}
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000386}}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003101}}
 .alert-block {
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003106}}
 .alert-block > p,
 .alert-block > ul {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003109}}
 .alert-block p + p {
   margin-top: 5px;
 }
@@ -5676,7 +5677,7 @@ form.login .pager li > span .caret,
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\0000389}}
 .navbar-link {
-  color: #777777;
+  color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\0000392}}
 .navbar-link:hover, .navbar-link:focus {
@@ -5885,7 +5886,7 @@ form.login .pager li > span .caret,
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #333333;
   text-decoration: none;
   text-shadow: 0 1px 0 white;
 }
@@ -5898,12 +5899,12 @@ form.login .pager li > span .caret,
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003270}}
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: transparent;
   color: #333333;
   text-decoration: none;
+  background-color: #f4f4f4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003281}}
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
@@ -5917,7 +5918,7 @@ form.login .pager li > span .caret,
   margin-top: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003296}}
 .navbar .btn-navbar {
   display: none;
   float: right;
@@ -5954,7 +5955,7 @@ form.login .pager li > span .caret,
   background-color: #cccccc \9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003305}}
 .navbar .btn-navbar .icon-bar {
   display: block;
   width: 18px;
@@ -5968,12 +5969,12 @@ form.login .pager li > span .caret,
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003313}}
 .btn-navbar .icon-bar + .icon-bar {
   margin-top: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003324}}
 .navbar .nav > li > .dropdown-menu:before {
   content: '';
   display: inline-block;
@@ -5985,7 +5986,7 @@ form.login .pager li > span .caret,
   top: -7px;
   left: 9px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003335}}
 .navbar .nav > li > .dropdown-menu:after {
   content: '';
   display: inline-block;
@@ -5997,7 +5998,7 @@ form.login .pager li > span .caret,
   left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003348}}
 .navbar-fixed-bottom .nav > li > .dropdown-menu:before {
   border-top: 7px solid #ccc;
   border-top-color: #cccccc;
@@ -6005,7 +6006,7 @@ form.login .pager li > span .caret,
   bottom: -7px;
   top: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003355}}
 .navbar-fixed-bottom .nav > li > .dropdown-menu:after {
   border-top: 6px solid white;
   border-bottom: 0;
@@ -6013,14 +6014,14 @@ form.login .pager li > span .caret,
   top: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003365}}
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
   border-top-color: #555555;
   border-bottom-color: #555555;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003373}}
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
@@ -6028,13 +6029,13 @@ form.login .pager li > span .caret,
   color: #555555;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003377}}
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #777777;
-  border-bottom-color: #777777;
+  border-top-color: #333333;
+  border-bottom-color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003383}}
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
@@ -6042,25 +6043,25 @@ form.login .pager li > span .caret,
   border-bottom-color: #555555;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003390}}
 .navbar .pull-right > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003393}}
 .navbar .pull-right > li > .dropdown-menu:before,
 .navbar .nav > li > .dropdown-menu.pull-right:before {
   left: auto;
   right: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003397}}
 .navbar .pull-right > li > .dropdown-menu:after,
 .navbar .nav > li > .dropdown-menu.pull-right:after {
   left: auto;
   right: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003401}}
 .navbar .pull-right > li > .dropdown-menu .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
   left: auto;
@@ -6072,28 +6073,28 @@ form.login .pager li > span .caret,
   border-radius: 6px 0 6px 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003414}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003416}}
 .navbar-inverse .navbar-inner {
   background-color: #4d4843;
   border-color: #252525;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003423}}
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003425}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003427}}
 .navbar-inverse .brand:hover, .navbar-inverse .brand:focus,
 .navbar-inverse .nav > li > a:hover,
 .navbar-inverse .nav > li > a:focus {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003430}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003432}}
 .navbar-inverse .nav > li {
   border-color: #716D69;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003434}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003436}}
 .navbar-inverse .brand {
   color: white;
   background-color: #4d4843;
@@ -6102,17 +6103,17 @@ form.login .pager li > span .caret,
   width: 60px;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003444}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003446}}
 .navbar-inverse .navbar-text {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003449}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003451}}
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
   background-color: transparent;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003456}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003458}}
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
@@ -6124,45 +6125,45 @@ form.login .pager li > span .caret,
   z-index: 0;
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003471}}
 .navbar-inverse .navbar-link {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003472}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003474}}
 .navbar-inverse .navbar-link:hover, .navbar-inverse .navbar-link:focus {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003478}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003480}}
 .navbar-inverse .divider-vertical {
   border-left-color: #322e2a;
   border-right-color: #222222;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003486}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003488}}
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #322e2a;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003491}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003493}}
 .navbar-inverse .nav li.dropdown > a:hover .caret,
 .navbar-inverse .nav li.dropdown > a:focus .caret {
   border-top-color: white;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003495}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003497}}
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003501}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003503}}
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003508}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003510}}
 .navbar-inverse .navbar-search .search-query {
   color: white;
   background-color: #776e64;
@@ -6187,7 +6188,7 @@ form.login .pager li > span .caret,
 .navbar-inverse .navbar-search .search-query::-webkit-input-placeholder {
   color: #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003520}}
 .navbar-inverse .navbar-search .search-query:focus, .navbar-inverse .navbar-search .search-query.focused {
   padding: 5px 15px;
   color: #333333;
@@ -6199,7 +6200,7 @@ form.login .pager li > span .caret,
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   outline: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003531}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003533}}
 .navbar-inverse .btn-navbar {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -6228,14 +6229,14 @@ form.login .pager li > span .caret,
   background-color: #080807 \9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003542}}
 .navbar-translator .brand {
   background-color: #98D7CC;
   border-right: 1px solid #8CC6BC;
   border-bottom: 1px solid #89C2B8;
   width: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003549}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003551}}
 .navbar-translator .nav .active > a,
 .navbar-translator .nav .active > a:hover,
 .navbar-translator .nav .active > a:focus {
@@ -9001,7 +9002,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
-    color: #777777;
+    color: #333333;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
