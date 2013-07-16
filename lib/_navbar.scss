@@ -97,9 +97,9 @@
 // -------------------------
 .navbar .divider-vertical {
   height: $navbarHeight;
-  margin: 0 9px;
-  border-left: 1px solid $navbarBackground;
-  border-right: 1px solid $navbarBackgroundHighlight;
+  // margin: 0 9px;
+  border-left: 1px solid #E6E6E6;
+  // border-right: 1px solid $navbarBackgroundHighlight;
 }
 
 // Buttons in navbar
@@ -242,7 +242,6 @@
   display: block;
   float: left;
   margin: 0 10px 0 0;
-  // border-bottom: 1px solid #E6E6E6;
 }
 .navbar .nav.pull-right {
   float: right; // redeclare due to specificity
@@ -250,7 +249,6 @@
 }
 .navbar .nav > li {
   float: left;
-  border-right: 1px solid #E6E6E6;
 }
 
 // Links
@@ -413,7 +411,8 @@
 .navbar-inverse {
 
   .navbar-inner {
-    @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+    // @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+    background-color: $jerichoGrayDark;
     border-color: $navbarInverseBorder;
   }
 
@@ -427,11 +426,18 @@
     }
   }
 
+  .nav > li {
+    border-color: #716D69;
+  }
+
   .brand {
     color: $navbarInverseBrandColor;
-    background-color: #06a073;
-    box-shadow: 0 1px 0 #06a073;
-    width: 59px;
+    background-color: $jerichoGrayDark;
+    border-bottom: 0;
+    border-color: $navbarInverseBorder;
+    // box-shadow: 0 1px 0 #06a073;
+    width: 60px;
+    padding: 0;
   }
 
   .navbar-text {
@@ -448,7 +454,14 @@
   .nav .active > a:hover,
   .nav .active > a:focus {
     color: $navbarInverseLinkColorActive;
-    background-color: $navbarInverseLinkBackgroundActive;
+    // background-color: $navbarInverseLinkBackgroundActive;
+    background-color: #322E2A;
+    border-bottom: 0;
+    padding-bottom: 10px;
+
+    bottom: 0;
+    z-index: 0;
+    margin-top: 0;
   }
 
   // Inline text links
