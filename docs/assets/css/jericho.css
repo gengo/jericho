@@ -1671,31 +1671,33 @@ input[type="checkbox"][readonly] {
   background-color: #FDEFEC;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003383}}
-.control-group.error span {
+.control-group.error .icon {
   display: inline-block;
-  width: 4px;
-  height: 18px;
   *margin-right: .3em;
-  vertical-align: text-top;
-  background-image: url("/img/validation_error.png");
-  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
   line-height: 18px;
-  margin-top: 0;
   margin-left: 13px;
+  background-image: url('../img/sprite-s5ac3f07151.png');
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 4px;
+  background-position: 0 -108px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003401}}
-.control-group.success span {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003403}}
+.control-group.success .icon {
   display: inline-block;
-  width: 15px;
-  height: 14px;
   *margin-right: .3em;
-  vertical-align: text-top;
-  background-image: url("/img/validation_success.png");
-  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
   line-height: 14px;
-  margin-top: 4px;
   margin-left: 8px;
+  background-image: url('../img/sprite-s5ac3f07151.png');
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 15px;
+  background-position: 0 -94px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_mixins\.scss}line{font-family:\00003164}}
@@ -1738,21 +1740,21 @@ input[type="checkbox"][readonly] {
   border-color: #3a87ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003424}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003428}}
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
   color: #b94a48;
   border-color: #ee5f5b;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003431}}
 input:focus:invalid:focus,
 textarea:focus:invalid:focus,
 select:focus:invalid:focus {
   border-color: #e9322d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003438}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003442}}
 .form-actions {
   padding: 23px 20px 24px;
   margin-top: 24px;
@@ -1772,19 +1774,19 @@ select:focus:invalid:focus {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003453}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003457}}
 .help-block,
 .help-inline {
   color: #595959;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003457}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003461}}
 .help-block {
   display: block;
   margin-bottom: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003462}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003466}}
 .help-inline {
   display: inline-block;
   *display: inline;
@@ -1794,7 +1796,7 @@ select:focus:invalid:focus {
   padding-left: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003476}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003480}}
 .input-append,
 .input-prepend {
   display: inline-block;
@@ -1803,7 +1805,7 @@ select:focus:invalid:focus {
   font-size: 0;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003488}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003492}}
 .input-append input,
 .input-append select,
 .input-append .uneditable-input,
@@ -1816,7 +1818,7 @@ select:focus:invalid:focus {
 .input-prepend .popover {
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003494}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003498}}
 .input-append input,
 .input-append select,
 .input-append .uneditable-input,
@@ -1832,7 +1834,7 @@ select:focus:invalid:focus {
   border-radius: 0 3px 3px 0;
   background-color: #FCFCFC;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003506}}
 .input-append input:focus,
 .input-append select:focus,
 .input-append .uneditable-input:focus,
@@ -1841,7 +1843,7 @@ select:focus:invalid:focus {
 .input-prepend .uneditable-input:focus {
   z-index: 2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003506}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003510}}
 .input-append .add-on,
 .input-prepend .add-on {
   display: inline-block;
@@ -1858,7 +1860,7 @@ select:focus:invalid:focus {
   background-color: #F8F8F8;
   border: 1px solid #d9d9d9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003524}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003528}}
 .input-append .add-on,
 .input-append .btn,
 .input-append .pager li > a,
@@ -1878,14 +1880,14 @@ select:focus:invalid:focus {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003528}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003532}}
 .input-append .active,
 .input-prepend .active {
   background-color: #a9dba9;
   border-color: #46a546;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003536}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003540}}
 .input-prepend .add-on,
 .input-prepend .btn,
 .input-prepend .pager li > a,
@@ -1894,7 +1896,7 @@ select:focus:invalid:focus {
 .pager .input-prepend li > span {
   margin-right: -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003544}}
 .input-prepend .add-on:first-child,
 .input-prepend .btn:first-child,
 .input-prepend .pager li > a:first-child,
@@ -1906,7 +1908,7 @@ select:focus:invalid:focus {
   border-radius: 3px 0 0 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003549}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003553}}
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
@@ -1914,7 +1916,7 @@ select:focus:invalid:focus {
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003555}}
 .input-append input + .btn-group .btn:last-child, .input-append input + .btn-group .pager li > a:last-child, .pager .input-append input + .btn-group li > a:last-child,
 .input-append input + .btn-group .pager li > span:last-child,
 .pager .input-append input + .btn-group li > span:last-child,
@@ -1932,7 +1934,7 @@ select:focus:invalid:focus {
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003561}}
 .input-append .add-on,
 .input-append .btn,
 .input-append .pager li > a,
@@ -1942,7 +1944,7 @@ select:focus:invalid:focus {
 .input-append .btn-group {
   margin-left: -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003562}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003566}}
 .input-append .add-on:last-child,
 .input-append .btn:last-child,
 .input-append .pager li > a:last-child,
@@ -1955,7 +1957,7 @@ select:focus:invalid:focus {
   border-radius: 0 3px 3px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003575}}
 .input-prepend.input-append input,
 .input-prepend.input-append select,
 .input-prepend.input-append .uneditable-input {
@@ -1963,7 +1965,7 @@ select:focus:invalid:focus {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003573}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003577}}
 .input-prepend.input-append input + .btn-group .btn, .input-prepend.input-append input + .btn-group .pager li > a, .pager .input-prepend.input-append input + .btn-group li > a,
 .input-prepend.input-append input + .btn-group .pager li > span,
 .pager .input-prepend.input-append input + .btn-group li > span,
@@ -1981,7 +1983,7 @@ select:focus:invalid:focus {
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003578}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003582}}
 .input-prepend.input-append .add-on:first-child,
 .input-prepend.input-append .btn:first-child,
 .input-prepend.input-append .pager li > a:first-child,
@@ -1993,7 +1995,7 @@ select:focus:invalid:focus {
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003583}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003587}}
 .input-prepend.input-append .add-on:last-child,
 .input-prepend.input-append .btn:last-child,
 .input-prepend.input-append .pager li > a:last-child,
@@ -2005,12 +2007,12 @@ select:focus:invalid:focus {
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003587}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003591}}
 .input-prepend.input-append .btn-group:first-child {
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003596}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003600}}
 input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
@@ -2021,7 +2023,7 @@ input.search-query {
 }
 
 /* Allow for input prepend/append in search forms */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003607}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003611}}
 .form-search .input-append .search-query,
 .form-search .input-prepend .search-query {
   -webkit-border-radius: 0;
@@ -2029,14 +2031,14 @@ input.search-query {
   border-radius: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003610}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003614}}
 .form-search .input-append .search-query {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003613}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003617}}
 .form-search .input-append .btn, .form-search .input-append .pager li > a, .pager .form-search .input-append li > a,
 .form-search .input-append .pager li > span,
 .pager .form-search .input-append li > span {
@@ -2045,14 +2047,14 @@ input.search-query {
   border-radius: 0 3px 3px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003620}}
 .form-search .input-prepend .search-query {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003619}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003623}}
 .form-search .input-prepend .btn, .form-search .input-prepend .pager li > a, .pager .form-search .input-prepend li > a,
 .form-search .input-prepend .pager li > span,
 .pager .form-search .input-prepend li > span {
@@ -2061,7 +2063,7 @@ input.search-query {
   border-radius: 3px 0 0 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003641}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003645}}
 .form-search input,
 .form-search textarea,
 .form-search select,
@@ -2090,14 +2092,14 @@ input.search-query {
   margin-bottom: 0;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003648}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003652}}
 .form-search .hide,
 .form-inline .hide,
 .form-horizontal .hide {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003655}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003659}}
 .form-search label,
 .form-inline label,
 .form-search .btn-group,
@@ -2105,7 +2107,7 @@ input.search-query {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003662}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003666}}
 .form-search .input-append,
 .form-inline .input-append,
 .form-search .input-prepend,
@@ -2113,7 +2115,7 @@ input.search-query {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003669}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003673}}
 .form-search .radio,
 .form-search .checkbox,
 .form-inline .radio,
@@ -2123,7 +2125,7 @@ input.search-query {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003678}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003682}}
 .form-search .radio input[type="radio"],
 .form-search .checkbox input[type="checkbox"],
 .form-inline .radio input[type="radio"],
@@ -2133,18 +2135,18 @@ input.search-query {
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003686}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003690}}
 .control-group {
   margin-bottom: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003691}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003695}}
 legend + .control-group {
   margin-top: 24px;
   -webkit-margin-top-collapse: separate;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003701}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003705}}
 .form-horizontal .control-group {
   margin-bottom: 24px;
   *zoom: 1;
@@ -2159,29 +2161,29 @@ legend + .control-group {
 .form-horizontal .control-group:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003706}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003710}}
 .form-horizontal .control-label {
   float: left;
   width: 160px;
   padding-top: 5px;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003713}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003717}}
 .form-horizontal .controls {
   *display: inline-block;
   *padding-left: 20px;
   margin-left: 180px;
   *margin-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003720}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003724}}
 .form-horizontal .controls:first-child {
   *padding-left: 180px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003725}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003729}}
 .form-horizontal .help-block {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003735}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003739}}
 .form-horizontal input + .help-block,
 .form-horizontal select + .help-block,
 .form-horizontal textarea + .help-block,
@@ -2190,17 +2192,17 @@ legend + .control-group {
 .form-horizontal .input-append + .help-block {
   margin-top: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003740}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003744}}
 .form-horizontal .form-actions {
   padding-left: 180px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003748}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003752}}
 .order form .add-on {
   line-height: 30px;
   height: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003757}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003761}}
 .order form select,
 .order form textarea,
 .order form input,
@@ -2208,12 +2210,12 @@ legend + .control-group {
   height: 34px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003765}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003769}}
 .login form .add-on {
   line-height: 36px;
   height: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003774}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_forms\.scss}line{font-family:\00003778}}
 .login form select,
 .login form textarea,
 .login form input,
@@ -5078,46 +5080,88 @@ form.login .pager li > span .caret,
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000353}}
 .alert-success {
-  background-image: url("/img/alert_success.png");
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000363}}
+.alert-success > .icon, .alert-success > .icon {
+  background-image: url('../img/sprite-s5ac3f07151.png');
   background-repeat: no-repeat;
-  background-position: 18px 28px;
+  height: 24px;
+  width: 24px;
+  background-position: 0 -70px;
+  position: absolute;
+  top: 28px;
+  left: 17px;
+  display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000380}}
 .alert-danger,
 .alert-error {
-  background-image: url("/img/alert_error.png");
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000384}}
+.alert-danger > .icon, .alert-danger > .icon,
+.alert-error > .icon,
+.alert-error > .icon {
+  background-image: url('../img/sprite-s5ac3f07151.png');
   background-repeat: no-repeat;
-  background-position: 18px 28px;
+  height: 24px;
+  width: 24px;
+  background-position: 0 0;
+  position: absolute;
+  top: 28px;
+  left: 17px;
+  display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000397}}
 .alert-warning {
-  background-image: url("/img/alert_warning.png");
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003107}}
+.alert-warning > .icon, .alert-warning > .icon {
+  background-image: url('../img/sprite-s5ac3f07151.png');
   background-repeat: no-repeat;
-  background-position: 18px 28px;
+  height: 22px;
+  width: 24px;
+  background-position: 0 -24px;
+  position: absolute;
+  top: 28px;
+  left: 17px;
+  display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003124}}
 .alert-info {
-  background-image: url("/img/alert_info.png");
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003135}}
+.alert-info > .icon, .alert-info > .icon {
+  background-image: url('../img/sprite-s5ac3f07151.png');
   background-repeat: no-repeat;
-  background-position: 18px 28px;
+  height: 24px;
+  width: 24px;
+  background-position: 0 -46px;
+  position: absolute;
+  top: 28px;
+  left: 17px;
+  display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003156}}
 .alert-block {
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003161}}
 .alert-block > p,
 .alert-block > ul {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_alerts\.scss}line{font-family:\00003164}}
 .alert-block p + p {
   margin-top: 5px;
 }
