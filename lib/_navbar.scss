@@ -20,12 +20,14 @@
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
 .navbar-inner {
   min-height: $navbarHeight;
-  padding-left:  20px;
-  padding-right: 20px;
-  @include gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
-  border: 1px solid $navbarBorder;
+  padding-left:  0;
+  padding-right: 0;
+  background-color: $white;
+  // @include gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
+  // border: 1px solid $navbarBorder;
+  border-bottom: 1px solid #ccc;
   @include border-radius($baseBorderRadius);
-  @include box-shadow(0 1px 4px rgba(0,0,0,.065));
+  @include box-shadow(0 0px 4px rgba(0,0,0,.15));
 
   // Prevent floats from breaking the navbar
   @include clearfix();
@@ -51,11 +53,22 @@
   display: block;
   // Vertically center the text given $navbarHeight
   padding: (($navbarHeight - $baseLineHeight) / 2) 20px (($navbarHeight - $baseLineHeight) / 2);
-  margin-left: -20px; // negative indent to left-align the text down the page
   font-size: 20px;
-  font-weight: 200;
   color: $navbarBrandColor;
-  text-shadow: 0 1px 0 $navbarBackgroundHighlight;
+  // text-shadow: 0 1px 0 $navbarBackgroundHighlight;
+
+  font-weight: 400;
+  background-color: #1cad7e;
+  width: 107px;
+  height: $navbarHeight;
+  line-height: 1.9;
+  margin-left: 0;
+  padding: 0 20px;
+  text-align: center;
+
+  border-bottom: 1px solid #06A073;
+  border-right: 1px solid #1BA478;
+
   &:hover,
   &:focus {
     text-decoration: none;
@@ -229,6 +242,7 @@
   display: block;
   float: left;
   margin: 0 10px 0 0;
+  // border-bottom: 1px solid #E6E6E6;
 }
 .navbar .nav.pull-right {
   float: right; // redeclare due to specificity
@@ -236,6 +250,7 @@
 }
 .navbar .nav > li {
   float: left;
+  border-right: 1px solid #E6E6E6;
 }
 
 // Links
@@ -265,8 +280,14 @@
 .navbar .nav > .active > a:focus {
   color: $navbarLinkColorActive;
   text-decoration: none;
-  background-color: $navbarLinkBackgroundActive;
-  @include box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
+  // background-color: $navbarLinkBackgroundActive;
+  // @include box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
+  padding-bottom: 9px;
+  border-bottom: 3px solid $linkColor;
+  position: relative;
+  bottom: -1px;
+  z-index: 100;
+  margin-top: -1px;
 }
 
 // Navbar button for toggling navbar items in responsive layouts
@@ -408,6 +429,9 @@
 
   .brand {
     color: $navbarInverseBrandColor;
+    background-color: #06a073;
+    box-shadow: 0 1px 0 #06a073;
+    width: 59px;
   }
 
   .navbar-text {
