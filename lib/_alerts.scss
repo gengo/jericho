@@ -54,29 +54,68 @@
   // background-color: $successBackground;
   // border-color: $successBorder;
   // color: $successText;
-  background-image: url("/img/alert_success.png");
-  background-repeat: no-repeat;
-  background-position: 18px 28px;
+  // background-image: url("/img/alert_success.png");
+  // background-repeat: no-repeat;
+  // background-position: 18px 28px;
+  position: relative;
+
+  & > .icon,
+  & > .icon {
+    background-image: $sprites-img;
+    background-repeat: no-repeat;
+    height: image-height(sprite-file($sprites, alert_success));
+    width: image-width(sprite-file($sprites, alert_success));
+    background-position: sprite-position( $sprites, alert_success);
+
+    position: absolute;
+    top: 28px;
+    left: 17px;
+    display: inline-block;
+  }
 }
 .alert-success h4 {
   // color: $successText;
 }
 .alert-danger,
 .alert-error {
-  // background-color: $errorBackground;
-  // border-color: $errorBorder;
-  // color: $errorText;
-  background-image: url("/img/alert_error.png");
-  background-repeat: no-repeat;
-  background-position: 18px 28px;
+  position: relative;
+
+  & > .icon,
+  & > .icon {
+    background-image: $sprites-img;
+    background-repeat: no-repeat;
+    height: image-height(sprite-file($sprites, alert_error));
+    width: image-width(sprite-file($sprites, alert_error));
+    background-position: sprite-position( $sprites, alert_error);
+
+    position: absolute;
+    top: 28px;
+    left: 17px;
+    display: inline-block;
+  }
 }
 .alert-warning {
   // background-color: $errorBackground;
   // border-color: $errorBorder;
   // color: $errorText;
-  background-image: url("/img/alert_warning.png");
-  background-repeat: no-repeat;
-  background-position: 18px 28px;
+  // background-image: url("/img/alert_warning.png");
+  // background-repeat: no-repeat;
+  // background-position: 18px 28px;
+  position: relative;
+
+  & > .icon,
+  & > .icon {
+    background-image: $sprites-img;
+    background-repeat: no-repeat;
+    height: image-height(sprite-file($sprites, alert_warning));
+    width: image-width(sprite-file($sprites, alert_warning));
+    background-position: sprite-position( $sprites, alert_warning);
+
+    position: absolute;
+    top: 28px;
+    left: 17px;
+    display: inline-block;
+  }
 }
 .alert-danger h4,
 .alert-error h4 {
@@ -86,9 +125,25 @@
   // background-color: $infoBackground;
   // border-color: $infoBorder;
   // color: $infoText;
-  background-image: url("/img/alert_info.png");
-  background-repeat: no-repeat;
-  background-position: 18px 28px;
+  // background-image: url("/img/alert_info.png");
+  // background-repeat: no-repeat;
+  // background-position: 18px 28px;
+
+  position: relative;
+
+  & > .icon,
+  & > .icon {
+    background-image: $sprites-img;
+    background-repeat: no-repeat;
+    height: image-height(sprite-file($sprites, alert_info));
+    width: image-width(sprite-file($sprites, alert_info));
+    background-position: sprite-position( $sprites, alert_info);
+
+    position: absolute;
+    top: 28px;
+    left: 17px;
+    display: inline-block;
+  }
 }
 .alert-info h4 {
   // color: $infoText;
