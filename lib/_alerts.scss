@@ -50,34 +50,49 @@
 // Alternate styles
 // -------------------------
 
-/*
 .alert-success {
-  background-color: $successBackground;
-  border-color: $successBorder;
-  color: $successText;
+  // background-color: $successBackground;
+  // border-color: $successBorder;
+  // color: $successText;
+  background-image: url("/img/alert_success.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
 .alert-success h4 {
-  color: $successText;
+  // color: $successText;
 }
 .alert-danger,
 .alert-error {
-  background-color: $errorBackground;
-  border-color: $errorBorder;
-  color: $errorText;
+  // background-color: $errorBackground;
+  // border-color: $errorBorder;
+  // color: $errorText;
+  background-image: url("/img/alert_error.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
+}
+.alert-warning {
+  // background-color: $errorBackground;
+  // border-color: $errorBorder;
+  // color: $errorText;
+  background-image: url("/img/alert_warning.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
 .alert-danger h4,
 .alert-error h4 {
-  color: $errorText;
+  // color: $errorText;
 }
 .alert-info {
-  background-color: $infoBackground;
-  border-color: $infoBorder;
-  color: $infoText;
+  // background-color: $infoBackground;
+  // border-color: $infoBorder;
+  // color: $infoText;
+  background-image: url("/img/alert_info.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
 .alert-info h4 {
-  color: $infoText;
+  // color: $infoText;
 }
-*/
 
 
 // Block alerts
