@@ -39,7 +39,7 @@ $purple:                #7a43b6 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white !default;
+$bodyBackground:        #F4F4F4 !default;
 $textColor:             $grayDark !default;
 
 
@@ -69,6 +69,7 @@ $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
+$UIFontSize:            16px;
 $baseFontFamily:        $gengoFontFamily !default;
 $baseLineHeight:        24px !default;
 $altFontFamily:         $serifFontFamily !default;
