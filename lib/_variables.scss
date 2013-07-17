@@ -20,7 +20,6 @@ $grayLight:             #999 !default;
 $grayLighter:           #eee !default;
 $white:                 #fff !default;
 
-
 $jerichoGrayDark:       #4D4843 !default;
 $jerichoGrayLight:      #A6A3A1 !default;
 
@@ -36,6 +35,8 @@ $orange:                #f89406 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
+$translatorColor:       #98D7CC !default;
+$workerColor:           $jerichoGrayDark !default;
 
 // Scaffolding
 // -------------------------
@@ -324,6 +325,9 @@ $navbarInverseSearchBorder:              $navbarInverseBackground !default;
 $navbarInverseSearchPlaceholderColor:    #ccc !default;
 
 $navbarInverseBrandColor:                $navbarInverseLinkColor !default;
+
+// Worker nav
+$navbarWorkerBorderColor:             #716D69 !default;
 
 
 // Pagination
