@@ -2,15 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Javascript · Bootstrap</title>
+    <title>Javascript : Jericho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="../jericho.css">
+    <link href="assets/css/jericho.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style>
+      body > .navbar .brand {
+        color: #FFF;
+      }
+    </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -30,9 +35,10 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top"> -->
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -44,24 +50,27 @@
               <li class="">
                 <a href="./index.html">Home</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./getting-started.html">Get started</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./scaffolding.html">Scaffolding</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./base-css.html">Base CSS</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./components.html">Components</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="active">
                 <a href="./javascript.html">JavaScript</a>
               </li>
-              <li class="">
-                <a href="./customize.html">Customize</a>
-              </li>
+              <li class="divider-vertical"></li>
             </ul>
           </div>
         </div>
@@ -437,7 +446,7 @@ $('#myModal').on('hidden', function () {
                 </div>
               </div>
             </div> <!-- /navbar-example -->
-          </div> 
+          </div>
 
           <h3>Within tabs</h3>
           <div class="bs-docs-example">
@@ -474,7 +483,7 @@ $('#myModal').on('hidden', function () {
                 </ul>
               </li>
             </ul> <!-- /tabs -->
-          </div> 
+          </div>
 
 
           <hr class="bs-docs-separator">
@@ -1754,13 +1763,24 @@ $('.carousel').carousel({
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
     <script src="assets/js/holder/holder.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
 
     <script src="assets/js/application.js"></script>
-
-
 
   </body>
 </html>

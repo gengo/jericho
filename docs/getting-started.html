@@ -2,15 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Getting · Bootstrap</title>
+    <title>Getting : Jericho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="../jericho.css">
+    <link href="assets/css/jericho.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style>
+      body > .navbar .brand {
+        color: #FFF;
+      }
+    </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -30,9 +35,10 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top"> -->
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -44,24 +50,27 @@
               <li class="">
                 <a href="./index.html">Home</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="active">
                 <a href="./getting-started.html">Get started</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./scaffolding.html">Scaffolding</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./base-css.html">Base CSS</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./components.html">Components</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./javascript.html">JavaScript</a>
               </li>
-              <li class="">
-                <a href="./customize.html">Customize</a>
-              </li>
+              <li class="divider-vertical"></li>
             </ul>
           </div>
         </div>
@@ -109,12 +118,12 @@
             <div class="span6">
               <h2>Download compiled</h2>
               <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
-              <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" >Download Bootstrap</a></p>
+              <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap</a></p>
             </div>
             <div class="span6">
               <h2>Download source</h2>
               <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-              <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" >Download Bootstrap source</a></p>
+              <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download Bootstrap source</a></p>
             </div>
           </div>
         </section>
@@ -313,8 +322,8 @@
             <h1>What next?</h1>
           </div>
           <p class="lead">Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.</p>
-          <a class="btn btn-large btn-primary" href="./scaffolding.html" >Visit the Bootstrap docs</a>
-          <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;" >Customize Bootstrap</a>
+          <a class="btn btn-large btn-primary" href="./scaffolding.html" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Visit docs']);">Visit the Bootstrap docs</a>
+          <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Customize']);">Customize Bootstrap</a>
         </section>
 
 
@@ -369,8 +378,6 @@
     <script src="assets/js/google-code-prettify/prettify.js"></script>
 
     <script src="assets/js/application.js"></script>
-
-
 
   </body>
 </html>

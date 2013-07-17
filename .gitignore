@@ -1,5 +1,9 @@
-.sass-cache
-node_modules
 .DS_Store
+*/.DS_Store
+lib/.sass-cache/*
+.sass-cache/*
+.rvmrc
+node_modules
+.tmp
 css
 components
