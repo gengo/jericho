@@ -59,4 +59,3 @@ Jericho would not be without the following great projects:
 
 + [Twitter Boottrap](http://twitter.github.io/bootstrap/)
 + [sass-twitter-bootstrap](https://github.com/jlong/sass-twitter-bootstrap)
-
