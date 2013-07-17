@@ -1,0 +1,99 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\000038}}
+footer {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000310}}
+.footer {
+  width: 100%;
+  margin: 0 36px;
+  height: 90px;
+  font-size: 14px -2;
+  padding-top: 18px;
+  margin-bottom: -18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000318}}
+.footer a {
+  color: #4c4643;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000322}}
+.footer .nav li a {
+  color: #4c4643;
+  font-weight: 300;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000327}}
+.footer .nav li a:hover {
+  color: #4D4843;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000332}}
+.footer .facebook {
+  padding-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000334}}
+.footer .facebook span {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  width: 23px;
+  height: 24px;
+  background: url("http://d1mvomz2rusyi1.cloudfront.net/048a98b/mygengo_v4/images/home/home-page-icons/social_media_icons.png") left top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000342}}
+.footer .twitter {
+  padding-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000344}}
+.footer .twitter span {
+  margin: 0;
+  display: inline-block;
+  width: 23px;
+  height: 24px;
+  background: url("http://d1mvomz2rusyi1.cloudfront.net/048a98b/mygengo_v4/images/home/home-page-icons/social_media_icons.png") right top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000353}}
+.footer .copyright {
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 24px;
+  text-align: right;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000360}}
+.footer .text-link {
+  padding-left: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000362}}
+.footer .text-link a {
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000365}}
+.footer .text-link a:hover {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000370}}
+.footer .row {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000371}}
+.footer .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000375}}
+.footer .footnote {
+  max-width: 600px;
+  margin: 10px 18px 0;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000380}}
+.footer .btn-group {
+  position: relative;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/toshipon\/sandbox\/workspace\/bootstrap\/jericho\/scss\/custom\/footer\.scss}line{font-family:\0000386}}
+.footer.footer-simple {
+  background-color: transparent;
+  height: 60px;
+}

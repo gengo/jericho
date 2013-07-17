@@ -1,0 +1,15 @@
+@import "compass";
+@import "../lib/variables";
+@import "./variables";
+@import "../lib/mixins";
+@import "./mixins";
+
+//
+// Dropdown menus
+// --------------------------------------------------
+
+// The dropdown menu (ul)
+// ----------------------
+.dropdown-menu {
+  background-color: $white;
+}
