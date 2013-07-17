@@ -1,11 +1,11 @@
 Jericho
 =========
-Jericho provides simple and flexible HTML, CSS, and Javascript for web apps that wants to use the Stylish UI style. It is built on top of Twitter Bootstrap.
+Jericho provides a simple and flexible HTML, CSS, and Javascript foundation for web apps that want to use the Stylish UI style. It is built on top of Twitter Bootstrap.
 
 How to use Jericho
 ---------------
 
-add Jericho as git submodule.
+Easy - just add Jericho as a git submodule.
 
 ```
 git submodule add https://github.com/gengo/jericho.git css/lib/jericho
@@ -16,35 +16,37 @@ git submodule update
 How to setup Jericho's development environment
 ---------------
 
-install compass.
+1) Install compass:
 
 ```
 sudo gem install compass
 ```
-install node modules.
+
+2) Install node modules:
 
 ```
 npm install
 ```
-You should setup path if you did not.
+
+3) Setup your path if you haven't already:
 
 ```
 export PATH=$PATH:node_modules/.bin
 ```
 
-run the grunt task.
+4) Run the grunt task:
 
 ```
 grunt
 ```
 
-This will start a local server on "localhost:9000" so you can check docs
+5) Start a local server on "localhost:9000" so you can check docs:
 
 ```
 grunt server
 ```
 
-if you want to minified file. run task for production.
+6) If you want a minified version, run the task for production:
 
 ```
 grunt build
@@ -53,7 +55,7 @@ grunt build
 
 Features
 ---------------
-The framework integrate and extend the work first done by other great people:
+Jericho would not be without the following great projects:
 
 + [Twitter Boottrap](http://twitter.github.io/bootstrap/)
 + [sass-twitter-bootstrap](https://github.com/jlong/sass-twitter-bootstrap)
