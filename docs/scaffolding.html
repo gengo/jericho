@@ -2,15 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Scaffolding · Bootstrap</title>
+    <title>Scaffolding : Jericho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="../jericho.css">
+    <link href="assets/css/jericho.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style>
+      body > .navbar .brand {
+        color: #FFF;
+      }
+    </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -30,9 +35,10 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top"> -->
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -41,7 +47,6 @@
           <a class="brand" href="./index.html">Jericho</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./index.html">Home</a>
               </li>
@@ -66,10 +71,6 @@
                 <a href="./javascript.html">JavaScript</a>
               </li>
               <li class="divider-vertical"></li>
-              <li class="">
-                <a href="./customize.html">Customize</a>
-              </li>
-              <li class="divider-vertical"></li>
             </ul>
           </div>
         </div>
@@ -81,7 +82,7 @@
 <header class="jumbotron subhead" id="overview">
   <div class="container">
     <h1>Scaffolding</h1>
-    <p class="lead">Jericho is built on responsive 12-column grids, layouts, and components.</p>
+    <p class="lead">Bootstrap is built on responsive 12-column grids, layouts, and components.</p>
   </div>
 </header>
 
@@ -602,8 +603,6 @@
     <script src="assets/js/google-code-prettify/prettify.js"></script>
 
     <script src="assets/js/application.js"></script>
-
-
 
   </body>
 </html>

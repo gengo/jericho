@@ -38,6 +38,12 @@ run the grunt task.
 grunt
 ```
 
+This will start a local server on "localhost:9000" so you can check docs
+
+```
+grunt server
+```
+
 if you want to minified file. run task for production.
 
 ```
