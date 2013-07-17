@@ -535,9 +535,17 @@
 // WORKER STYLES
 // -------------
 .navbar-worker {
- .brand {
+
+  .navbar-inner {
+    border: 0;
+    @include box-shadow(none);
+  }
+
+ .brand,
+ .divider-vertical {
   border-color: $navbarWorkerBorderColor;
  }
+
 }
 
 // TRANSLATOR STYLES
