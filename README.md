@@ -1,6 +1,6 @@
 Jericho
 =========
-Jericho provides simple and fle	xible HTML, CSS, and Javascript for web apps that wants to use the Stylish UI style. It is built on top of Twitter Bootstrap.
+Jericho provides simple and flexible HTML, CSS, and Javascript for web apps that wants to use the Stylish UI style. It is built on top of Twitter Bootstrap.
 
 How to use Jericho
 ---------------
