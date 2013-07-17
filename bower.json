@@ -1,9 +1,9 @@
 {
-  name: "jericho",
-  version: "0.1.2",
-  main: "./jericho.css",
-  dependencies: { },
-  ignore: [
+  "name": "jericho",
+  "version": "0.1.3",
+  "main": "./jericho.css",
+  "dependencies": {},
+  "ignore": [
     "**/.*",
     "node_modules",
     "components"
