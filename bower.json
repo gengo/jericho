@@ -1,6 +1,10 @@
 {
   "name": "jericho",
+<<<<<<< HEAD
+  "version": "0.1.3",
+=======
   "version": "0.0.4",
+>>>>>>> origin/master
   "main": "./jericho.css",
   "dependencies": {},
   "ignore": [

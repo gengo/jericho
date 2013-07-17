@@ -2,20 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Components · Bootstrap</title>
+    <title>Components : Jericho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="../jericho.css">
+    <link href="assets/css/jericho.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style>
+      body > .navbar .brand {
+        color: #FFF;
+      }
+    </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
+
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
@@ -29,9 +35,10 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top"> -->
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -43,24 +50,27 @@
               <li class="">
                 <a href="./index.html">Home</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./getting-started.html">Get started</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./scaffolding.html">Scaffolding</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./base-css.html">Base CSS</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="active">
                 <a href="./components.html">Components</a>
               </li>
+              <li class="divider-vertical"></li>
               <li class="">
                 <a href="./javascript.html">JavaScript</a>
               </li>
-              <li class="">
-                <a href="./customize.html">Customize</a>
-              </li>
+              <li class="divider-vertical"></li>
             </ul>
           </div>
         </div>
@@ -116,7 +126,7 @@
           <div class="bs-docs-example">
             <div class="dropdown clearfix">
               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
-                <li><a tabindex="-1" href="#">Action</a></li>
+                <li class="active"><a tabindex="-1" href="#">Action</a></li>
                 <li><a tabindex="-1" href="#">Another action</a></li>
                 <li><a tabindex="-1" href="#">Something else here</a></li>
                 <li class="divider"></li>
@@ -385,7 +395,7 @@
                 </ul>
               </div><!-- /btn-group -->
               <div class="btn-group">
-                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+                <button class="btn btn-core dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -394,7 +404,7 @@
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div><!-- /btn-group -->
-              <div class="btn-group">
+<!--               <div class="btn-group">
                 <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
@@ -403,8 +413,8 @@
                   <li class="divider"></li>
                   <li><a href="#">Separated link</a></li>
                 </ul>
-              </div><!-- /btn-group -->
-              <div class="btn-group">
+              </div> --><!-- /btn-group -->
+<!--               <div class="btn-group">
                 <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
@@ -413,7 +423,7 @@
                   <li class="divider"></li>
                   <li><a href="#">Separated link</a></li>
                 </ul>
-              </div><!-- /btn-group -->
+              </div> --><!-- /btn-group -->
               <div class="btn-group">
                 <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -424,8 +434,8 @@
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div><!-- /btn-group -->
-              <div class="btn-group">
-                <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverse <span class="caret"></span></button>
+<!--              <div class="btn-group">
+                 <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverse <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -433,7 +443,7 @@
                   <li class="divider"></li>
                   <li><a href="#">Separated link</a></li>
                 </ul>
-              </div><!-- /btn-group -->
+              </div> --><!-- /btn-group -->
             </div><!-- /btn-toolbar -->
           </div>
 <pre class="prettyprint linenums">
@@ -520,8 +530,8 @@
                 </ul>
               </div><!-- /btn-group -->
               <div class="btn-group">
-                <button class="btn btn-danger">Danger</button>
-                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <button class="btn btn-core">Danger</button>
+                <button class="btn btn-core dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -530,7 +540,7 @@
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div><!-- /btn-group -->
-              <div class="btn-group">
+<!--               <div class="btn-group">
                 <button class="btn btn-warning">Warning</button>
                 <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -540,8 +550,8 @@
                   <li class="divider"></li>
                   <li><a href="#">Separated link</a></li>
                 </ul>
-              </div><!-- /btn-group -->
-              <div class="btn-group">
+              </div> --><!-- /btn-group -->
+<!--               <div class="btn-group">
                 <button class="btn btn-success">Success</button>
                 <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -551,7 +561,7 @@
                   <li class="divider"></li>
                   <li><a href="#">Separated link</a></li>
                 </ul>
-              </div><!-- /btn-group -->
+              </div> --><!-- /btn-group -->
               <div class="btn-group">
                 <button class="btn btn-info">Info</button>
                 <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
@@ -563,7 +573,7 @@
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div><!-- /btn-group -->
-              <div class="btn-group">
+<!--               <div class="btn-group">
                 <button class="btn btn-inverse">Inverse</button>
                 <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -573,7 +583,7 @@
                   <li class="divider"></li>
                   <li><a href="#">Separated link</a></li>
                 </ul>
-              </div><!-- /btn-group -->
+              </div> --><!-- /btn-group -->
             </div><!-- /btn-toolbar -->
           </div>
 <pre class="prettyprint linenums">
@@ -1083,8 +1093,11 @@
                 <a class="brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
+                  <li class="divider-vertical"></li>
                   <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
                   <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
                 </ul>
               </div>
             </div>
@@ -1095,8 +1108,43 @@
     &lt;a class="brand" href="#"&gt;Title&lt;/a&gt;
     &lt;ul class="nav"&gt;
       &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h2>Translator navbar</h2>
+          <div class="bs-docs-example">
+            <div class="navbar navbar-translator">
+              <div class="navbar-inner">
+                <a class="brand" href="#">Title</a>
+                <ul class="nav">
+                  <li><a href="#">Home</a></li>
+                  <li class="divider-vertical"></li>
+                  <li class="active"><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-translator"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;a class="brand" href="#"&gt;Title&lt;/a&gt;
+    &lt;ul class="nav"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -1401,8 +1449,11 @@
                   <div class="nav-collapse collapse navbar-inverse-collapse">
                     <ul class="nav">
                       <li class="active"><a href="#">Home</a></li>
+                      <li class="divider-vertical"></li>
                       <li><a href="#">Link</a></li>
+                      <li class="divider-vertical"></li>
                       <li><a href="#">Link</a></li>
+                      <li class="divider-vertical"></li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -1415,6 +1466,7 @@
                           <li><a href="#">One more separated link</a></li>
                         </ul>
                       </li>
+                      <li class="divider-vertical"></li>
                     </ul>
                     <form class="navbar-search pull-left" action="">
                       <input type="text" class="search-query span2" placeholder="Search">
@@ -1495,13 +1547,13 @@
           <div class="bs-docs-example">
             <div class="pagination">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
               </ul>
             </div>
           </div>
@@ -1530,13 +1582,13 @@
           <div class="bs-docs-example">
             <div class="pagination pagination-centered">
               <ul>
-                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="disabled"><a href="#"><</a></li>
                 <li class="active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
              </ul>
             </div>
           </div>
@@ -1565,46 +1617,46 @@
           <div class="bs-docs-example">
             <div class="pagination pagination-large">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
               </ul>
             </div>
             <div class="pagination">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
              </ul>
             </div>
             <div class="pagination pagination-small">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
               </ul>
             </div>
             <div class="pagination pagination-mini">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
               </ul>
             </div>
           </div>
@@ -1636,13 +1688,13 @@
           <div class="bs-docs-example">
             <div class="pagination pagination-centered">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
              </ul>
             </div>
           </div>
@@ -1654,13 +1706,13 @@
           <div class="bs-docs-example">
             <div class="pagination pagination-right">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#">></a></li>
               </ul>
             </div>
           </div>
@@ -2132,6 +2184,7 @@
           <h3>Error or danger</h3>
           <div class="bs-docs-example">
             <div class="alert alert-error">
+              <span class="icon"></span>
               <button type="button" class="close" data-dismiss="alert">&times;</button>
               <strong>Oh snap!</strong> Change a few things up and try submitting again.
             </div>
@@ -2142,9 +2195,24 @@
 &lt;/div&gt;
 </pre>
 
+          <h3>Warning</h3>
+          <div class="bs-docs-example">
+            <div class="alert alert-warning">
+              <span class="icon"></span>
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Well done!</strong> You successfully read this important alert message.
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-warning"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
           <h3>Success</h3>
           <div class="bs-docs-example">
             <div class="alert alert-success">
+              <span class="icon"></span>
               <button type="button" class="close" data-dismiss="alert">&times;</button>
               <strong>Well done!</strong> You successfully read this important alert message.
             </div>
@@ -2158,6 +2226,7 @@
           <h3>Information</h3>
           <div class="bs-docs-example">
             <div class="alert alert-info">
+              <span class="icon"></span>
               <button type="button" class="close" data-dismiss="alert">&times;</button>
               <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
             </div>
@@ -2618,6 +2687,17 @@ class="clearfix"
 
     <script src="assets/js/application.js"></script>
 
+    <script>
+      // $(function(){
+      //   $(".dropdown-menu").each(function(){
+      //       var $this = $(this),
+      //         parentWidth = $this.parent().innerWidth(),
+      //         menuWidth = $this.innerWidth(),
+      //         margin = (parentWidth / 2 ) - (menuWidth / 2);
+      //       $this.css("margin-left", margin +"px");
+      //   });
+      // });
+    </script>
 
 
   </body>
