@@ -535,3 +535,19 @@ form.search .btn {
   border: 0;
 }
 
+.btn-google,.btn-google:hover {
+  @include buttonBackground($btnGoogleBackgroundHighlight, $btnGoogleBackgound );
+  @include darkerBorderColors($btnGoogleBackgound );
+}
+.btn-google:hover{
+  @include buttonBackground(darken($btnGoogleBackgroundHighlight,4), darken($btnGoogleBackgound,4) );
+  @include darkerBorderColors(darken($btnGoogleBackgound,4) );
+}
+.btn-facebook {
+  @include buttonBackground($btnFacebookBackgroundHighlight, $btnFacebookBackgound);
+   @include darkerBorderColors($btnFacebookBackgound );
+}
+.btn-facebook:hover {
+  @include buttonBackground(darken($btnFacebookBackgroundHighlight, 4), darken($btnFacebookBackgound, 4));
+   @include darkerBorderColors(darken($btnFacebookBackgound, 4));
+}
