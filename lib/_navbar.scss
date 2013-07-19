@@ -16,6 +16,21 @@
   *z-index: 2;
 }
 
+// Fixed position navbar
+.navbar-fixed-right,
+.navbar-fixed-left {
+  position: fixed;
+  top: 0;
+  right: 0;
+  // bottom: 0;
+  z-index: 2000;
+}
+
+.navbar-fixed-left {
+  left: 0;
+}
+
+
 // Inner for background effects
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
 .navbar-inner {
@@ -411,7 +426,8 @@
 // Inverted navbar
 // -------------------------
 
-.navbar-inverse {
+.navbar-inverse,
+.navbar-worker {
 
   .navbar-inner {
     // @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
@@ -429,12 +445,7 @@
     }
   }
 
-  .nav > li {
-    border-color: #716D69;
-  }
-
   .brand {
-    color: $navbarInverseBrandColor;
     background-color: $jerichoGrayDark;
     border-bottom: 0;
     border-color: $navbarInverseBorder;
@@ -536,11 +547,28 @@
 
 }
 
+// WORKER STYLES
+// -------------
+.navbar-worker {
 
+  .navbar-inner {
+    border: 0;
+    @include box-shadow(none);
+  }
+
+ .brand,
+ .divider-vertical {
+  border-color: $navbarWorkerBorderColor;
+ }
+
+}
+
+// TRANSLATOR STYLES
+// -------------
 .navbar-translator {
 
   .brand {
-    background-color: #98D7CC;
+    background-color: $translatorColor;
     border-right: 1px solid #8CC6BC;
     border-bottom: 1px solid #89C2B8;
     width: 80px;
