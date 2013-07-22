@@ -6504,15 +6504,20 @@ form.login .pager li > span .caret,
 .navbar-worker .divider-vertical {
   border-color: #716d69;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003565}}
+.navbar-worker .nav > li > a:focus,
+.navbar-worker .nav > li > a:hover {
+  background-color: #322E2A;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003570}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003575}}
 .navbar-translator .brand {
   background-color: #98d7cc;
   border-right: 1px solid #8CC6BC;
   border-bottom: 1px solid #89C2B8;
   width: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/marexandre\/Vagrant\/jericho\/lib\/_navbar\.scss}line{font-family:\00003584}}
 .navbar-translator .nav .active > a,
 .navbar-translator .nav .active > a:hover,
 .navbar-translator .nav .active > a:focus {
