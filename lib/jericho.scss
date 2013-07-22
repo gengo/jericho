@@ -33,6 +33,10 @@
   src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
 
+// image sprites
+$sprites: sprite-map("sprite/*.png");
+$sprites-img: sprite-url($sprites);
+
 
 // Core variables and mixins
 @import "variables"; // Modify this for custom colors, font-sizes, etc
