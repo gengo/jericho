@@ -556,10 +556,15 @@
     @include box-shadow(none);
   }
 
- .brand,
- .divider-vertical {
-  border-color: $navbarWorkerBorderColor;
- }
+  .brand,
+  .divider-vertical {
+   border-color: $navbarWorkerBorderColor;
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background-color: #322E2A;
+  }
 
 }
 
