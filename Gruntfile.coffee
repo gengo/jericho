@@ -68,8 +68,7 @@ module.exports = (grunt) ->
                 sassDir       : 'lib'
                 cssDir        : '.tmp'
                 imagesDir     : 'img'
-                # fontsDir      : ''
-                relativeAssets: true
+                httpGeneratedImagesPath : './img'
             dev:
                 options:
                     debugInfo: true
