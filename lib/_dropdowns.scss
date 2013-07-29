@@ -105,8 +105,9 @@
     left: 50.5%;
   }
   .dropdown-submenu {
-    &:before, &:after {
-      border: none;
+    > .dropdown-menu {
+      &:before,
+      &:after {border: none;}
     }
   }
 }
