@@ -9,12 +9,12 @@
 .alert {
   width: 313px;
   // height: 83px;
-  padding: 14px 45px 20px 55px;
+  padding: 16px 45px 18px 55px;
   margin-bottom: $baseLineHeight;
   font-size: $baseFontSize;
   // text-shadow: 0 1px 0 rgba(255,255,255,.5);
   background-color: $jerichoGrayDark;
-  border: 1px solid $warningBorder;
+  // border: 1px solid $warningBorder;
   @include border-radius($baseBorderRadius);
   @include opacity(90);
 
@@ -32,16 +32,22 @@
 .alert .close {
   font-weight: normal;
   position: relative;
-  top: -2px;
-  left: 28px;
+  top: 4px;
+  left: 26px;
   line-height: $baseLineHeight;
   color: $white;
 
-  @include opacity(70);
+  background-image: $sprites-img;
+  background-repeat: no-repeat;
+  height: image-height(sprite-file($sprites, alert_close_button));
+  width: image-width(sprite-file($sprites, alert_close_button));
+  background-position: sprite-position( $sprites, alert_close_button);
+
+  @include opacity(100);
 
   &:hover,
   &:focus {
-    @include opacity(100);
+    @include opacity(70);
     @include transition(background-position .1s linear);
   }
 }
@@ -50,13 +56,17 @@
 // Alternate styles
 // -------------------------
 
+.alert {
+  & > .icon,
+  & > .icon {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    display: inline-block;
+  }
+}
+
 .alert-success {
-  // background-color: $successBackground;
-  // border-color: $successBorder;
-  // color: $successText;
-  // background-image: url("/img/alert_success.png");
-  // background-repeat: no-repeat;
-  // background-position: 18px 28px;
   position: relative;
 
   & > .icon,
@@ -66,11 +76,8 @@
     height: image-height(sprite-file($sprites, alert_success));
     width: image-width(sprite-file($sprites, alert_success));
     background-position: sprite-position( $sprites, alert_success);
+    margin-top: image-height(sprite-file($sprites, alert_success)) / 2 * -1;
 
-    position: absolute;
-    top: 28px;
-    left: 17px;
-    display: inline-block;
   }
 }
 .alert-success h4 {
@@ -87,20 +94,10 @@
     height: image-height(sprite-file($sprites, alert_error));
     width: image-width(sprite-file($sprites, alert_error));
     background-position: sprite-position( $sprites, alert_error);
-
-    position: absolute;
-    top: 28px;
-    left: 17px;
-    display: inline-block;
+    margin-top: image-height(sprite-file($sprites, alert_error)) / 2 * -1;
   }
 }
 .alert-warning {
-  // background-color: $errorBackground;
-  // border-color: $errorBorder;
-  // color: $errorText;
-  // background-image: url("/img/alert_warning.png");
-  // background-repeat: no-repeat;
-  // background-position: 18px 28px;
   position: relative;
 
   & > .icon,
@@ -110,11 +107,7 @@
     height: image-height(sprite-file($sprites, alert_warning));
     width: image-width(sprite-file($sprites, alert_warning));
     background-position: sprite-position( $sprites, alert_warning);
-
-    position: absolute;
-    top: 28px;
-    left: 17px;
-    display: inline-block;
+    margin-top: image-height(sprite-file($sprites, alert_warning)) / 2 * -1;
   }
 }
 .alert-danger h4,
@@ -122,13 +115,6 @@
   // color: $errorText;
 }
 .alert-info {
-  // background-color: $infoBackground;
-  // border-color: $infoBorder;
-  // color: $infoText;
-  // background-image: url("/img/alert_info.png");
-  // background-repeat: no-repeat;
-  // background-position: 18px 28px;
-
   position: relative;
 
   & > .icon,
@@ -138,11 +124,7 @@
     height: image-height(sprite-file($sprites, alert_info));
     width: image-width(sprite-file($sprites, alert_info));
     background-position: sprite-position( $sprites, alert_info);
-
-    position: absolute;
-    top: 28px;
-    left: 17px;
-    display: inline-block;
+    margin-top: image-height(sprite-file($sprites, alert_info)) / 2 * -1;
   }
 }
 .alert-info h4 {
