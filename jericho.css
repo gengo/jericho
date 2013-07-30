@@ -1,4 +1,4 @@
-/*
+/*!
  * Jericho v0.2.0
  *
  * Copyright 2013 Gengo inc.
@@ -1472,11 +1472,11 @@ input[type="checkbox"][readonly] {
   top: 3px;
   line-height: 18px;
   margin-left: 13px;
-  background-image: url('img/sprite-s5ac3f07151.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 18px;
   width: 4px;
-  background-position: 0 -108px;
+  background-position: 0 -118px;
 }
 
 .control-group.success .icon {
@@ -1486,7 +1486,7 @@ input[type="checkbox"][readonly] {
   top: 3px;
   line-height: 14px;
   margin-left: 8px;
-  background-image: url('img/sprite-s5ac3f07151.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 14px;
   width: 15px;
@@ -4509,11 +4509,10 @@ form.login .pager li > span .caret,
 
 .alert {
   width: 313px;
-  padding: 14px 45px 20px 55px;
+  padding: 16px 45px 18px 55px;
   margin-bottom: 24px;
   font-size: 14px;
   background-color: #4d4843;
-  border: 1px solid #c6ab67;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -4533,35 +4532,44 @@ form.login .pager li > span .caret,
 .alert .close {
   font-weight: normal;
   position: relative;
-  top: -2px;
-  left: 28px;
+  top: 4px;
+  left: 26px;
   line-height: 24px;
   color: white;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
-}
-.alert .close:hover, .alert .close:focus {
+  background-image: url('img/sprite-s27d73ae805.png');
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 9px;
+  background-position: 0 -108px;
   opacity: 1;
   filter: alpha(opacity=100);
+}
+.alert .close:hover, .alert .close:focus {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
   -webkit-transition: background-position 0.1s linear;
   -moz-transition: background-position 0.1s linear;
   -o-transition: background-position 0.1s linear;
   transition: background-position 0.1s linear;
 }
 
+.alert > .icon, .alert > .icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  display: inline-block;
+}
+
 .alert-success {
   position: relative;
 }
 .alert-success > .icon, .alert-success > .icon {
-  background-image: url('img/sprite-s5ac3f07151.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
   background-position: 0 -70px;
-  position: absolute;
-  top: 28px;
-  left: 17px;
-  display: inline-block;
+  margin-top: -12px;
 }
 
 .alert-danger,
@@ -4571,45 +4579,36 @@ form.login .pager li > span .caret,
 .alert-danger > .icon, .alert-danger > .icon,
 .alert-error > .icon,
 .alert-error > .icon {
-  background-image: url('img/sprite-s5ac3f07151.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
   background-position: 0 0;
-  position: absolute;
-  top: 28px;
-  left: 17px;
-  display: inline-block;
+  margin-top: -12px;
 }
 
 .alert-warning {
   position: relative;
 }
 .alert-warning > .icon, .alert-warning > .icon {
-  background-image: url('img/sprite-s5ac3f07151.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 22px;
   width: 24px;
   background-position: 0 -24px;
-  position: absolute;
-  top: 28px;
-  left: 17px;
-  display: inline-block;
+  margin-top: -11px;
 }
 
 .alert-info {
   position: relative;
 }
 .alert-info > .icon, .alert-info > .icon {
-  background-image: url('img/sprite-s5ac3f07151.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
   background-position: 0 -46px;
-  position: absolute;
-  top: 28px;
-  left: 17px;
-  display: inline-block;
+  margin-top: -12px;
 }
 
 .alert-block {
@@ -6878,7 +6877,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-;/*
+;/*!
  * Jericho v0.2.0
  *
  * Copyright 2013 Gengo inc.
