@@ -123,10 +123,10 @@ module.exports = (grunt) ->
             options:
               separator: ';'
             dev:
-              src: ['.tmp/jericho.css', '.tmp/responsive.css']
+              src: ['.tmp/jericho.css']
               dest: '.tmp/jericho.css'
             dev_responsive:
-              src: ['.tmp/jericho.css']
+              src: ['.tmp/jericho.css', '.tmp/responsive.css']
               dest: '.tmp/jericho-responsive.css'
             prod:
               src: ['.tmp/jericho.css']
