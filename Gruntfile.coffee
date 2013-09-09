@@ -62,6 +62,13 @@ module.exports = (grunt) ->
                     logLevel: 0
                     optimizeCss: 'standard'
                     out: './jericho.min.css'
+            styles_responsive:
+                options:
+                    baseUrl: './'
+                    cssIn: './jericho-responsive.css'
+                    logLevel: 0
+                    optimizeCss: 'standard'
+                    out: './jericho-responsive.min.css'
 
         compass:
             options:
@@ -87,7 +94,7 @@ module.exports = (grunt) ->
                 files: [
                     cwd: '.tmp'
                     src: [
-                        'jericho.css'
+                        'jericho.css', 'jericho-responsive.css'
                     ]
                     dest: './'
                     expand: true
@@ -96,8 +103,8 @@ module.exports = (grunt) ->
                 files: [
                     cwd: '.tmp'
                     src: [
-                        'jericho.css'
-                        'jericho.min.css'
+                        'jericho.css', 'jericho-responsive.css'
+                        'jericho.min.css', 'jericho-responsive.min.css'
                     ]
                     dest: './'
                     expand: true
@@ -106,7 +113,7 @@ module.exports = (grunt) ->
                 files: [
                     cwd: './'
                     src: [
-                        'jericho.css'
+                        'jericho.css', 'jericho-responsive.css'
                     ]
                     dest: './docs/assets/css'
                     expand: true
@@ -118,9 +125,15 @@ module.exports = (grunt) ->
             dev:
               src: ['.tmp/jericho.css', '.tmp/responsive.css']
               dest: '.tmp/jericho.css'
+            dev_responsive:
+              src: ['.tmp/jericho.css']
+              dest: '.tmp/jericho-responsive.css'
             prod:
-              src: ['.tmp/jericho.css', '.tmp/responsive.css']
+              src: ['.tmp/jericho.css']
               dest: '.tmp/jericho.css'
+            prod_responsive:
+              src: ['.tmp/jericho.css', '.tmp/responsive.css']
+              dest: '.tmp/jericho-responsive.css'
 
 
 
@@ -129,6 +142,7 @@ module.exports = (grunt) ->
             'clean'
             'compass:dev'
             'concat:dev'
+            'concat:dev_responsive'
             'copy:dev'
             'copy:docs'
             'connect:livereload'
@@ -148,6 +162,7 @@ module.exports = (grunt) ->
         'clean'
         'compass:dev'
         'concat:dev'
+        'concat:dev_responsive'
         'copy:dev'
         'copy:docs'
         'watch'
@@ -160,7 +175,9 @@ module.exports = (grunt) ->
         'clean'
         'compass:prod'
         'concat:prod'
+        'concat:prod_responsive'
         'copy:prod'
         'copy:docs'
         'requirejs:styles'
+        'requirejs:styles_responsive'
     ]
