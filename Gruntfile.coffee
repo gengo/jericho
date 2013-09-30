@@ -115,7 +115,7 @@ module.exports = (grunt) ->
                     src: [
                         'jericho.css', 'jericho-responsive.css'
                     ]
-                    dest: './docs/css'
+                    dest: './docs'
                     expand: true
                 ]
 
