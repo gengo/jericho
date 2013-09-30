@@ -2886,7 +2886,6 @@ table th[class*="span"],
 .dropdown-menu .dropdown-submenu > .dropdown-menu:before, .dropdown-menu .dropdown-submenu > .dropdown-menu:after {
   border: none;
 }
-
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
@@ -4559,6 +4558,10 @@ form.login .pager li > span .caret,
   height: 10px;
   width: 9px;
   background-position: 0 -108px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.alert .close:hover, .alert .close:focus {
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -5500,6 +5503,10 @@ form.login .pager li > span .caret,
 }
 .navbar-inverse .brand,
 .navbar-worker .brand {
+  border-color: #716D69;
+}
+.navbar-inverse .brand {
+  color: white;
   background-color: #4d4843;
   border-bottom: 0;
   border-color: #252525;
@@ -5661,6 +5668,10 @@ form.login .pager li > span .caret,
 .navbar-worker .nav > li > a:focus,
 .navbar-worker .nav > li > a:hover {
   background-color: #322E2A;
+}
+
+.navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active {
+  background-color: #080807 \9;
 }
 
 .navbar-translator .brand {

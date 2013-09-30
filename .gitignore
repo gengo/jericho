@@ -6,3 +6,5 @@ lib/.sass-cache/*
 node_modules
 .tmp
 lib
+css
+components
