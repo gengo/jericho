@@ -1490,7 +1490,7 @@ input[type="checkbox"][readonly] {
   top: 3px;
   line-height: 18px;
   margin-left: 13px;
-  background-image: url('../img/sprite-s27d73ae805.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 18px;
   width: 4px;
@@ -1504,7 +1504,7 @@ input[type="checkbox"][readonly] {
   top: 3px;
   line-height: 14px;
   margin-left: 8px;
-  background-image: url('../img/sprite-s27d73ae805.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 14px;
   width: 15px;
@@ -4554,7 +4554,7 @@ form.login .pager li > span .caret,
   left: 26px;
   line-height: 24px;
   color: white;
-  background-image: url('../img/sprite-s27d73ae805.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 10px;
   width: 9px;
@@ -4582,7 +4582,7 @@ form.login .pager li > span .caret,
   position: relative;
 }
 .alert-success > .icon, .alert-success > .icon {
-  background-image: url('../img/sprite-s27d73ae805.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
@@ -4597,7 +4597,7 @@ form.login .pager li > span .caret,
 .alert-danger > .icon, .alert-danger > .icon,
 .alert-error > .icon,
 .alert-error > .icon {
-  background-image: url('../img/sprite-s27d73ae805.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
@@ -4609,7 +4609,7 @@ form.login .pager li > span .caret,
   position: relative;
 }
 .alert-warning > .icon, .alert-warning > .icon {
-  background-image: url('../img/sprite-s27d73ae805.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 22px;
   width: 24px;
@@ -4621,7 +4621,7 @@ form.login .pager li > span .caret,
   position: relative;
 }
 .alert-info > .icon, .alert-info > .icon {
-  background-image: url('../img/sprite-s27d73ae805.png');
+  background-image: url('img/sprite-s27d73ae805.png');
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
