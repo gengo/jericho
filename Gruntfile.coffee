@@ -75,7 +75,7 @@ module.exports = (grunt) ->
                 sassDir       : 'lib'
                 cssDir        : '.tmp'
                 imagesDir     : 'img'
-                httpGeneratedImagesPath : './img'
+                httpGeneratedImagesPath : '../img'
             dev:
                 options:
                     debugInfo: true
