@@ -32,7 +32,7 @@ module.exports = (grunt) ->
 
         connect:
             options:
-                port: 9000
+                port: 9010
                  # change this to '0.0.0.0' to access the server from outside
                 hostname: 'localhost'
             livereload:
@@ -115,7 +115,7 @@ module.exports = (grunt) ->
                     src: [
                         'jericho.css', 'jericho-responsive.css'
                     ]
-                    dest: './docs/assets/css'
+                    dest: './docs/css'
                     expand: true
                 ]
 
