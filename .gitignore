@@ -5,5 +5,5 @@ lib/.sass-cache/*
 .rvmrc
 node_modules
 .tmp
-css
+lib
 components
