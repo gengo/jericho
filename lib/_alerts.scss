@@ -8,16 +8,14 @@
 
 .alert {
   width: 313px;
-  // height: 83px;
   padding: 16px 45px 18px 55px;
   margin-bottom: $baseLineHeight;
   font-size: $baseFontSize;
-  // text-shadow: 0 1px 0 rgba(255,255,255,.5);
   background-color: $jerichoGrayDark;
-  // border: 1px solid $warningBorder;
   @include border-radius($baseBorderRadius);
+  @include box-shadow(0 1px 6px 1px rgba(0,0,0,0.4));
+  @include background-clip(padding-box);
   @include opacity(90);
-
 }
 .alert,
 .alert h4 {

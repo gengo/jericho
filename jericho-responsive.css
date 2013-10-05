@@ -1,5 +1,5 @@
 /*!
- * Jericho v0.3.1
+ * Jericho v0.3.2
  *
  * Copyright 2013 Gengo inc.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -4534,6 +4534,12 @@ form.login .pager li > span .caret,
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -webkit-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.4);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
