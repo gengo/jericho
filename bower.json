@@ -1,7 +1,25 @@
 {
   "name": "jericho",
-  "version": "0.3.2",
-  "main": "./jericho.css",
+  "version": "0.3.3",
+  "main": [
+    "jericho.css",
+    "jericho.min.css",
+    "jericho-responsive.css",
+    "jericho-responsive.min.css",
+    "js/bootstrap-affix.js",
+    "js/bootstrap-alert.js",
+    "js/bootstrap-button.js",
+    "js/bootstrap-carousel.js",
+    "js/bootstrap-collapse.js",
+    "js/bootstrap-dropdown.js",
+    "js/bootstrap-modal.js",
+    "js/bootstrap-popover.js",
+    "js/bootstrap-scrollspy.js",
+    "js/bootstrap-tab.js",
+    "js/bootstrap-tooltip.js",
+    "js/bootstrap-transition.js",
+    "js/bootstrap-typeahead.js"
+  ],
   "dependencies": {},
   "ignore": [
     "**/.*",
