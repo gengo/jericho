@@ -1,7 +1,8 @@
 {
   "name": "jericho",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "main": [
+    "fonts",
     "jericho.css",
     "jericho.min.css",
     "jericho-responsive.css",
