@@ -1,8 +1,7 @@
 {
   "name": "jericho",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "main": [
-    "fonts",
     "jericho.css",
     "jericho.min.css",
     "jericho-responsive.css",
@@ -19,7 +18,23 @@
     "js/bootstrap-tab.js",
     "js/bootstrap-tooltip.js",
     "js/bootstrap-transition.js",
-    "js/bootstrap-typeahead.js"
+    "js/bootstrap-typeahead.js",
+    "fonts/OpenSans-Bold-webfont.eot",
+    "fonts/OpenSans-Bold-webfont.svg",
+    "fonts/OpenSans-Bold-webfont.ttf",
+    "fonts/OpenSans-Bold-webfont.woff",
+    "fonts/OpenSans-Italic-webfont.eot",
+    "fonts/OpenSans-Italic-webfont.svg",
+    "fonts/OpenSans-Italic-webfont.ttf",
+    "fonts/OpenSans-Italic-webfont.woff",
+    "fonts/OpenSans-Regular-webfont.eot",
+    "fonts/OpenSans-Regular-webfont.svg",
+    "fonts/OpenSans-Regular-webfont.ttf",
+    "fonts/OpenSans-Regular-webfont.woff",
+    "fonts/OpenSans-Semibold-webfont.eot",
+    "fonts/OpenSans-Semibold-webfont.svg",
+    "fonts/OpenSans-Semibold-webfont.ttf",
+    "fonts/OpenSans-Semibold-webfont.woff"
   ],
   "dependencies": {},
   "ignore": [
