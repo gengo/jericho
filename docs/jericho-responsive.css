@@ -259,7 +259,7 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #333333;
+  color: #4d4843;
   background-color: #f4f4f4;
 }
 
@@ -1996,7 +1996,7 @@ table {
 }
 
 .table {
-  color: #333333;
+  color: #4d4843;
   width: 100%;
   margin-bottom: 24px;
 }
