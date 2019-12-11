@@ -275,6 +275,7 @@ input[type="button"] {
   &:hover,
   &:focus {
     text-decoration: none;
+    color: #fff;
 
     @include buttonBackgroundJericho($btnInfoHoverBackground-0, $btnInfoHoverBackground-5, $btnInfoHoverBackground-95, $btnInfoHoverBackground-100);
     border-top-color   : $btnInfoHoverBorderTop;
