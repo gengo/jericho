@@ -40,11 +40,17 @@ $workerColor:           $jerichoGrayDark !default;
 $bodyBackground:        #F4F4F4 !default;
 $textColor:             $grayDark !default;
 
+// LB oranges
+$lightest-orange:       #FF8B48 !default;
+$lb-orange:             #F26522 !default;
+$sec-lightest-orange:   #FFBA43 !default;
+$sec-lb-orange:         #FFBA43 !default;
+
 
 // Links
 // -------------------------
-$linkColor:                 #1CAD7E !default;
-$linkColorHover:            #1CAD7E !default;
+$linkColor:                 $lb-orange !default;
+$linkColorHover:            $lb-orange !default;
 //
 $translatorLinkColor:       #52AE9B !default;
 $translatorLinkColorHover:  #52AE9B !default;
@@ -130,45 +136,45 @@ $btnHoverBorderLeft:              #D2D2D2 !default;
 $btnPrimaryBackground:              $linkColor !default;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
 
-$btnPrimaryBackground-0:            #4ABE98 !default;
-$btnPrimaryBackground-5:            #27B184 !default;
-$btnPrimaryBackground-95:           #1BA478 !default;
-$btnPrimaryBackground-100:          #199B71 !default;
-$btnPrimaryBorderTop:               #5DB79A !default;
-$btnPrimaryBorderRight:             #1F9771 !default;
-$btnPrimaryBorderBottom:            #1F9771 !default;
-$btnPrimaryBorderLeft:              #168361 !default;
+$btnPrimaryBackground-0:            $lightest-orange !default;
+$btnPrimaryBackground-5:            $lightest-orange !default;
+$btnPrimaryBackground-95:           $lightest-orange !default;
+$btnPrimaryBackground-100:          $lightest-orange !default;
+$btnPrimaryBorderTop:               $lightest-orange !default;
+$btnPrimaryBorderRight:             $lightest-orange !default;
+$btnPrimaryBorderBottom:            $lightest-orange !default;
+$btnPrimaryBorderLeft:              $lightest-orange !default;
 
-$btnPrimaryHoverBackground-0:            #42B087 !default;
-$btnPrimaryHoverBackground-5:            #1EA070 !default;
-$btnPrimaryHoverBackground-95:           #129564 !default;
-$btnPrimaryHoverBackground-100:          #108B5E !default;
-$btnPrimaryHoverBorderTop:               #5AA98E !default;
-$btnPrimaryHoverBorderRight:             #1B8560 !default;
-$btnPrimaryHoverBorderBottom:            #127351 !default;
-$btnPrimaryHoverBorderLeft:              #1B8560 !default;
+$btnPrimaryHoverBackground-0:            lighten($lightest-orange, 5%) !default;
+$btnPrimaryHoverBackground-5:            lighten($lightest-orange, 5%) !default;
+$btnPrimaryHoverBackground-95:           lighten($lightest-orange, 5%) !default;
+$btnPrimaryHoverBackground-100:          lighten($lightest-orange, 5%) !default;
+$btnPrimaryHoverBorderTop:               lighten($lightest-orange, 5%) !default;
+$btnPrimaryHoverBorderRight:             lighten($lightest-orange, 5%) !default;
+$btnPrimaryHoverBorderBottom:            lighten($lightest-orange, 5%) !default;
+$btnPrimaryHoverBorderLeft:              lighten($lightest-orange, 5%) !default;
 
 // Info btn
-$btnInfoBackground:                 #5bc0de !default;
-$btnInfoBackgroundHighlight:        #2f96b4 !default;
+$btnInfoBackground:                 #2f96b4 !default;
+$btnInfoBackgroundHighlight:        #5bc0de !default;
 
-$btnInfoBackground-0:            #A7DAD3 !default;
-$btnInfoBackground-5:            #96D3C9 !default;
-$btnInfoBackground-95:           #8BC7BE !default;
-$btnInfoBackground-100:          #82BBB2 !default;
-$btnInfoBorderTop:               #A7D1CB !default;
-$btnInfoBorderRight:             #83BBB2 !default;
-$btnInfoBorderBottom:            #70A29B !default;
-$btnInfoBorderLeft:              #83BBB2 !default;
+$btnInfoBackground-0:            $btnInfoBackground !default;
+$btnInfoBackground-5:            $btnInfoBackground !default;
+$btnInfoBackground-95:           $btnInfoBackground !default;
+$btnInfoBackground-100:          $btnInfoBackground !default;
+$btnInfoBorderTop:               $btnInfoBackground !default;
+$btnInfoBorderRight:             $btnInfoBackground !default;
+$btnInfoBorderBottom:            $btnInfoBackground !default;
+$btnInfoBorderLeft:              $btnInfoBackground !default;
 
-$btnInfoHoverBackground-0:            #A4D3CB !default;
-$btnInfoHoverBackground-5:            #92C9C1 !default;
-$btnInfoHoverBackground-95:           #87BEB5 !default;
-$btnInfoHoverBackground-100:          #7EB2AA !default;
-$btnInfoHoverBorderTop:               #8EC7BE !default;
-$btnInfoHoverBorderRight:             #5FADA1 !default;
-$btnInfoHoverBorderBottom:            #50978C !default;
-$btnInfoHoverBorderLeft:              #5FADA1 !default;
+$btnInfoHoverBackground-0:       $btnInfoBackgroundHighlight !default;
+$btnInfoHoverBackground-5:       $btnInfoBackgroundHighlight !default;
+$btnInfoHoverBackground-95:      $btnInfoBackgroundHighlight !default;
+$btnInfoHoverBackground-100:     $btnInfoBackgroundHighlight !default;
+$btnInfoHoverBorderTop:          $btnInfoBackgroundHighlight !default;
+$btnInfoHoverBorderRight:        $btnInfoBackgroundHighlight !default;
+$btnInfoHoverBorderBottom:       $btnInfoBackgroundHighlight !default;
+$btnInfoHoverBorderLeft:         $btnInfoBackgroundHighlight !default;
 
 // Primary btn
 $btnSuccessBackground:              #62c462 !default;
@@ -243,10 +249,10 @@ $dropdownDividerBottom:         $white !default;
 
 $dropdownLinkColor:             $grayDark !default;
 $dropdownLinkColorHover:        $grayDark !default;
-$dropdownLinkColorActive:       #1AAC7E !default;
+$dropdownLinkColorActive:       $lb-orange !default;
 
 $dropdownLinkBackgroundActive:  $linkColor !default;
-$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;
+$dropdownLinkBackgroundHover:   $lightest-orange !default;
 
 
 

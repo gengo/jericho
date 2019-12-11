@@ -73,7 +73,7 @@
   // text-shadow: 0 1px 0 $navbarBackgroundHighlight;
 
   font-weight: 400;
-  background-color: #1cad7e;
+  background-color: $lb-orange;
   width: 107px;
   height: $navbarHeight;
   line-height: 1.9;
@@ -82,8 +82,8 @@
   // padding: 0;
   text-align: center;
 
-  border-bottom: 1px solid #06A073;
-  border-right: 1px solid #1BA478;
+  border-bottom: 1px solid $lb-orange;
+  border-right: 1px solid $lb-orange;
 
   &:hover,
   &:focus {
